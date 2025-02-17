@@ -1,2 +1,1 @@
-# PDMR_workflow
-the workflow is used for processing PDMR data
+# Data and Figure repository for PDMR landscape paper
