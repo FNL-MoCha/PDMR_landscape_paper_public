@@ -1,0 +1,1038 @@
+Patient ID	Model Set ID	ONCOTREE CODE	Tumor histology code for manuscript figures	Rare/ Recalcitrant/ Common cancer	NCI CTEP Simplified Disease Classification (CTEP SDC)	Diagnosis Subtype	Disease_BodyLocation	Age at Diagnosis	CTC-derived model	Germline Available	CAF used as germline surrogate	Originator Available	Number of PDC	Number of PDOrg	Number of PDX Samples	Total number of Samples	Has known Metastatic Disease	Inferred Ancestry	Source  of inferred ancestry	Contributor Model?	Contributor	Contributor Model ID	Available from NCI PDMR
+111316	111316-319-R	GIST	Other	Rare	Gastrointestinal stromal tumor	epithelioid type	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+112475	112475-105-R	SOC	Other	Rare	Ovarian epithelial cancer	Papillary Serous Cystadenocarcinoma 	Gynecologic	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+114348	114348-004-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	4	4	Yes	European	PDX	no	N/A		Yes
+114434	114434-197-R	SFT	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	Spindle cell, solitary fibrous tumor	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+114551	114551-080-T	ACCC	Other	Rare	Salivary gland cancer	acinic cell carcinoma	Head and Neck	41-89 yo	No	no	no	no	0	1	5	6	Yes	African	PDX	no	N/A		Yes
+114868	114868-125-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	-	Head and Neck	41-89 yo	No	no	no	yes	0	0	4	5	Yes	Admixture	Originator	no	N/A		Yes
+115747	115747-069-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+116653	116653-092-T	CEAD	Other	Rare	Adenocarcinoma - cervix	-	Gynecologic	41-89 yo	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	no	N/A		Yes
+116653	116653-108-T	CEAD	Other	Rare	Adenocarcinoma - cervix	-	Gynecologic	41-89 yo	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	no	N/A		Yes
+116655	116655-072-R	MACR	COADREAD	Common	Adenocarcinoma - colon	mucinous	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	1	1	6	9	Not Reported	European	Germline	no	N/A		Yes
+117519	117519-064-T	PRAD	Other	Rare	Prostate cancer, NOS	adenocarcinoma	Genitourinary	41-89 yo	No	yes	no	yes	0	0	6	7	Yes	Admixture	Germline	no	N/A		Yes
+118821	118821-072-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	no	no	no	1	0	0	1	Not Reported	European	PDX	no	N/A		Yes
+119177	119177-322-R1	SYNS	SARCOMA	Rare	Synovial sarcoma	-	Musculoskeletal	18-40 yo	No	yes	yes	no	0	0	5	5	Yes	European	PDX	no	N/A		Yes
+119387	119387-122-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	yes	no	no	0	1	5	6	Not Reported	Admixture	Germline	no	N/A		Yes
+125672	125672-216-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	invasive	Head and Neck	41-89 yo	No	no	no	no	0	0	1	1	Yes	Admixture	PDX	no	N/A		Yes
+126254	126254-015-R	SARCNOS	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	pleomorphic 	Musculoskeletal	41-89 yo	No	yes	no	no	1	0	4	5	Not Reported	Admixture	Germline	no	N/A		Yes
+126767	126767-308-R	DDLS	SARCOMA	Rare	Liposarcoma	dedifferentiated	Musculoskeletal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+128128	128128-338-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	yes	no	no	1	0	6	7	Yes	European	Germline	no	N/A		Yes
+128162	128162-247-R	IDC	Other	Common	Invasive breast carcinoma	ductal, TNBC	Breast	41-89 yo	No	no	no	no	0	1	6	7	Yes	South Asian	PDX	no	N/A		Yes
+128236	128236-265-R3	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	0	1	Yes	European	PDX	no	N/A		Yes
+128236	128236-265-R4	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+128783	128783-104-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	3	5	Yes	African	Germline	no	N/A		Yes
+131542	131542-069-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	Invasive, non- keratinizing	Head and Neck	18-40 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+132734	132734-180-R	ERMS	SARCOMA	Rare	Embryonal rhabdomyosarcoma	-	Musculoskeletal	18-40 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+133257	133257-275-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	no	0	0	4	4	Yes	European	PDX	no	N/A		Yes
+133581	133581-144-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	18-40 yo	No	no	no	yes	0	0	5	6	Yes	European	Originator	no	N/A		Yes
+134843	134843-207-R	LXSC	HNSC	Rare	Laryngeal squamous cell carcinoma	-	Head and Neck	41-89 yo	No	yes	no	no	0	0	4	4	Not Reported	European	Germline	no	N/A		Yes
+135598	135598-235-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	Admixture	Germline	no	N/A		Yes
+135848	135848-042-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	6	8	Yes	European	Germline	no	N/A		Yes
+136153	136153-299-R	USC	Other	Common	Serous endometrial adenocarcinoma	-	Gynecologic	41-89 yo	No	no	no	yes	0	1	6	8	Yes	European	Originator	no	N/A		Yes
+136722	136722-071-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	no	no	no	1	0	0	1	Yes	Admixture	PDX	no	N/A		Yes
+137432	137432-314-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	Invasive	Head and Neck	41-89 yo	No	no	no	yes	1	0	6	8	Not Reported	European	Originator	no	N/A		Yes
+137849	137849-337-R	MEL	MEL	Common	Melanoma	spindle cell type	Skin	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	Admixture	Germline	no	N/A		Yes
+138582	138582-337-R	MCC	Other	Rare	Merkel cell tumor	-	Endocrine and Neuroendocrine	41-89 yo	No	no	no	no	1	0	6	7	Not Reported	Admixture	PDX	no	N/A		Yes
+139182	139182-063-R	BLCA	BLCA	Common	Transitional cell car. - uroth.	-	Genitourinary	41-89 yo	No	yes	yes	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+143587	143587-279-R	POCA	Other	Rare	Skin cancer, NOS	invasive porocarcinoma 	Skin	41-89 yo	No	no	no	yes	0	1	6	8	Not Reported	European	Originator	no	N/A		Yes
+144126	144126-210-T	NECNOS	Other	Rare	Neuroendocrine cancer, NOS	carcinoma	Endocrine and Neuroendocrine	41-89 yo	No	no	no	no	0	0	5	5	Yes	Admixture	PDX	no	N/A		Yes
+144237	144237-036-T	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	Pleomorphic Sarcoma	Musculoskeletal	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	Admixture	Germline	no	N/A		Yes
+144555	144555-231-T	MACR	COADREAD	Common	Adenocarcinoma - colon	mucinous	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	4	4	Yes	European	Germline	no	N/A		Yes
+144983	144983-106-R	HGONEC	Other	Rare	Ovarian cancer, NOS	large cell neuroendocrine carcinoma (LCNC) of the ovary 	Gynecologic	41-89 yo	No	yes	no	yes	0	0	6	7	Not Reported	African	Germline	no	N/A		Yes
+145666	145666-245-R	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	yes	0	0	4	5	Not Reported	Admixture	Originator	no	N/A		Yes
+145919	145919-334-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	6	8	Not Reported	Admixture	PDX	no	N/A		Yes
+146199	146199-324-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	yes	no	yes	0	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+146476	146476-266-R	SCB	BLCA	Common	Urothelial/bladder cancer, NOS	Invasive papillary with sarcomatoid differentiation	Genitourinary	41-89 yo	No	yes	no	no	0	0	4	4	Yes	European	Germline	no	N/A		Yes
+147741	147741-163-M	SOC	Other	Rare	Ovarian epithelial cancer	serous carcinoma with clear cell features 	Gynecologic	41-89 yo	No	yes	no	no	1	1	0	2	Yes	European	Germline	no	N/A		Yes
+147741	147741-172-M	SOC	Other	Rare	Ovarian epithelial cancer	serous carcinoma with clear cell features 	Gynecologic	41-89 yo	No	yes	no	no	1	1	6	8	Yes	European	Germline	no	N/A		Yes
+147741	147741-191-M	SOC	Other	Rare	Ovarian epithelial cancer	serous carcinoma with clear cell features 	Gynecologic	41-89 yo	No	yes	no	no	1	1	6	8	Yes	European	Germline	no	N/A		Yes
+147771	147771-066-R1	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	0	6	7	Yes	Admixture	Germline	no	N/A		Yes
+147771	147771-066-R2	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	6	6	Yes	Admixture	Germline	no	N/A		Yes
+152527	152527-244-T	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	no	N/A		Yes
+154431	154431-089-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	0	1	3	Not Reported	European	Originator	no	N/A		Yes
+155919	155919-109-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	1	6	7	Not Reported	European	Germline	no	N/A		Yes
+156681	156681-154-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	yes	no	no	1	0	4	5	Yes	European	Germline	no	N/A		Yes
+157184	157184-299-T	MACR	COADREAD	Common	Adenocarcinoma - rectum	mucinous	Digestive/Gastrointestinal	18-40 yo	No	no	no	no	1	0	6	7	Yes	Admixture	PDX	no	N/A		Yes
+158597	158597-082-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	4	5	Yes	European	PDX	no	N/A		Yes
+158883	158883-120-T	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	spindle cell	Musculoskeletal	41-89 yo	No	yes	no	yes	0	0	4	5	Yes	European	Germline	no	N/A		Yes
+159449	159449-244-R	BLCA	BLCA	Common	Transitional cell car. - uroth.	-	Genitourinary	41-89 yo	No	no	no	no	1	1	6	8	Not Reported	Admixture	PDX	no	N/A		Yes
+161341	161341-145-T	COADREAD	COADREAD	Common	Colorectal cancer, NOS	adenocarcinoma	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	5	5	Yes	European	PDX	no	N/A		Yes
+161853	161853-170-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	no	0	0	3	3	Not Reported	European	PDX	no	N/A		Yes
+161973	161973-066-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+163349	163349-219-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	4	4	Not Reported	European	PDX	no	N/A		Yes
+163357	163357-337-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	Admixture	Originator	no	N/A		Yes
+163895	163895-298-T	OCS	Other	Rare	Ovarian cancer, NOS	Carcinosarcoma (malignant mixed Mullerian tumor) 	Gynecologic	41-89 yo	No	no	no	no	0	1	6	7	Not Reported	European	PDX	no	N/A		Yes
+164165	164165-088-R1	ACCC	Other	Rare	Adrenocortical carcinoma	-	Endocrine and Neuroendocrine	41-89 yo	No	yes	no	no	0	0	6	6	Yes	European	Germline	no	N/A		Yes
+165257	165257-294-R	MFH	SARCOMA	Rare	Malignant fibrous histiocytoma	undifferentiated pleomorphic sarcoma	Musculoskeletal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	Admixture	PDX	no	N/A		Yes
+165739	165739-295-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+167148	167148-078-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	18-40 yo	No	yes	no	yes	1	1	6	9	Yes	Admixture	Germline	no	N/A		Yes
+168753	168753-222-R	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	papillary 	Genitourinary	41-89 yo	No	no	no	yes	1	0	5	7	Not Reported	African	Originator	no	N/A		Yes
+169284	169284-167-R	UEC	Other	Common	Endometrioid endomet. adenocar.	Focal Squamous and Villoglandular Differentiation	Gynecologic	41-89 yo	No	no	no	no	1	1	5	7	Yes	Admixture	PDX	no	N/A		Yes
+171881	171881-019-R	BRCA	Other	Common	Invasive breast carcinoma	-	Breast	41-89 yo	No	no	no	yes	1	1	5	8	Not Reported	African	Originator	no	N/A		Yes
+172845	172845-121-B	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	Yes	no	no	no	0	0	5	5	Yes	European	Originator	no	N/A		Yes
+172845	172845-121-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	Originator	no	N/A		Yes
+172845	172845-142-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	Originator	no	N/A		Yes
+172845	172845-288-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+174115	174115-289-R	CCOV	Other	Rare	Ovarian epithelial cancer	Clear cell carcinoma	Gynecologic	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+174125	174125-134-R	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	1	6	9	Not Reported	European	Originator	no	N/A		Yes
+174316	174316-266-R	CSCC	Other	Common	Squamous cell carcinoma - skin	foci of keratinization	Skin	41-89 yo	No	yes	no	yes	0	0	5	6	Not Reported	Admixture	Germline	no	N/A		Yes
+174941	174941-126-T	MEL	MEL	Common	Melanoma	-	Skin	<18 yo	No	yes	no	no	0	0	6	6	Not Reported	European	Germline	no	N/A		Yes
+175126	175126-011-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	1	0	6	8	Not Reported	European	Germline	no	N/A		Yes
+176247	176247-063-R	COAD	COADREAD	Common	Adenocarcinoma - colon	 focally invasive 	Digestive/Gastrointestinal	41-89 yo	No	yes	yes	no	1	1	6	8	Not Reported	European	PDX	no	N/A		Yes
+176358	176358-292-R	SOC	Other	Rare	Ovarian epithelial cancer	serous carcinoma	Gynecologic	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+176374	176374-079-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	invasive	Respiratory/Thoracic	41-89 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+179942	179942-160-R	ULMS	SARCOMA	Rare	Leiomyosarcoma - uterus	-	Musculoskeletal	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	African	PDX	no	N/A		Yes
+182917	182917-245-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	yes	0	0	3	4	Not Reported	European	Originator	no	N/A		Yes
+183764	183764-302-T	NSCLC	NSCLC	Common	Non-small cell lung cancer, NOS	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	5	5	Yes	African	PDX	no	N/A		Yes
+184893	184893-071-T	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	yes	no	no	0	0	5	5	Yes	Admixture	Germline	no	N/A		Yes
+185487	185487-224-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	1	4	5	Yes	Admixture	Germline	no	N/A		Yes
+186277	186277-243-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	<18 yo	No	no	no	no	1	1	4	6	Yes	European	PDX	no	N/A		Yes
+186413	186413-043-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	5	5	Yes	European	Germline	no	N/A		Yes
+187717	187717-099-R	EPM	Other	Rare	Ependymoma, NOS	Anaplastic subtype	Neurologic	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	Admixture	Originator	no	N/A		Yes
+188146	188146-221-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	0	6	8	Not Reported	Admixture	Originator	no	N/A		Yes
+188165	188165-248-R	LMS	SARCOMA	Rare	Leiomyosarcoma - not uterine	atypical spindle cell 	Musculoskeletal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+188272	188272-219-T	DA	Other	Rare	Adenocarcinoma - small intest.	Duodenal 	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	6	6	Yes	European	Germline	no	N/A		Yes
+189374	189374-263-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	0	6	7	Not Reported	European	PDX	no	N/A		Yes
+191243	191243-178-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	1	6	8	Yes	European	Germline	no	N/A		Yes
+191259	191259-040-R	LMS	SARCOMA	Rare	Leiomyosarcoma - not uterine	-	Musculoskeletal	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	European	Germline	no	N/A		Yes
+191741	191741-267-R	UCS	Other	Rare	Carcinosarcoma of the uterus	malignant mixed Mullerian tumor	Gynecologic	41-89 yo	No	no	no	no	0	0	6	6	Yes	African	PDX	no	N/A		Yes
+192368	192368-113-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+192522	192522-019-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	18-40 yo	No	yes	no	no	1	1	6	8	Yes	European	Germline	no	N/A		Yes
+192969	192969-224-R	PANET	Other	Recalcitrant	Adenocarcinoma - pancreas	mixed neuroendocrine-ductal carcinoma 	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+193399	193399-133-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	7	7	Not Reported	European	Germline	no	N/A		Yes
+193523	193523-008-R	OUTT	Other	Rare	Female reprod. system cancer, NOS	carcinosarcoma	Gynecologic	18-40 yo	No	yes	no	yes	0	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+193832	193832-021-R	IDC	Other	Common	Invasive breast carcinoma	ductal, TNBC	Breast	41-89 yo	No	yes	no	yes	0	0	6	7	Yes	European	Germline	no	N/A		Yes
+194179	194179-226-R	EMCHS	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	Extraskeletal osteosarcoma with giant cells and focal chondroid differentiation 	Musculoskeletal	41-89 yo	No	yes	no	yes	1	1	6	9	Not Reported	Admixture	Germline	no	N/A		Yes
+195496	195496-121-R	MACR	COADREAD	Common	Adenocarcinoma - colon	mucinous	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	5	6	Yes	European	Originator	no	N/A		Yes
+197587	197587-005-T	SYNS	SARCOMA	Rare	Synovial sarcoma	-	Musculoskeletal	18-40 yo	No	yes	no	yes	0	0	6	7	Not Reported	African	Germline	no	N/A		Yes
+197837	197837-219-T	STAD	Other	Rare	Gastric cancer, NOS	exophytic adenocarcinoma	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	4	6	Yes	Admixture	PDX	no	N/A		Yes
+199195	199195-117-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	5	5	Yes	European	Germline	no	N/A		Yes
+212162	212162-194-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	no	no	no	0	1	5	6	Not Reported	European	PDX	no	N/A		Yes
+212328	212328-146-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+212978	212978-012-R	PSCC	Other	Rare	Penile squamous car.(epidermoid)	keratinizing 	Genitourinary	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+215974	215974-263-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	1	6	7	Yes	Admixture	Germline	no	N/A		Yes
+216738	216738-123-R	RCC	Other	Common	Renal cell carcinoma, NOS	-	Genitourinary	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+217283	217283-344-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	invasive, keratinizing	Head and Neck	41-89 yo	No	yes	no	yes	1	0	6	8	Not Reported	South Asian	Germline	no	N/A		Yes
+217524	217524-143-R1	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	mucinous	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	5	7	Yes	European	PDX	no	N/A		Yes
+217524	217524-143-R2	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	mucinous	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	0	6	7	Yes	European	PDX	no	N/A		Yes
+217524	217524-143-R4	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	mucinous	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	0	6	7	Yes	European	PDX	no	N/A		Yes
+217524	217524-143-R5	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	mucinous	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	0	6	7	Yes	European	PDX	no	N/A		Yes
+218243	218243-119-R	FIBS	SARCOMA	Rare	Fibrosarcoma - not infantile	-	Musculoskeletal	18-40 yo	No	yes	no	no	0	0	6	6	Not Reported	European	Germline	no	N/A		Yes
+218898	218898-057-R	UCS	Other	Rare	Carcinosarcoma of the uterus	Mixed Malignant Mullerian Tumor  	Gynecologic	41-89 yo	No	yes	yes	no	0	0	6	6	Yes	Admixture	PDX	no	N/A		Yes
+222454	222454-113-R	BLCA	BLCA	Common	Transitional cell car. - uroth.	-	Genitourinary	41-89 yo	No	yes	no	no	0	0	4	4	Not Reported	Admixture	Germline	no	N/A		Yes
+222671	222671-168-R	ACYC	Other	Rare	Salivary gland cancer	Adenoid Cystic Adenocarcinoma 	Head and Neck	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	Admixture	PDX	no	N/A		Yes
+226611	226611-082-R	HNSC	HNSC	Rare	H & N squamous cell car., NOS	Invasive 	Head and Neck	41-89 yo	No	yes	no	no	0	0	4	4	Yes	European	Germline	no	N/A		Yes
+227169	227169-078-T	SCBC	Other	Rare	Small cell car. (extrapulmonary)	Small cell cancer of the bladder	Endocrine and Neuroendocrine	41-89 yo	No	yes	no	no	0	0	6	6	Yes	European	Germline	no	N/A		Yes
+227483	227483-062-R1	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	5	7	Yes	European	PDX	no	N/A		Yes
+228754	228754-122-R	UCCC	Other	Rare	Uterine cancer, NOS	Clear cell carcinoma	Gynecologic	41-89 yo	No	yes	no	no	1	1	0	2	Not Reported	European	Germline	no	N/A		Yes
+232344	232344-273-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	Oropharyngeal Cancer	Head and Neck	41-89 yo	No	no	no	no	0	0	4	4	Not Reported	European	PDX	no	N/A		Yes
+233313	233313-265-R	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	 papillary carcinoma of the urinary bladder	Genitourinary	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+233499	233499-124-R	COAD	COADREAD	Common	Adenocarcinoma - colon	mucinous features	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	6	8	Yes	European	Germline	no	N/A		Yes
+234829	234829-215-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	6	7	Not Reported	European	PDX	no	N/A		Yes
+235635	235635-245-T	CEAD	Other	Rare	Adenocarcinoma - cervix	-	Gynecologic	41-89 yo	No	yes	no	no	0	0	6	6	Yes	Admixture	Germline	no	N/A		Yes
+237351	237351-077-R	ES	SARCOMA	Rare	Ewing sarcoma/Peripheral PNET	-	Musculoskeletal	18-40 yo	No	yes	no	no	0	0	4	4	Not Reported	European	Germline	no	N/A		Yes
+237688	237688-112-R	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	Admixture	PDX	no	N/A		Yes
+238488	238488-219-R	MACR	COADREAD	Common	Adenocarcinoma - colon	Invasive, mucinous	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	4	4	Not Reported	Admixture	Germline	no	N/A		Yes
+241356	241356-047-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	Oropharyngeal	Head and Neck	41-89 yo	No	yes	no	no	0	0	4	4	Not Reported	African	Germline	no	N/A		Yes
+242566	242566-281-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	1	6	9	Not Reported	European	Originator	no	N/A		Yes
+243415	243415-090-R	IDC	Other	Common	Invasive breast carcinoma	Ductal 	Breast	18-40 yo	No	no	no	yes	0	0	5	6	Not Reported	Admixture	Originator	no	N/A		Yes
+243952	243952-196-R	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	-	Genitourinary	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	Admixture	PDX	no	N/A		Yes
+244465	244465-170-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	6	8	Yes	European	Germline	no	N/A		Yes
+244727	244727-301-R	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	Papillary	Genitourinary	41-89 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+244774	244774-204-R	VSC	Other	Rare	Vulvar cancer, NOS	invasive squamous cell carcinoma	Gynecologic	41-89 yo	No	yes	no	no	0	0	1	1	Not Reported	European	Germline	no	N/A		Yes
+245127	245127-232-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	yes	no	yes	0	0	4	5	Not Reported	European	Germline	no	N/A		Yes
+245324	245324-029-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	yes	no	yes	0	0	6	7	Yes	European	Germline	no	N/A		Yes
+246569	246569-268-R	LXSC	HNSC	Rare	Laryngeal squamous cell carcinoma	-	Head and Neck	41-89 yo	No	yes	no	no	0	0	4	4	Not Reported	Admixture	Germline	no	N/A		Yes
+248138	248138-237-R	THHC	Other	Rare	Hurthle cell neoplasm (thyroid)	-	Endocrine and Neuroendocrine	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	Admixture	PDX	no	N/A		Yes
+249533	249533-200-R	HGSOC	Other	Rare	Ovarian epithelial cancer	serous carcinoma	Gynecologic	41-89 yo	No	no	no	yes	0	1	4	6	Yes	European	Originator	no	N/A		Yes
+249661	249661-222-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	keratinizing type	Head and Neck	41-89 yo	No	yes	no	no	1	0	5	6	Not Reported	Admixture	Germline	no	N/A		Yes
+249662	249662-076-R	HGSOC	Other	Rare	Ovarian epithelial cancer	serous adenocarcinoma	Gynecologic	41-89 yo	No	no	no	yes	0	0	5	6	Yes	European	Originator	no	N/A		Yes
+251477	251477-161-R	BLSC	BLCA	Common	Transitional cell car. - uroth.	squamous cell differentiation	Genitourinary	41-89 yo	No	yes	no	no	1	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+251568	251568-266-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	yes	yes	yes	1	1	5	8	Yes	European	Originator	no	N/A		Yes
+251944	251944-056-R	CESC	Other	Rare	Squamous cervical cancer	Keratinizing SCC	Gynecologic	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	African	Originator	no	N/A		Yes
+252517	252517-233-R	UCS	Other	Rare	Carcinosarcoma of the uterus	-	Gynecologic	41-89 yo	No	no	no	yes	1	1	6	9	Not Reported	European	Originator	no	N/A		Yes
+252836	252836-082-R	HNSC	HNSC	Rare	H & N squamous cell car., NOS	Keratinizing	Head and Neck	41-89 yo	No	no	no	yes	1	0	4	6	Not Reported	Admixture	Originator	no	N/A		Yes
+253994	253994-281-T	COADREAD	COADREAD	Common	Colorectal cancer, NOS	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	4	6	Not Reported	European	Germline	no	N/A		Yes
+254851	254851-301-R	MACR	COADREAD	Common	Adenocarcinoma - colon	mucinous	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	1	3	5	Not Reported	European	Originator	no	N/A		Yes
+255893	255893-291-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	1	1	6	9	Not Reported	European	Germline	no	N/A		Yes
+255913	255913-289-T	ANGS	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	Angiosarcoma [possible radiation-induced angiosarcoma of the breast (RIAS)]	Musculoskeletal	18-40 yo	No	no	no	no	0	0	6	6	Yes	African	PDX	no	N/A		Yes
+255913	255913-304-M	ANGS	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	Angiosarcoma [possible radiation-induced angiosarcoma of the breast (RIAS)]	Musculoskeletal	18-40 yo	No	no	no	no	0	0	5	5	Yes	African	PDX	no	N/A		Yes
+258747	258747-076-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	yes	no	no	0	0	5	5	Not Reported	European	Germline	no	N/A		Yes
+259776	259776-179-R	SOC	Other	Rare	Ovarian epithelial cancer	Serous Carcinoma	Gynecologic	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	no	N/A		Yes
+259778	259778-044-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	1	1	6	9	Not Reported	Admixture	Germline	no	N/A		Yes
+261386	261386-189-R	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	Bladder; Muscle Invasive	Genitourinary	41-89 yo	No	yes	no	yes	0	0	4	5	Not Reported	European	Germline	no	N/A		Yes
+262622	262622-085-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	yes	no	yes	0	0	4	5	Not Reported	European	Germline	no	N/A		Yes
+264941	264941-293-T	MACR	COADREAD	Common	Adenocarcinoma - colon	mucinous with signet ring features	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	European	Germline	no	N/A		Yes
+266295	266295-075-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	Oropharyngeal	Head and Neck	41-89 yo	No	yes	no	yes	1	0	5	7	Not Reported	European	Germline	no	N/A		Yes
+268233	268233-264-R	SNSC	Other	Rare	H & N squamous cell car., NOS	Sinonasal SCC	Head and Neck	41-89 yo	No	no	no	yes	0	0	4	5	Not Reported	African	Originator	no	N/A		Yes
+269647	269647-328-T	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	1	6	7	Yes	Admixture	PDX	no	N/A		Yes
+269762	269762-231-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+269878	269878-174-B	MCC	Other	Rare	Merkel cell tumor	-	Endocrine and Neuroendocrine	41-89 yo	Yes	no	no	no	0	1	4	5	Not Reported	European	PDX	no	N/A		Yes
+271251	271251-349-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+271591	271591-306-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	4	4	Yes	European	PDX	no	N/A		Yes
+272462	272462-364-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+272983	272983-159-R	VSC	Other	Rare	Vaginal cancer, NOS	Invasive squamous cell carcinoma 	Gynecologic	41-89 yo	No	no	no	yes	0	0	4	5	Not Reported	European	Originator	no	N/A		Yes
+273541	273541-280-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	4	6	Yes	European	Germline	no	N/A		Yes
+273589	273589-319-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	0	6	7	Yes	European	Germline	no	N/A		Yes
+274332	274332-332-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	1	4	6	Yes	Admixture	Originator	no	N/A		Yes
+275155	275155-148-R	SAAD	Other	Rare	Salivary gland cancer	Adenocarcinoma	Head and Neck	41-89 yo	No	yes	no	yes	0	1	5	7	Not Reported	European	Germline	no	N/A		Yes
+275375	275375-350-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	no	no	yes	0	1	6	8	Not Reported	European	Originator	no	N/A		Yes
+276233	276233-004-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+276743	276743-352-R	GIST	Other	Rare	Gastrointestinal stromal tumor	mixed spindle cell type w/focal epithelioid	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	African	Originator	no	N/A		Yes
+277667	277667-354-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	yes	no	no	1	1	6	8	Yes	European	Germline	no	N/A		Yes
+277826	277826-050-R	MACR	COADREAD	Common	Adenocarcinoma - colon	mucinous	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	1	5	6	Not Reported	European	Germline	no	N/A		Yes
+278458	278458-045-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	yes	no	yes	0	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+278527	278527-230-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	-	Head and Neck	41-89 yo	No	no	no	no	0	0	2	2	Not Reported	South Asian	PDX	no	N/A		Yes
+279218	279218-305-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	yes	no	no	0	0	6	6	Yes	African	Germline	no	N/A		Yes
+279428	279428-182-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	18-40 yo	No	yes	no	no	0	1	6	7	Yes	European	Germline	no	N/A		Yes
+281475	281475-159-R	BLCA	BLCA	Common	Transitional cell car. - uroth.	-	Genitourinary	41-89 yo	No	yes	no	yes	0	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+281562	281562-285-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+282377	282377-053-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	1	1	6	9	Not Reported	European	Germline	no	N/A		Yes
+283228	283228-195-R	MEL	MEL	Common	Melanoma	Invasive	Skin	41-89 yo	No	no	no	yes	1	0	3	5	Not Reported	European	Originator	no	N/A		Yes
+283339	283339-068-R	VSC	Other	Rare	Vaginal cancer, NOS	Invasive non-keratinizing squamous cell carcinoma 	Gynecologic	41-89 yo	No	no	no	yes	0	0	5	6	Yes	European	Originator	no	N/A		Yes
+283384	283384-342-R	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	Invasive urothelial carcinoma of the bladder	Genitourinary	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	African	PDX	no	N/A		Yes
+283833	283833-183-T	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	African	PDX	no	N/A		Yes
+284588	284588-233-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	non-keratinizing epidermoid 	Respiratory/Thoracic	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	European	Germline	no	N/A		Yes
+285369	285369-178-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+285828	285828-011-R	SNSC	Other	Rare	H & N squamous cell car., NOS	Sinonasal SCC, non-keratinizing 	Head and Neck	41-89 yo	No	no	no	no	0	1	5	6	Not Reported	Admixture	PDX	no	N/A		Yes
+286954	286954-287-R	LIPO	SARCOMA	Rare	Liposarcoma	-	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	4	5	Not Reported	European	Originator	no	N/A		Yes
+287614	287614-091-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	yes	no	no	1	1	6	8	Not Reported	European	Germline	no	N/A		Yes
+287954	287954-098-R	ES	SARCOMA	Rare	Ewing sarcoma/Peripheral PNET	-	Musculoskeletal	18-40 yo	No	yes	no	no	1	1	5	7	Not Reported	European	Germline	no	N/A		Yes
+289738	289738-340-R	MACR	COADREAD	Common	Adenocarcinoma - colon	mucinous 	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+289856	289856-162-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	Spindle Cell	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+289964	289964-363-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	yes	no	no	0	1	3	4	Not Reported	European	Germline	no	N/A		Yes
+292632	292632-238-R	ULMS	SARCOMA	Rare	Leiomyosarcoma - uterus	-	Musculoskeletal	41-89 yo	No	yes	no	yes	0	0	6	7	Yes	Admixture	Germline	no	N/A		Yes
+292921	292921-168-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	no	N/A		Yes
+295223	295223-140-R	HNSC	HNSC	Rare	H & N squamous cell car., NOS	-	Head and Neck	41-89 yo	No	yes	no	no	0	0	5	5	Not Reported	Admixture	Germline	no	N/A		Yes
+295898	295898-268-R1	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	5	5	Yes	European	Originator	no	N/A		Yes
+295898	295898-268-R2	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	1	5	7	Yes	European	Originator	no	N/A		Yes
+295898	295898-268-R3	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	0	1	Yes	European	Originator	no	N/A		Yes
+295898	295898-268-R4	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	4	5	Yes	European	Originator	no	N/A		Yes
+295898	295898-268-R5	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	1	6	8	Yes	European	Originator	no	N/A		Yes
+295898	295898-268-R6	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	Originator	no	N/A		Yes
+296188	296188-107-R	NSCLC	NSCLC	Common	Lung cancer, NOS	-	Respiratory/Thoracic	41-89 yo	No	yes	no	no	1	0	0	1	Not Reported	European	Germline	no	N/A		Yes
+296347	296347-364-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	1	4	6	Not Reported	European	Germline	no	N/A		Yes
+297248	297248-317-R	LXSC	HNSC	Rare	Laryngeal squamous cell carcinoma	-	Head and Neck	41-89 yo	No	yes	no	no	0	0	4	4	Not Reported	European	Germline	no	N/A		Yes
+299254	299254-011-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	yes	no	yes	2	1	4	8	Yes	European	Germline	no	N/A		Yes
+299373	299373-070-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	no	N/A		Yes
+312483	312483-313-R	UCS	Other	Rare	Carcinosarcoma of the uterus	Serous mixed malignant mullerian tumor	Gynecologic	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+313798	313798-341-R	CESC	Other	Rare	Squamous cervical cancer	-	Gynecologic	41-89 yo	No	yes	yes	yes	1	1	6	9	Not Reported	European	Originator	no	N/A		Yes
+314644	314644-219-R	LMS	SARCOMA	Rare	Leiomyosarcoma - not uterine	pleomorphic sarcoma	Musculoskeletal	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	European	Germline	no	N/A		Yes
+317291	317291-083-R	MFH	SARCOMA	Rare	Malignant fibrous histiocytoma	undifferentiated pleomorphic sarcoma	Musculoskeletal	41-89 yo	No	no	no	yes	1	0	5	7	Yes	European	Originator	no	N/A		Yes
+319732	319732-119-R	MPNST	SARCOMA	Rare	Malig. periph. nerve sheath tum.	-	Musculoskeletal	18-40 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+321549	321549-286-R	LXSC	HNSC	Rare	Laryngeal squamous cell carcinoma	-	Head and Neck	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	African	PDX	no	N/A		Yes
+322161	322161-139-T	ADNOS	Other	Rare	Adenocarcinoma, NOS	-	Unknown Primary	41-89 yo	No	no	no	no	0	1	5	6	Yes	European	PDX	no	N/A		Yes
+322927	322927-281-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+323392	323392-091-R	HNSC	HNSC	Rare	H & N squamous cell car., NOS	SCC of the maxillary sinus	Head and Neck	41-89 yo	No	yes	no	yes	1	0	6	8	Not Reported	Admixture	Germline	no	N/A		Yes
+323965	323965-272-R	PAAD	PAAD	Recalcitrant	Pancreatic cancer (not Islets)	ductal adenocarcinoma	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	6	8	Not Reported	European	PDX	no	N/A		Yes
+324363	324363-279-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	0	6	7	Yes	Admixture	PDX	no	N/A		Yes
+324938	324938-238-R	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	Invasive Papillary of the bladder	Genitourinary	41-89 yo	No	yes	no	yes	0	1	6	8	Not Reported	European	Germline	no	N/A		Yes
+324944	324944-112-T	MEL	MEL	Common	Melanoma	-	Skin	18-40 yo	No	no	no	no	1	0	6	7	Not Reported	European	PDX	no	N/A		Yes
+325652	325652-104-R	UCS	Other	Rare	Carcinosarcoma of the uterus	Malignant Mixed Mullerian	Gynecologic	41-89 yo	No	no	no	yes	0	1	6	8	Not Reported	European	Originator	no	N/A		Yes
+326966	326966-086-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	yes	no	yes	0	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+327498	327498-153-R	UCS	Other	Rare	Carcinosarcoma of the uterus	-	Gynecologic	41-89 yo	No	no	no	yes	1	1	4	7	Yes	European	Originator	no	N/A		Yes
+327544	327544-111-R	SCUP	Other	Rare	Small cell car. (extrapulmonary)	-	Endocrine and Neuroendocrine	41-89 yo	No	no	no	no	1	0	0	1	Not Reported	European	PDX	no	N/A		Yes
+328373	328373-195-R	HNSC	HNSC	Rare	H & N squamous cell car., NOS	-	Head and Neck	41-89 yo	No	yes	no	yes	1	0	4	6	Not Reported	European	Germline	no	N/A		Yes
+328469	328469-098-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	0	4	5	Not Reported	European	Germline	no	N/A		Yes
+328634	328634-206-R	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	1	6	9	Not Reported	European	Originator	no	N/A		Yes
+329996	329996-348-R	CSCC	Other	Common	Squamous cell carcinoma - skin	Invasive 	Skin	41-89 yo	No	no	no	no	0	0	2	2	Yes	European	PDX	no	N/A		Yes
+331535	331535-300-R	PSEC	Other	Rare	Primary peritoneal carcinoma	Adenocarcinoma; Mullerian origin	Gynecologic	41-89 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+331888	331888-031-R	SNSC	Other	Rare	H & N squamous cell car., NOS	Non-Keratizing Sinonasal 	Head and Neck	41-89 yo	No	yes	no	yes	0	1	6	8	Not Reported	European	Germline	no	N/A		Yes
+332555	332555-067-R4	NBL	Other	Rare	Neuroblastoma	 	Neurologic	<18 yo	No	no	no	yes	0	0	6	7	Yes	African	Originator	no	N/A		Yes
+333224	333224-299-R	UCS	Other	Rare	Carcinosarcoma of the uterus	-	Gynecologic	41-89 yo	No	no	no	yes	0	1	6	8	Yes	European	Originator	no	N/A		Yes
+333512	333512-047-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+333828	333828-041-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	no	1	1	5	7	Yes	European	PDX	no	N/A		Yes
+337211	337211-066-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	no	1	0	0	1	Not Reported	European	PDX	no	N/A		Yes
+337426	337426-197-R	BRCA	Other	Common	Invasive breast carcinoma	NST	Breast	41-89 yo	No	no	no	yes	0	1	6	8	Not Reported	European	Originator	no	N/A		Yes
+337823	337823-066-R	MFS	SARCOMA	Rare	Fibrosarcoma - not infantile	epithelioid myxofibrosarcoma	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+338488	338488-144-R	VSC	Other	Rare	Vulvar cancer, NOS	Squamous Cell 	Gynecologic	41-89 yo	No	no	no	no	1	0	0	1	Not Reported	European	PDX	no	N/A		Yes
+339189	339189-122-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	3	4	Not Reported	European	PDX	no	N/A		Yes
+341922	341922-053-R	COADREAD	COADREAD	Common	Colorectal cancer, NOS	Invasive adenocarcinoma 	Digestive/Gastrointestinal	18-40 yo	No	yes	no	yes	0	1	6	8	Yes	European	Germline	no	N/A		Yes
+343268	343268-274-T	BLAD	BLCA	Common	Urothelial/bladder cancer, NOS	mucinous adenocarcinoma	Genitourinary	41-89 yo	No	yes	no	yes	0	0	6	7	Yes	East Asian	Germline	no	N/A		Yes
+345371	345371-062-R	SACA	Other	Rare	Salivary gland cancer	Mucoepidermoid carcinoma	Head and Neck	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	European	Germline	no	N/A		Yes
+346799	346799-050-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	yes	no	yes	0	1	6	8	Not Reported	European	Germline	no	N/A		Yes
+348733	348733-031-R	ESST	SARCOMA	Rare	Soft tissue neoplasm, NOS	undifferentiated small round cell sarcoma (CIC-DUX4 fusion)	Musculoskeletal	41-89 yo	No	yes	no	no	1	0	5	6	Not Reported	European	Germline	no	N/A		Yes
+349418	349418-098-R	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	yes	no	no	1	1	7	9	Not Reported	European	Germline	no	N/A		Yes
+349713	349713-176-R	MPNST	SARCOMA	Rare	Malig. periph. nerve sheath tum.	-	Musculoskeletal	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	African	PDX	no	N/A		Yes
+351142	351142-076-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	no	1	1	6	8	Not Reported	European	PDX	no	N/A		Yes
+351241	351241-312-R	CESE	Other	Rare	Adenocarcinoma - cervix	serous	Gynecologic	41-89 yo	No	no	no	no	0	0	4	4	Not Reported	European	PDX	no	N/A		Yes
+352319	352319-331-R	BRCA	Other	Common	Invasive breast carcinoma	NST	Breast	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	African	PDX	no	N/A		Yes
+352433	352433-323-T	UCCC	Other	Common	Endometrioid endomet. adenocar.	Clear Cell	Gynecologic	41-89 yo	No	no	no	no	0	0	7	7	Not Reported	European	PDX	no	N/A		Yes
+353785	353785-320-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	Invasive keratinizing	Head and Neck	41-89 yo	No	no	no	no	1	1	6	8	Not Reported	European	PDX	no	N/A		Yes
+354836	354836-022-R	HNSC	HNSC	Rare	H & N squamous cell car., NOS	-	Head and Neck	41-89 yo	No	no	no	no	1	1	6	8	Not Reported	Admixture	PDX	no	N/A		Yes
+355891	355891-322-R	ANSC	Other	Rare	Squamous cell carcinoma - anus	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	6	6	Yes	European	Germline	no	N/A		Yes
+356262	356262-224-T1	NPC	HNSC	Rare	Nasopharyngeal carcinoma	non-keratinzing	Head and Neck	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	Admixture	PDX	no	N/A		Yes
+359531	359531-246-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	yes	yes	no	1	1	5	7	Not Reported	European	PDX	no	N/A		Yes
+359829	359829-203-R	UCCC	Other	Rare	Uterine cancer, NOS	Clear cell endometrial carcinoma	Gynecologic	41-89 yo	No	no	no	no	1	1	6	8	Not Reported	European	PDX	no	N/A		Yes
+361931	361931-004-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	5	7	Yes	Admixture	Germline	no	N/A		Yes
+361957	361957-307-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+362531	362531-283-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	7	9	Not Reported	European	PDX	no	N/A		Yes
+363778	363778-159-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	0	0	1	Yes	African	PDX	no	N/A		Yes
+364223	364223-131-R	HNSC	HNSC	Rare	H & N squamous cell car., NOS	-	Head and Neck	41-89 yo	No	no	no	no	0	0	4	4	Not Reported	European	PDX	no	N/A		Yes
+364918	364918-056-R	SNA	Other	Rare	Head & neck cancer, NOS	HPV-related multiphenotypic sinonasal carcinoma	Head and Neck	18-40 yo	No	yes	no	no	0	1	0	1	Not Reported	European	Germline	no	N/A		Yes
+365171	365171-240-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	Admixture	Originator	no	N/A		Yes
+365248	365248-190-R4	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal 	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	no	N/A		Yes
+365595	365595-188-R2	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	no	N/A		Yes
+367327	367327-171-R	ACYC	Other	Rare	Salivary gland cancer	Adenoid Cystic Carcinoma	Head and Neck	41-89 yo	No	yes	no	no	0	0	6	6	Yes	European	Germline	no	N/A		Yes
+367927	367927-166-R	OSACA	Other	Rare	Salivary gland cancer	squamous cell carcinoma	Head and Neck	41-89 yo	No	no	no	no	1	0	6	7	Not Reported	European	PDX	no	N/A		Yes
+369146	369146-172-R	RCSNOS	SARCOMA	Rare	Soft tissue neoplasm, NOS	round cell sarcoma, CIC-rearranged	Musculoskeletal	18-40 yo	No	no	no	yes	0	0	4	5	Not Reported	European	Originator	no	N/A		Yes
+372686	372686-303-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	yes	no	no	0	1	6	7	Not Reported	Admixture	Germline	no	N/A		Yes
+372923	372923-337-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	Originator	no	N/A		Yes
+374635	374635-292-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+377368	377368-042-T1	ASPS	SARCOMA	Rare	Alveolar soft part sarcoma	Type1	Musculoskeletal	18-40 yo	No	no	no	no	0	0	6	6	Not Reported	East Asian	PDX	no	N/A		Yes
+377368	377368-042-T2	ASPS	SARCOMA	Rare	Alveolar soft part sarcoma	Type1	Musculoskeletal	18-40 yo	No	no	no	no	0	0	6	6	Not Reported	East Asian	PDX	no	N/A		Yes
+377384	377384-186-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	0	6	7	Not Reported	European	PDX	no	N/A		Yes
+377594	377594-074-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	Spindle cell with myxoid changes	Musculoskeletal	18-40 yo	No	yes	no	yes	0	0	6	7	Not Reported	Admixture	Germline	no	N/A		Yes
+378893	378893-306-R	CESC	Other	Rare	Squamous cervical cancer	-	Gynecologic	41-89 yo	No	no	no	yes	1	0	4	6	Not Reported	European	Originator	no	N/A		Yes
+379773	379773-124-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	no	1	1	6	8	Not Reported	European	PDX	no	N/A		Yes
+381231	381231-234-R	PANET	Other	Rare	Neuroendocrine cancer, NOS	Pancreatic	Endocrine and Neuroendocrine	41-89 yo	No	yes	no	no	0	1	6	7	Not Reported	European	Germline	no	N/A		Yes
+381249	381249-077-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	no	0	0	4	4	Yes	European	PDX	no	N/A		Yes
+381356	381356-305-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	1	6	9	Not Reported	Admixture	Originator	no	N/A		Yes
+381576	381576-328-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+382168	382168-346-R	SOC	Other	Rare	Ovarian tum. of low malig. poten.	serous papillary borderline tumor	Gynecologic	41-89 yo	No	no	no	no	1	0	0	1	Yes	European	PDX	no	N/A		Yes
+382773	382773-019-T	NETNOS	Other	Rare	Neuroendocrine cancer, NOS	Large cell carcinoma 	Endocrine and Neuroendocrine	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	no	N/A		Yes
+384148	384148-302-R	MCC	Other	Rare	Merkel cell tumor	-	Endocrine and Neuroendocrine	41-89 yo	No	no	no	no	0	1	6	7	Not Reported	Admixture	PDX	no	N/A		Yes
+384518	384518-221-R	ULMS	SARCOMA	Rare	Leiomyosarcoma - uterus	-	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+385692	385692-084-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	1	1	Not Reported	European	PDX	no	N/A		Yes
+388244	388244-064-R	BRCA	Other	Common	Invasive breast carcinoma	TNBC	Breast	18-40 yo	No	yes	no	yes	1	1	6	9	Not Reported	African	Germline	no	N/A		Yes
+388556	388556-164-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	18-40 yo	No	yes	no	no	1	1	6	8	Yes	Admixture	Germline	no	N/A		Yes
+391268	391268-213-R2	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	5	6	Yes	Admixture	Originator	no	N/A		Yes
+391268	391268-213-R3	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	Admixture	Originator	no	N/A		Yes
+391396	391396-364-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	Oropharyngeal 	Head and Neck	41-89 yo	No	yes	no	no	1	0	5	6	Not Reported	European	Germline	no	N/A		Yes
+392184	392184-169-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	18-40 yo	No	no	no	yes	2	1	5	9	Yes	European	Originator	no	N/A		Yes
+393732	393732-063-R	NSGCT	Other	Rare	Testicular nonseminomat. GCT, NOS	choriocarcinoma	Germ Cell	18-40 yo	No	no	no	yes	0	0	5	6	Yes	European	Originator	no	N/A		Yes
+394591	394591-219-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+394772	394772-225-R	BLSC	BLCA	Common	Transitional cell car. - uroth.	squamous cell	Genitourinary	41-89 yo	No	no	no	no	1	0	7	8	Yes	European	PDX	no	N/A		Yes
+394938	394938-205-R	SARCNOS	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	Pleomorphic giant cell tumor of the bone	Musculoskeletal	18-40 yo	No	no	no	yes	0	0	6	7	Yes	African	Originator	no	N/A		Yes
+395191	395191-088-T	CESC	Other	Rare	Squamous cervical cancer	-	Gynecologic	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	Admixture	Germline	no	N/A		Yes
+397859	397859-316-R	IDC	Other	Common	Invasive breast carcinoma	Ductal, TNBC	Breast	41-89 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+412248	412248-322-R	IDC	Other	Common	Invasive breast carcinoma	Ductal, TNBC	Breast	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	Admixture	Originator	no	N/A		Yes
+412728	412728-344-R	UCS	Other	Rare	Carcinosarcoma of the uterus	Malignant mixed Mullerian tumor 	Gynecologic	41-89 yo	No	no	no	yes	2	1	4	8	Not Reported	European	Originator	no	N/A		Yes
+413124	413124-020-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	keratinizing type	Head and Neck	41-89 yo	No	yes	yes	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+413552	413552-270-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	yes	0	1	6	8	Not Reported	European	Originator	no	N/A		Yes
+413561	413561-133-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	18-40 yo	No	yes	no	yes	0	0	3	4	Yes	Admixture	Germline	no	N/A		Yes
+414838	414838-212-R	IDC	Other	Common	Invasive breast carcinoma	TNBC, ductal	Breast	41-89 yo	No	yes	no	no	0	1	6	7	Not Reported	Admixture	Germline	no	N/A		Yes
+415267	415267-285-R	IBC	Other	Rare	Inflammatory breast carcinoma	TNBC	Breast	41-89 yo	No	yes	no	yes	1	1	6	9	Not Reported	African	Germline	no	N/A		Yes
+415371	415371-026-R	CSCC	Other	Common	Squamous cell carcinoma - skin	-	Skin	≥90 yo	No	yes	no	yes	0	1	6	8	Yes	Admixture	Germline	no	N/A		Yes
+416634	416634-122-T	BLCA	BLCA	Common	Transitional cell car. - uroth.	papillary 	Genitourinary	41-89 yo	No	yes	no	no	0	1	6	7	Yes	European	Germline	no	N/A		Yes
+417378	417378-266-R	STAD	Other	Rare	Adenocarcinoma - stomach	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	African	PDX	no	N/A		Yes
+417612	417612-090-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+417821	417821-307-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	yes	no	no	1	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+417952	417952-058-R	VSC	Other	Rare	Vaginal cancer, NOS	Keratinizing Squamous cell carcinoma	Gynecologic	41-89 yo	No	yes	no	yes	1	1	5	8	Not Reported	European	Germline	no	N/A		Yes
+419622	419622-098-T	ANSC	Other	Rare	Squamous cell carcinoma - anus	Basaloid	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	1	4	6	Yes	European	Germline	no	N/A		Yes
+421681	421681-087-R	COAD	COADREAD	Common	Adenocarcinoma - colon	invasive 	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	6	8	Not Reported	European	Germline	no	N/A		Yes
+421758	421758-270-R	ANSC	Other	Rare	Squamous cell carcinoma - anus	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+422866	422866-222-R5	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	1	6	9	Yes	European	Originator	no	N/A		Yes
+424524	424524-100-T	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	European	Germline	no	N/A		Yes
+425362	425362-245-T	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	no	0	1	3	4	Yes	European	PDX	no	N/A		Yes
+427551	427551-204-R	LXSC	HNSC	Rare	Laryngeal squamous cell carcinoma	-	Head and Neck	41-89 yo	No	yes	no	yes	0	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+427958	427958-088-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	no	no	no	1	0	0	1	Not Reported	European	PDX	no	N/A		Yes
+428932	428932-153-R	MFH	SARCOMA	Rare	Malignant fibrous histiocytoma	Myxofibrosarcoma, undifferentiated pleomorphic sarcoma	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	Admixture	Originator	no	N/A		Yes
+428986	428986-081-R	MASCC	Other	Common	Breast cancer, NOS	TNBC, Metaplastic Spindle Cell Carcinoma 	Breast	41-89 yo	No	no	no	no	0	1	4	5	Not Reported	European	PDX	no	N/A		Yes
+429239	429239-143-T	SCLC	Other	Recalcitrant	Small cell lung cancer	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	1	1	6	8	Yes	European	PDX	no	N/A		Yes
+429463	429463-259-R	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	yes	no	no	1	1	6	8	Not Reported	European	Germline	no	N/A		Yes
+429767	429767-202-R	GIST	Other	Rare	Gastrointestinal stromal tumor	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	5	6	Yes	African	Originator	no	N/A		Yes
+431354	431354-103-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	0	6	7	Yes	European	Germline	no	N/A		Yes
+431587	431587-115-T	ILC	Other	Common	Invasive breast carcinoma	Lobular	Breast	41-89 yo	No	yes	no	no	0	0	7	7	Yes	European	Germline	no	N/A		Yes
+435261	435261-313-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	1	0	4	6	Not Reported	Admixture	Germline	no	N/A		Yes
+436779	436779-168-T	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	yes	no	yes	0	0	7	8	Yes	European	Germline	no	N/A		Yes
+437389	437389-329-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	Admixture	Germline	no	N/A		Yes
+437761	437761-239-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	keratinizing	Head and Neck	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+439126	439126-050-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	3	3	Yes	European	Germline	no	N/A		Yes
+439515	439515-179-R2	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	ductal	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+439559	439559-082-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	6	8	Yes	European	PDX	no	N/A		Yes
+442324	442324-144-R	ESCC	Other	Rare	Squamous cell car. - esophagus	invasive keratinizing	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	0	5	7	Not Reported	European	Originator	no	N/A		Yes
+444589	444589-340-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	4	4	Not Reported	African	Germline	no	N/A		Yes
+445384	445384-181-T	MFH	SARCOMA	Rare	Malignant fibrous histiocytoma	undifferentiated pleomorphic sarcoma	Musculoskeletal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	African	PDX	no	N/A		Yes
+445649	445649-340-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	yes	no	no	0	1	6	7	Not Reported	European	Germline	no	N/A		Yes
+445685	445685-031-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	6	8	Not Reported	European	Germline	no	N/A		Yes
+446735	446735-337-T	USC	Other	Common	Serous endometrial adenocarcinoma	-	Gynecologic	41-89 yo	No	no	no	no	1	1	6	8	Not Reported	Admixture	PDX	no	N/A		Yes
+447297	447297-187-R	IDC	Other	Common	Invasive breast carcinoma	TNBC, Ductal	Breast	41-89 yo	No	no	no	no	0	1	5	6	Not Reported	Admixture	PDX	no	N/A		Yes
+447624	447624-303-R	ANSC	Other	Rare	Squamous cell carcinoma - anus	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	6	8	Not Reported	European	PDX	no	N/A		Yes
+447687	447687-232-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	Spindle cell sarcoma	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+448835	448835-203-R	IDC	Other	Common	Invasive breast carcinoma	TNBC, ductal	Breast	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+449684	449684-009-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	spindle and pleomorphic [[possible radiation-induced sarcoma (RIS)]]	Musculoskeletal	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	African	PDX	no	N/A		Yes
+449892	449892-231-R	MFH	SARCOMA	Rare	Malignant fibrous histiocytoma	Undifferentiated pleomorphic sarcoma	Musculoskeletal	41-89 yo	No	yes	no	yes	0	0	5	6	Not Reported	European	Germline	no	N/A		Yes
+451658	451658-271-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	1	4	6	Not Reported	Admixture	Germline	no	N/A		Yes
+452449	452449-287-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	yes	no	no	0	1	5	6	Yes	European	Germline	no	N/A		Yes
+453144	453144-164-R	PANET	Other	Rare	Neuroendocrine cancer, NOS	Pancreatic 	Endocrine and Neuroendocrine	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	European	Germline	no	N/A		Yes
+454855	454855-012-R	UCEC	Other	Rare	Uterine cancer, NOS	-	Gynecologic	41-89 yo	No	no	no	no	0	1	6	7	Not Reported	European	PDX	no	N/A		Yes
+454973	454973-116-R2	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	5	7	Yes	Admixture	Originator	no	N/A		Yes
+454973	454973-116-R3	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	1	6	9	Yes	Admixture	Originator	no	N/A		Yes
+454973	454973-116-R4	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	1	6	9	Yes	Admixture	Originator	no	N/A		Yes
+455511	455511-112-R	MFH	SARCOMA	Rare	Malignant fibrous histiocytoma	Myxofibrosarcoma, undifferentiated pleomorphic sarcoma	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+455876	455876-151-R	LXSC	HNSC	Rare	Laryngeal squamous cell carcinoma	-	Head and Neck	41-89 yo	No	no	no	no	2	1	5	8	Not Reported	European	PDX	no	N/A		Yes
+456648	456648-364-R	SCBC	Other	Rare	Small cell car. (extrapulmonary)	Small cell cancer of the bladder	Endocrine and Neuroendocrine	41-89 yo	No	no	no	no	0	0	4	4	Not Reported	European	PDX	no	N/A		Yes
+457572	457572-356-R	STAD	Other	Rare	Adenocarcinoma - stomach	Signet ring	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	4	4	Not Reported	European	PDX	no	N/A		Yes
+458424	458424-160-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	-	Head and Neck	41-89 yo	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	no	N/A		Yes
+459226	459226-011-R	MFH	SARCOMA	Rare	Malignant fibrous histiocytoma	undifferentiated pleomorphic sarcoma	Musculoskeletal	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	European	Germline	no	N/A		Yes
+459288	459288-142-R	UCS	Other	Rare	Carcinosarcoma of the uterus	-	Gynecologic	41-89 yo	No	yes	no	yes	1	1	6	9	Not Reported	European	Germline	no	N/A		Yes
+459534	459534-040-R	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	Invasive papillary	Genitourinary	41-89 yo	No	no	no	no	0	0	4	4	Not Reported	European	PDX	no	N/A		Yes
+461769	461769-161-T	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	Neuroendocrine and/or small cell carcinoma features	Genitourinary	41-89 yo	No	yes	no	no	0	0	6	6	Yes	European	Germline	no	N/A		Yes
+463458	463458-065-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+463931	463931-005-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+463943	463943-066-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	5	7	Yes	Admixture	Germline	no	N/A		Yes
+464338	464338-155-R	HNSC	HNSC	Rare	H & N squamous cell car., NOS	-	Head and Neck	41-89 yo	No	yes	no	no	1	0	6	7	Yes	European	Germline	no	N/A		Yes
+464991	464991-137-R	OUTT	Other	Rare	Female reprod. system cancer, NOS	ovarian or uterine Origin	Gynecologic	41-89 yo	No	yes	no	yes	0	0	6	7	Yes	European	Germline	no	N/A		Yes
+466636	466636-057-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	3	3	Not Reported	Admixture	Germline	no	N/A		Yes
+466732	466732-252-T	SIC	Other	Rare	Adenocarcinoma - small intest.	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	1	6	8	Yes	African	Germline	no	N/A		Yes
+467112	467112-017-R	MPNST	SARCOMA	Rare	Malig. periph. nerve sheath tum.	-	Musculoskeletal	41-89 yo	No	yes	no	yes	0	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+467783	467783-034-R	LUAS	NSCLC	Common	Non-small cell lung cancer, NOS	Adenosquamous carcinoma	Respiratory/Thoracic	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	Admixture	Originator	no	N/A		Yes
+469116	469116-191-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	Admixture	Originator	no	N/A		Yes
+469464	469464-171-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	yes	no	no	0	0	6	6	Yes	Admixture	Germline	no	N/A		Yes
+471365	471365-239-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	spindle cell	Musculoskeletal	41-89 yo	No	yes	no	yes	0	0	5	6	Not Reported	European	Germline	no	N/A		Yes
+474343	474343-323-R	OS	SARCOMA	Rare	Osteosarcoma	-	Musculoskeletal	18-40 yo	No	yes	no	no	0	0	6	6	Not Reported	Admixture	Germline	no	N/A		Yes
+474377	474377-126-R	UCEC	Other	Common	Endometrioid endomet. adenocar.	secretory and clear cell features	Gynecologic	41-89 yo	No	no	no	yes	0	1	6	8	Yes	European	Originator	no	N/A		Yes
+474841	474841-006-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	Invasive, keratinizing	Head and Neck	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	Admixture	Originator	no	N/A		Yes
+475259	475259-130-R	LIPO	SARCOMA	Rare	Liposarcoma	-	Musculoskeletal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+475296	475296-252-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	5	7	Not Reported	European	PDX	no	N/A		Yes
+476673	476673-061-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	yes	0	1	6	8	Yes	European	Originator	no	N/A		Yes
+476745	476745-003-R	READ	COADREAD	Common	Adenocarcinoma - rectum	invasive	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+476816	476816-319-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Mucinous 	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	4	5	Yes	Admixture	Originator	no	N/A		Yes
+477875	477875-180-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	non-keratinizing 	Respiratory/Thoracic	41-89 yo	No	no	no	no	1	1	6	8	Not Reported	European	PDX	no	N/A		Yes
+478993	478993-354-R	MFS	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	myxofibrosarcoma with epithelioid features	Musculoskeletal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	Admixture	PDX	no	N/A		Yes
+479181	479181-293-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	African	Germline	no	N/A		Yes
+479421	479421-043-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	pleomorphic	Musculoskeletal	18-40 yo	No	no	no	yes	1	1	6	9	Not Reported	European	Originator	no	N/A		Yes
+481146	481146-293-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+482815	482815-354-R1	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	"ductal
+"	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	5	5	Yes	European	PDX	no	N/A		Yes
+482815	482815-354-R2	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	"ductal
+"	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	0	6	7	Yes	European	PDX	no	N/A		Yes
+483684	483684-250-R	MACR	COADREAD	Common	Adenocarcinoma - colon	mucinous	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	1	5	7	Not Reported	European	Originator	no	N/A		Yes
+485176	485176-168-R4	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	 w/mucinous features	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	6	8	Yes	European	Originator	no	N/A		Yes
+485368	485368-065-R3	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	yes	yes	1	1	7	10	Yes	European	Originator	no	N/A		Yes
+485368	485368-065-R4	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	yes	yes	1	0	6	8	Yes	European	Originator	no	N/A		Yes
+485368	485368-065-R8	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	yes	no	1	0	6	7	Yes	European	Originator	no	N/A		Yes
+485977	485977-131-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	yes	1	1	6	9	Not Reported	European	Originator	no	N/A		Yes
+486699	486699-345-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	no	1	1	0	2	Not Reported	European	Originator	no	N/A		Yes
+487391	487391-300-R	PRCC	Other	Common	Papillary renal cell carcinoma	Papillary, Type 2	Genitourinary	41-89 yo	No	no	no	no	1	1	5	7	Not Reported	European	PDX	no	N/A		Yes
+487416	487416-170-R	IHCH	Other	Rare	Cholangiocar.- intra/extrahepatic	-	Digestive/Gastrointestinal	18-40 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+491133	491133-110-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	1	6	8	Not Reported	European	Originator	no	N/A		Yes
+491195	491195-065-R5	PAASC	Other	Recalcitrant	Pancreatic cancer (not Islets)	adenosquamous	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+492569	492569-054-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Invasive ductal 	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+492797	492797-167-R	MFS	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	Mesenchymal tumor compatible with Myxofibrosarcoma	Musculoskeletal	41-89 yo	No	no	no	no	0	0	4	4	Not Reported	European	PDX	no	N/A		Yes
+494315	494315-158-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	pleomorphic sarcoma	Musculoskeletal	41-89 yo	No	no	no	yes	1	0	6	8	Not Reported	European	Originator	no	N/A		Yes
+496331	496331-347-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	1	2	Not Reported	European	Originator	no	N/A		Yes
+496974	496974-208-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Invasive	Digestive/Gastrointestinal	41-89 yo	No	yes	yes	yes	1	0	6	8	Not Reported	European	Originator	no	N/A		Yes
+497265	497265-261-R	ULMS	SARCOMA	Rare	Leiomyosarcoma - uterus	-	Musculoskeletal	18-40 yo	No	yes	no	yes	0	0	6	7	Yes	European	Germline	no	N/A		Yes
+498487	498487-281-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	yes	no	no	0	0	4	4	Not Reported	European	Germline	no	N/A		Yes
+512359	512359-319-R	MCC	Other	Rare	Merkel cell tumor	-	Endocrine and Neuroendocrine	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+512744	512744-197-R	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	 papillary	Genitourinary	41-89 yo	No	yes	no	no	0	0	6	6	Yes	European	Germline	no	N/A		Yes
+512936	512936-074-R	READ	COADREAD	Common	Adenocarcinoma - rectum	Invasive 	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	1	4	7	Yes	European	Originator	no	N/A		Yes
+513476	513476-338-R	LIPO	SARCOMA	Rare	Liposarcoma	round cell myxoid 	Musculoskeletal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+513682	513682-313-R	LMS	SARCOMA	Rare	Leiomyosarcoma - not uterine	-	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+514753	514753-038-R	OCS	Other	Rare	Ovarian cancer, NOS	carcinosarcoma	Gynecologic	41-89 yo	No	no	no	yes	0	1	6	8	Yes	Admixture	Originator	no	N/A		Yes
+514821	514821-333-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	1	6	8	Not Reported	European	Originator	no	N/A		Yes
+515677	515677-202-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+515863	515863-333-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	yes	no	no	1	1	6	8	Yes	Admixture	Germline	no	N/A		Yes
+516955	516955-315-R	MFS	SARCOMA	Rare	Fibrosarcoma - not infantile	Myxofibrosarcoma	Musculoskeletal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+517754	517754-364-R	SIC	Other	Rare	Adenocarcinoma - small intest.	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	5	7	Not Reported	European	Germline	no	N/A		Yes
+517816	517816-269-R	CEMN	Other	Rare	Adenocarcinoma - cervix	mesonephric carcinoma	Gynecologic	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+519858	519858-162-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	1	1	6	9	Not Reported	European	Germline	no	N/A		Yes
+521389	521389-187-R	APAD	Other	Rare	Gastrointestinal cancer, NOS	Appendiceal	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+521955	521955-158-R2	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	yes	no	1	1	6	8	Yes	European	Originator	no	N/A		Yes
+521955	521955-158-R3	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	yes	yes	1	0	6	8	Yes	European	Originator	no	N/A		Yes
+521955	521955-158-R4	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	yes	yes	0	1	6	8	Yes	European	Originator	no	N/A		Yes
+521955	521955-158-R5	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	yes	yes	1	1	5	8	Yes	European	Originator	no	N/A		Yes
+521955	521955-158-R6	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	yes	yes	1	1	6	9	Yes	European	Originator	no	N/A		Yes
+521955	521955-158-R7	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	yes	yes	0	1	6	8	Yes	European	Originator	no	N/A		Yes
+522493	522493-142-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	1	1	6	9	Yes	European	Germline	no	N/A		Yes
+523234	523234-163-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	no	N/A		Yes
+523349	523349-094-R	UEC	Other	Common	Endometrioid endomet. adenocar.	papillary serous	Gynecologic	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	Admixture	Originator	no	N/A		Yes
+523694	523694-262-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	5	5	Yes	Admixture	PDX	no	N/A		Yes
+524269	524269-139-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	1	1	6	9	Not Reported	Admixture	Germline	no	N/A		Yes
+524724	524724-177-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Mucinous	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+524855	524855-128-R	LIPO	SARCOMA	Rare	Liposarcoma	-	Musculoskeletal	41-89 yo	No	no	no	no	0	0	4	4	Not Reported	European	PDX	no	N/A		Yes
+526219	526219-279-T	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	0	0	1	Not Reported	Admixture	PDX	no	N/A		Yes
+528666	528666-305-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	yes	no	no	1	1	5	7	Not Reported	Admixture	Germline	no	N/A		Yes
+528814	528814-157-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	1	1	Yes	European	Germline	no	N/A		Yes
+529294	529294-124-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	European	Germline	no	N/A		Yes
+531464	531464-266-R	MCC	Other	Rare	Merkel cell tumor	-	Endocrine and Neuroendocrine	41-89 yo	No	no	no	no	0	0	5	5	Yes	European	PDX	no	N/A		Yes
+531923	531923-012-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	no	no	no	1	0	0	1	Not Reported	European	PDX	no	N/A		Yes
+532298	532298-043-R	CSNOS	Other	Common	Invasive breast carcinoma	Ductal	Breast	41-89 yo	No	no	no	no	0	0	4	4	Not Reported	East Asian	PDX	no	N/A		Yes
+535342	535342-205-R	IDC	Other	Common	Invasive breast carcinoma	ductal	Breast	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+535665	535665-135-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+536437	536437-012-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+538559	538559-288-R	LUAD	NSCLC	Common	Lung adenocarcinoma	areas of squamous cell differentiation present	Respiratory/Thoracic	41-89 yo	No	no	no	yes	1	1	6	9	Not Reported	European	Originator	no	N/A		Yes
+541839	541839-054-R	MOV	Other	Rare	Ovarian epithelial cancer	Mucinous Adenocarcinoma 	Gynecologic	41-89 yo	No	no	no	yes	1	1	6	9	Yes	Admixture	Originator	no	N/A		Yes
+541946	541946-237-B	SCLC	Other	Recalcitrant	Small cell lung cancer	-	Respiratory/Thoracic	41-89 yo	Yes	no	no	no	1	0	5	6	Not Reported	European	PDX	no	N/A		Yes
+542871	542871-191-R	SNSC	Other	Rare	H & N squamous cell car., NOS	SCC of the maxillary sinus	Head and Neck	41-89 yo	No	no	no	no	0	0	4	4	Not Reported	East Asian	PDX	no	N/A		Yes
+543588	543588-082-R	MFS	SARCOMA	Rare	Fibrosarcoma - not infantile	Myxofibrosarcoma	Musculoskeletal	41-89 yo	No	no	no	yes	1	0	2	4	Not Reported	European	Originator	no	N/A		Yes
+543952	543952-280-R	ULMS	SARCOMA	Rare	Leiomyosarcoma - uterus	-	Musculoskeletal	41-89 yo	No	yes	no	no	0	0	5	5	Yes	Admixture	Germline	no	N/A		Yes
+544552	544552-058-R	HGNEC	Other	Rare	Neuroendocrine cancer, NOS	large cell carcinoma of the cecum	Endocrine and Neuroendocrine	41-89 yo	No	yes	no	yes	0	0	5	6	Yes	European	Germline	no	N/A		Yes
+545958	545958-293-R	MFS	SARCOMA	Rare	Fibrosarcoma - not infantile	Myxofibrosarcoma	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	African	Originator	no	N/A		Yes
+546332	546332-049-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	18-40 yo	No	no	no	no	0	1	6	7	Yes	Admixture	PDX	no	N/A		Yes
+546743	546743-196-R	USC	Other	Common	Serous endometrial adenocarcinoma	-	Gynecologic	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+548149	548149-187-R	DDLS	SARCOMA	Rare	Liposarcoma	spindle cell	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	African	Originator	no	N/A		Yes
+548399	548399-264-B	GEJ	Other	Rare	Adenocarcinoma - GEJ	-	Digestive/Gastrointestinal	41-89 yo	Yes	no	no	no	1	1	6	8	Yes	Admixture	PDX	no	N/A		Yes
+549293	549293-155-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	keratinizing	Head and Neck	41-89 yo	No	no	no	no	1	1	6	8	Not Reported	European	PDX	no	N/A		Yes
+551195	551195-344-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	1	6	8	Yes	European	Originator	no	N/A		Yes
+553792	553792-285-R	SARCNOS	SARCOMA	Rare	Soft tissue neoplasm, NOS	Round Cell Sarcoma	Musculoskeletal	18-40 yo	No	no	no	no	0	0	5	5	Not Reported	African	PDX	no	N/A		Yes
+554418	554418-232-R	UCS	Other	Rare	Carcinosarcoma of the uterus	malignant mixed m¸llerian tumor	Gynecologic	41-89 yo	No	no	no	yes	1	1	6	9	Not Reported	African	Originator	no	N/A		Yes
+555411	555411-135-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	4	4	Yes	Admixture	PDX	no	N/A		Yes
+555926	555926-031-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	1	6	7	Not Reported	European	Germline	no	N/A		Yes
+556579	556579-094-R	BRCA	Other	Common	Invasive breast carcinoma	TNBC, Mammary 	Breast	41-89 yo	No	yes	no	no	0	0	5	5	Not Reported	European	Germline	no	N/A		Yes
+558632	558632-135-R	IDC	Other	Common	Invasive breast carcinoma	ductal, TNBC	Breast	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+558786	558786-286-R	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	-	Genitourinary	18-40 yo	No	yes	no	no	0	0	6	6	Yes	European	Germline	no	N/A		Yes
+559244	559244-337-R	CSCC	Other	Common	Squamous cell carcinoma - skin	-	Skin	41-89 yo	No	no	no	no	1	0	6	7	Yes	Admixture	PDX	no	N/A		Yes
+561559	561559-040-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+562418	562418-175-R	MRLS	SARCOMA	Rare	Liposarcoma	Myxoid	Musculoskeletal	18-40 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+562452	562452-108-R	IDC	Other	Common	Invasive breast carcinoma	Ductal, TNBC	Breast	41-89 yo	No	yes	no	yes	0	1	6	8	Not Reported	Admixture	Germline	no	N/A		Yes
+562715	562715-036-R	UCS	Other	Rare	Carcinosarcoma of the uterus	-	Gynecologic	41-89 yo	No	yes	no	yes	0	0	6	7	Not Reported	Admixture	Germline	no	N/A		Yes
+562742	562742-068-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	yes	no	no	0	1	8	9	Yes	European	Germline	no	N/A		Yes
+563396	563396-261-R	MEL	MEL	Common	Melanoma	-	Skin	18-40 yo	No	yes	no	no	0	0	6	6	Yes	European	Germline	no	N/A		Yes
+564639	564639-172-R1	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	yes	0	0	5	6	Yes	European	Originator	no	N/A		Yes
+564653	564653-332-T	BLCA	BLCA	Common	Transitional cell car. - uroth.	Invasive	Genitourinary	41-89 yo	No	yes	no	no	0	1	6	7	Not Reported	African	Germline	no	N/A		Yes
+565232	565232-114-T	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	-	Genitourinary	41-89 yo	No	no	no	no	1	0	0	1	Yes	Admixture	PDX	no	N/A		Yes
+565248	565248-004-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	Invasive 	Head and Neck	41-89 yo	No	no	no	yes	1	1	7	10	Not Reported	European	Originator	no	N/A		Yes
+565726	565726-208-R1	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal 	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	0	2	Yes	European	PDX	no	N/A		Yes
+565726	565726-208-R4	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal 	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	5	6	Yes	European	PDX	no	N/A		Yes
+565726	565726-208-R6	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal 	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	5	7	Yes	European	PDX	no	N/A		Yes
+565726	565726-208-R7	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal 	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	5	7	Yes	European	PDX	no	N/A		Yes
+567486	567486-219-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	1	6	7	Not Reported	European	PDX	no	N/A		Yes
+571277	571277-193-R	MRLS	SARCOMA	Rare	Liposarcoma	Myxoid 	Musculoskeletal	41-89 yo	No	no	no	no	0	0	3	3	Not Reported	European	PDX	no	N/A		Yes
+571681	571681-070-R	SYNS	SARCOMA	Rare	Synovial sarcoma	-	Musculoskeletal	18-40 yo	No	yes	no	yes	1	0	0	2	Yes	European	Germline	no	N/A		Yes
+571681	571681-099-R	SYNS	SARCOMA	Rare	Synovial sarcoma	-	Musculoskeletal	18-40 yo	No	yes	no	no	0	0	6	6	Yes	European	Germline	no	N/A		Yes
+572183	572183-171-R	LXSC	HNSC	Rare	Laryngeal squamous cell carcinoma	Keratinizing 	Head and Neck	41-89 yo	No	no	no	no	0	1	6	7	Not Reported	African	PDX	no	N/A		Yes
+572736	572736-102-R	COADREAD	COADREAD	Common	Colorectal cancer, NOS	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	1	5	6	Yes	African	Germline	no	N/A		Yes
+572874	572874-153-T	OVT	Other	Rare	Ovarian epithelial cancer	-	Gynecologic	41-89 yo	No	yes	no	no	0	1	6	7	Yes	European	Germline	no	N/A		Yes
+572918	572918-348-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	no	N/A		Yes
+574816	574816-094-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	Pleomorphic with myxoid features 	Musculoskeletal	41-89 yo	No	yes	no	no	0	0	5	5	Not Reported	European	Germline	no	N/A		Yes
+575123	575123-057-R	CUPNOS	Other	Rare	Miscellaneous neoplasm, NOS	Matrix-producing (osteoid) neoplasm	Unknown Primary	41-89 yo	No	no	no	no	1	0	0	1	Not Reported	Admixture	PDX	no	N/A		Yes
+575813	575813-281-R1	HGSOC	Other	Rare	Ovarian cancer, NOS	papillary, serous carcinoma	Gynecologic	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+575813	575813-281-R2	HGSOC	Other	Rare	Ovarian cancer, NOS	papillary, serous carcinoma	Gynecologic	41-89 yo	No	no	no	yes	1	1	6	9	Not Reported	European	Originator	no	N/A		Yes
+576588	576588-073-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+577847	577847-279-T	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	Admixture	PDX	no	N/A		Yes
+579494	579494-129-T	OVT	Other	Rare	Ovarian cancer, NOS	Adenocarcinoma	Gynecologic	41-89 yo	No	no	no	no	1	1	5	7	Not Reported	Admixture	PDX	no	N/A		Yes
+581982	581982-151-R	SARCNOS	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	-	Musculoskeletal	41-89 yo	No	no	no	no	1	0	0	1	Not Reported	European	PDX	no	N/A		Yes
+582836	582836-169-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	Oropharyngeal 	Head and Neck	41-89 yo	No	yes	no	yes	0	0	6	7	Not Reported	Admixture	Germline	no	N/A		Yes
+584427	584427-346-R	MGST	SARCOMA	Rare	Soft tissue neoplasm, NOS	Malignant Glomus tumor 	Musculoskeletal	41-89 yo	No	yes	no	yes	0	0	6	7	Yes	African	Germline	no	N/A		Yes
+585541	585541-042-R	IBC	Other	Rare	Inflammatory breast carcinoma	infiltrating ductal 	Breast	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+586459	586459-114-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	Admixture	PDX	no	N/A		Yes
+588824	588824-173-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	5	7	Yes	European	PDX	no	N/A		Yes
+589379	589379-206-R	LMS	SARCOMA	Rare	Leiomyosarcoma - not uterine	-	Musculoskeletal	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	Admixture	PDX	no	N/A		Yes
+589616	589616-265-R	MPNST	SARCOMA	Rare	Malig. periph. nerve sheath tum.	-	Musculoskeletal	41-89 yo	No	no	no	no	0	1	6	7	Not Reported	Admixture	PDX	no	N/A		Yes
+591375	591375-129-R	LUAS	NSCLC	Common	Non-small cell lung cancer, NOS	Adenosquamous	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+592484	592484-111-B	SCLC	Other	Recalcitrant	Small cell lung cancer	-	Respiratory/Thoracic	41-89 yo	Yes	no	no	no	0	0	4	4	Yes	European	PDX	no	N/A		Yes
+592788	592788-150-R3	ACCC	Other	Rare	Adrenocortical carcinoma	-	Endocrine and Neuroendocrine	18-40 yo	No	no	no	yes	0	0	5	6	Yes	European	Originator	no	N/A		Yes
+592788	592788-150-R4	ACCC	Other	Rare	Adrenocortical carcinoma	-	Endocrine and Neuroendocrine	18-40 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+592915	592915-224-R	ISTAD	Other	Rare	Adenocarcinoma - stomach	adenocarcinoma - intestinal type	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+593322	593322-323-R	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	Invasive urothelial carcinoma of the bladder	Genitourinary	41-89 yo	No	yes	no	no	0	0	4	4	Yes	European	Germline	no	N/A		Yes
+594176	594176-295-R	OS	SARCOMA	Rare	Osteosarcoma	-	Musculoskeletal	41-89 yo	No	yes	no	yes	0	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+594336	594336-271-R	IDC	Other	Common	Invasive breast carcinoma	Ductal, TNBC	Breast	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+594431	594431-109-B	SCLC	Other	Recalcitrant	Small cell lung cancer	-	Respiratory/Thoracic	41-89 yo	Yes	no	no	no	0	0	4	4	Not Reported	European	PDX	no	N/A		Yes
+594992	594992-005-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+595854	595854-104-R3	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+596521	596521-263-R	MFH	SARCOMA	Rare	Malignant fibrous histiocytoma	undifferentiated pleomorphic sarcoma	Musculoskeletal	41-89 yo	No	no	no	yes	1	0	4	6	Not Reported	European	Originator	no	N/A		Yes
+597326	597326-320-R	RCC	Other	Common	Renal cell carcinoma, NOS	-	Genitourinary	41-89 yo	No	yes	no	yes	0	0	4	5	Not Reported	European	Germline	no	N/A		Yes
+598228	598228-144-R	USC	Other	Common	Serous endometrial adenocarcinoma	Serous adenocarcinoma of Mullerian Origin	Gynecologic	41-89 yo	No	no	no	no	1	0	0	1	Yes	European	PDX	no	N/A		Yes
+598327	598327-061-R6	PRAD	Other	Rare	Prostate cancer, NOS	Adenocarcinoma 	Genitourinary	41-89 yo	No	no	no	yes	0	0	6	7	Yes	Admixture	Originator	no	N/A		Yes
+612792	612792-311-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	European	Germline	no	N/A		Yes
+613647	613647-318-R	UEC	Other	Common	Endometrioid endomet. adenocar.	 	Gynecologic	41-89 yo	No	no	no	yes	0	0	5	6	Yes	Admixture	Originator	no	N/A		Yes
+615535	615535-235-R	UCEC	Other	Rare	Uterine cancer, NOS	neuroendocrine features	Gynecologic	41-89 yo	No	yes	no	yes	1	1	6	9	Not Reported	Admixture	Germline	no	N/A		Yes
+616215	616215-338-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	≥90 yo	No	yes	no	no	1	1	6	8	Not Reported	European	Germline	no	N/A		Yes
+616732	616732-234-R1	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	1	6	9	Yes	European	Originator	no	N/A		Yes
+616732	616732-234-R2	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	5	6	Yes	European	Originator	no	N/A		Yes
+616732	616732-234-R3	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	4	5	Yes	European	Originator	no	N/A		Yes
+618468	618468-307-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	yes	1	1	6	9	Yes	European	Originator	no	N/A		Yes
+619344	619344-162-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	6	8	Not Reported	Admixture	Germline	no	N/A		Yes
+622955	622955-264-R	OPHSC	HNSC	Rare	H & N squamous cell car., NOS	Oropharyngeal, HPV+	Head and Neck	41-89 yo	No	no	no	yes	0	0	4	5	Yes	Admixture	Originator	no	N/A		Yes
+623371	623371-107-R1	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	6	7	Yes	Admixture	PDX	no	N/A		Yes
+623946	623946-074-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	5	6	Yes	European	PDX	no	N/A		Yes
+624824	624824-186-R	COAD	COADREAD	Common	Adenocarcinoma - colon	Invasive 	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	2	1	6	9	Not Reported	European	Germline	no	N/A		Yes
+625472	625472-104-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+626397	626397-294-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+627122	627122-101-R	GIST	Other	Rare	Gastrointestinal stromal tumor	-	Digestive/Gastrointestinal	18-40 yo	No	yes	yes	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+627137	627137-287-R	HGSOC	Other	Rare	Ovarian epithelial cancer	papillary serous carcinoma	Gynecologic	41-89 yo	No	no	no	yes	0	0	6	7	Yes	Admixture	Originator	no	N/A		Yes
+628479	628479-137-R10	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	1	1	6	8	Yes	European	Originator	no	N/A		Yes
+628479	628479-137-R2	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	1	1	6	8	Yes	European	Originator	no	N/A		Yes
+628479	628479-137-R9	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	1	0	6	7	Yes	European	Originator	no	N/A		Yes
+628569	628569-122-R	LXSC	HNSC	Rare	Laryngeal squamous cell carcinoma	Invasive	Head and Neck	41-89 yo	No	no	no	no	1	0	6	7	Not Reported	European	PDX	no	N/A		Yes
+628781	628781-278-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+629538	629538-142-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	yes	no	yes	0	1	6	8	Not Reported	European	Germline	no	N/A		Yes
+631417	631417-353-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	yes	no	no	1	1	6	8	Not Reported	European	Germline	no	N/A		Yes
+631745	631745-148-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	Oropharyngeal 	Head and Neck	41-89 yo	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	no	N/A		Yes
+632484	632484-111-R	MPNST	SARCOMA	Rare	Malig. periph. nerve sheath tum.	pleomorphic sarcoma	Musculoskeletal	41-89 yo	No	yes	no	no	0	0	4	4	Not Reported	European	Germline	no	N/A		Yes
+633275	633275-114-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	yes	no	no	1	1	5	7	Yes	Admixture	Germline	no	N/A		Yes
+633739	633739-251-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	1	4	7	Yes	European	Originator	no	N/A		Yes
+633993	633993-097-R	MEL	MEL	Common	Melanoma	Nevoid	Skin	18-40 yo	No	yes	no	yes	0	0	5	6	Not Reported	European	Germline	no	N/A		Yes
+635999	635999-064-R	PECOMA	SARCOMA	Rare	Soft tissue neoplasm, NOS	Malignant PEComa of the kidney 	Musculoskeletal	41-89 yo	No	yes	no	yes	1	0	0	2	Not Reported	European	Germline	no	N/A		Yes
+636577	636577-100-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	yes	no	yes	1	1	4	7	Not Reported	European	Germline	no	N/A		Yes
+636974	636974-082-R	GIST	Other	Rare	Gastrointestinal stromal tumor	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	4	4	Yes	European	PDX	no	N/A		Yes
+638129	638129-119-R	SCLC	Other	Recalcitrant	Small cell lung cancer	Neuroendocrine tumor	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	4	4	Yes	African	PDX	no	N/A		Yes
+638234	638234-109-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	1	6	9	Yes	European	Originator	no	N/A		Yes
+639262	639262-121-R	BLSC	BLCA	Common	Urothelial/bladder cancer, NOS	Papillary w/extensive Squamous Differentiation 	Genitourinary	41-89 yo	No	yes	no	yes	0	0	5	6	Not Reported	European	Germline	no	N/A		Yes
+639538	639538-348-R	MFS	SARCOMA	Rare	Fibrosarcoma - not infantile	Myxofibrosarcoma	Musculoskeletal	41-89 yo	No	no	no	yes	1	0	6	8	Not Reported	European	Originator	no	N/A		Yes
+641145	641145-348-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	no	N/A		Yes
+644723	644723-068-T	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	African	PDX	no	N/A		Yes
+647726	647726-015-R	LIPO	SARCOMA	Rare	Liposarcoma	spindle cell	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+648538	648538-100-R	ACYC	Other	Rare	Salivary gland cancer	Adenoid cystic carcinoma 	Head and Neck	41-89 yo	No	yes	no	yes	0	1	6	8	Not Reported	African	Germline	no	N/A		Yes
+649139	649139-167-T	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	5	5	Yes	European	PDX	no	N/A		Yes
+649442	649442-058-R	MFH	SARCOMA	Rare	Malignant fibrous histiocytoma	Myxofibrosarcoma, undifferentiated pleomorphic sarcoma	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	Admixture	Originator	no	N/A		Yes
+652731	652731-133-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	Pleomorphic, dermal 	Musculoskeletal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+653398	653398-132-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+653999	653999-131-R	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	1	1	4	6	Not Reported	European	PDX	no	N/A		Yes
+654129	654129-193-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	yes	0	0	6	7	Yes	Admixture	Originator	no	N/A		Yes
+655913	655913-031-T	HGSOC	Other	Rare	Ovarian epithelial cancer	serous carcinoma	Gynecologic	41-89 yo	No	no	no	no	1	1	6	8	Not Reported	European	PDX	no	N/A		Yes
+656117	656117-040-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	Admixture	PDX	no	N/A		Yes
+657687	657687-091-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	yes	0	1	6	8	Not Reported	European	Originator	no	N/A		Yes
+658696	658696-237-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	no	N/A		Yes
+659161	659161-295-R	CEAS	Other	Rare	Cervical cancer, NOS	adenosquamous carcinoma	Gynecologic	18-40 yo	No	yes	no	no	1	1	5	7	Not Reported	European	Germline	no	N/A		Yes
+661828	661828-353-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+662132	662132-345-T	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	invasive adenocarcinoma 	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+663772	663772-295-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	no	0	1	5	6	Not Reported	African	PDX	no	N/A		Yes
+665939	665939-344-R	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	 papillary	Genitourinary	41-89 yo	No	yes	no	yes	0	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+668155	668155-338-R	HNSC	HNSC	Rare	H & N squamous cell car., NOS	Keratinizing	Head and Neck	41-89 yo	No	yes	no	yes	0	1	3	5	Not Reported	African	Germline	no	N/A		Yes
+671287	671287-276-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	1	4	6	Not Reported	Admixture	Originator	no	N/A		Yes
+672227	672227-273-T	ADNOS	Other	Rare	Adenocarcinoma, NOS	-	Unknown Primary	18-40 yo	No	no	no	no	0	0	5	5	Yes	African	PDX	no	N/A		Yes
+672682	672682-312-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+673867	673867-039-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	1	4	6	Yes	European	Originator	no	N/A		Yes
+673883	673883-063-R3	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal 	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	6	8	Yes	European	Originator	no	N/A		Yes
+673883	673883-063-R4	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal 	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	1	3	5	Yes	European	Originator	no	N/A		Yes
+673883	673883-063-R5	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal 	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	0	2	Yes	European	Originator	no	N/A		Yes
+673883	673883-063-R7	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal 	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	0	3	5	Yes	European	Originator	no	N/A		Yes
+674348	674348-317-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	18-40 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+674366	674366-145-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	pleomorphic	Musculoskeletal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+675812	675812-077-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	Pleomorphic	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+676499	676499-111-R	LXSC	HNSC	Rare	Laryngeal squamous cell carcinoma	invasive	Head and Neck	41-89 yo	No	no	no	yes	1	0	6	8	Yes	European	Originator	no	N/A		Yes
+677734	677734-321-R	SARCNOS	SARCOMA	Rare	Soft tissue neoplasm, NOS	sarcomatoid carcinoma possibly of lung or pleural origin	Musculoskeletal	41-89 yo	No	no	no	no	1	0	6	7	Not Reported	European	PDX	no	N/A		Yes
+679263	679263-084-R	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	Bladder, Invasive with focal squamous differentiation	Genitourinary	41-89 yo	No	no	no	no	1	1	3	5	Not Reported	African	PDX	no	N/A		Yes
+681556	681556-308-R	BLCA	BLCA	Common	Transitional cell car. - uroth.	-	Genitourinary	41-89 yo	No	no	no	no	1	0	4	5	Not Reported	European	Originator	no	N/A		Yes
+682317	682317-045-R	OSACA	Other	Rare	Salivary gland cancer	Squamous Cell Carcinoma 	Head and Neck	41-89 yo	No	yes	no	yes	0	0	6	7	Yes	European	Germline	no	N/A		Yes
+683768	683768-134-T	OVT	Other	Rare	Ovarian epithelial cancer	-	Gynecologic	41-89 yo	No	yes	no	no	0	1	4	5	Yes	European	Germline	no	N/A		Yes
+683892	683892-313-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	yes	0	0	8	9	Not Reported	European	Originator	no	N/A		Yes
+684819	684819-155-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	Pleomorphic with focal myxoid features	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+685761	685761-110-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+686572	686572-087-R	USC	Other	Common	Serous endometrial adenocarcinoma	Papillary	Gynecologic	41-89 yo	No	yes	no	no	0	1	6	7	Not Reported	European	PDX	no	N/A		Yes
+686756	686756-172-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+686893	686893-015-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	18-40 yo	No	no	no	no	1	0	1	2	Not Reported	European	PDX	no	N/A		Yes
+687583	687583-202-T	PRAD	Other	Rare	Prostate cancer, NOS	Adenocarcinoma 	Genitourinary	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+689755	689755-048-R	ULMS	SARCOMA	Rare	Leiomyosarcoma - uterus	-	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+691877	691877-024-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	Pleomorphic 	Musculoskeletal	41-89 yo	No	yes	no	yes	0	0	6	7	Not Reported	Admixture	Germline	no	N/A		Yes
+692163	692163-330-T	ULMS	SARCOMA	Rare	Leiomyosarcoma - uterus	-	Musculoskeletal	41-89 yo	No	yes	no	no	0	0	6	6	Yes	African	Germline	no	N/A		Yes
+692585	692585-246-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	yes	no	yes	0	0	4	5	Yes	European	Germline	no	N/A		Yes
+693688	693688-280-R	SCUP	Other	Rare	Small cell car. (extrapulmonary)	colon origin	Endocrine and Neuroendocrine	41-89 yo	No	yes	no	no	0	0	5	5	Not Reported	European	Germline	no	N/A		Yes
+694582	694582-093-R	CESC	Other	Rare	Squamous cervical cancer	-	Gynecologic	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	Admixture	Germline	no	N/A		Yes
+695221	695221-133-T	MEL	MEL	Common	Melanoma	-	Skin	≥90 yo	No	yes	no	no	1	0	6	7	Yes	European	Germline	no	N/A		Yes
+695427	695427-040-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	5	7	Not Reported	European	Germline	no	N/A		Yes
+695669	695669-166-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+695912	695912-313-R	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+697273	697273-096-R	MFS	SARCOMA	Rare	Fibrosarcoma - not infantile	Myxofibrosarcoma	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	4	5	Yes	Admixture	Originator	no	N/A		Yes
+698357	698357-238-R	OS	SARCOMA	Rare	Osteosarcoma	Giant cell rich	Musculoskeletal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+699152	699152-130-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	5	7	Not Reported	European	Germline	no	N/A		Yes
+699847	699847-302-R	DDLS	SARCOMA	Rare	Liposarcoma	dedifferentiated	Musculoskeletal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+699948	699948-023-R	BCC	Other	Common	Basal cell carcinoma	-	Skin	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+711789	711789-176-R	UCS	Other	Rare	Carcinosarcoma of the uterus	-	Gynecologic	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+712175	712175-110-R	LMS	SARCOMA	Rare	Leiomyosarcoma - not uterine	-	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	4	5	Not Reported	European	Originator	no	N/A		Yes
+712881	712881-215-R	PSCC	Other	Rare	Penile squamous car.(epidermoid)	-	Genitourinary	41-89 yo	No	yes	no	no	1	1	6	8	Not Reported	Admixture	Germline	no	N/A		Yes
+713595	713595-302-R	FIBS	SARCOMA	Rare	Fibrosarcoma - not infantile	Myxofibrosarcoma	Musculoskeletal	41-89 yo	No	yes	no	yes	0	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+713683	713683-067-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	1	5	7	Yes	European	Originator	no	N/A		Yes
+714174	714174-038-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	1	6	7	Not Reported	African	Germline	no	N/A		Yes
+714841	714841-288-R	COAD	COADREAD	Common	Adenocarcinoma - colon	Adenocarcinoma 	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	6	6	Yes	European	Germline	no	N/A		Yes
+715222	715222-197-R1	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	1	0	1	Yes	European	Germline	no	N/A		Yes
+715222	715222-197-R2	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	4	6	Yes	European	Germline	no	N/A		Yes
+715222	715222-197-R3	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	5	7	Yes	European	Germline	no	N/A		Yes
+717593	717593-335-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+717755	717755-176-R	UCS	Other	Rare	Carcinosarcoma of the uterus	-	Gynecologic	41-89 yo	No	no	no	no	1	0	0	1	Not Reported	African	PDX	no	N/A		Yes
+719797	719797-321-R	MPNST	SARCOMA	Rare	Malig. periph. nerve sheath tum.	-	Musculoskeletal	18-40 yo	No	no	no	yes	2	0	5	8	Not Reported	European	Originator	no	N/A		Yes
+721194	721194-151-R	COAD	COADREAD	Common	Adenocarcinoma - colon	Invasive 	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	no	N/A		Yes
+722911	722911-139-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	4	6	Not Reported	European	PDX	no	N/A		Yes
+727343	727343-253-R	BRCA	Other	Common	Invasive breast carcinoma	-	Breast	41-89 yo	No	yes	no	no	1	1	6	8	Not Reported	European	Germline	no	N/A		Yes
+728994	728994-017-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	African	PDX	no	N/A		Yes
+729295	729295-174-R	LXSC	HNSC	Rare	Laryngeal squamous cell carcinoma	SCC of the glottic larynx	Head and Neck	41-89 yo	No	no	no	no	0	0	4	4	Not Reported	Admixture	PDX	no	N/A		Yes
+729321	729321-352-R	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	yes	no	no	0	0	6	6	Yes	Admixture	Germline	no	N/A		Yes
+731285	731285-195-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	no	no	no	1	0	0	1	Not Reported	European	PDX	no	N/A		Yes
+731979	731979-095-R	IDC	Other	Common	Invasive breast carcinoma	Ductal, TNBC	Breast	18-40 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+732768	732768-196-T	SCLC	Other	Recalcitrant	Small cell lung cancer	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	2	2	Yes	European	PDX	no	N/A		Yes
+732878	732878-109-T	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	European	Germline	no	N/A		Yes
+735528	735528-057-R	VSC	Other	Rare	Vulvar cancer, NOS	invasive squamous carcinoma 	Gynecologic	41-89 yo	No	yes	no	no	0	0	4	4	Not Reported	European	Germline	no	N/A		Yes
+735871	735871-273-R	NPC	HNSC	Rare	Nasopharyngeal carcinoma	-	Head and Neck	41-89 yo	No	yes	no	yes	0	0	5	6	Not Reported	European	Germline	no	N/A		Yes
+736355	736355-275-R	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	extra-hepatic biliary carcinoma	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	South Asian	PDX	no	N/A		Yes
+736525	736525-025-R	COAD	COADREAD	Common	Adenocarcinoma - colon	mucinous  and signet-ring features	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	0	4	5	Yes	European	Germline	no	N/A		Yes
+738133	738133-150-R	OCSC	HNSC	Rare	H & N squamous cell car., NOS	-	Head and Neck	41-89 yo	No	no	no	no	0	0	3	3	Not Reported	European	PDX	no	N/A		Yes
+738166	738166-108-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+738386	738386-334-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	yes	1	0	6	8	Not Reported	European	Originator	no	N/A		Yes
+738494	738494-208-R2	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+738633	738633-008-R	GIST	Other	Rare	Gastrointestinal stromal tumor	-	Digestive/Gastrointestinal	18-40 yo	No	yes	no	no	0	0	5	5	Not Reported	Admixture	Germline	no	N/A		Yes
+742374	742374-170-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	1	6	7	Not Reported	African	Germline	no	N/A		Yes
+742791	742791-240-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	0	1	Yes	European	PDX	no	N/A		Yes
+742811	742811-063-R	PANET	Other	Rare	Islet cell tumors - pancreas	-	Endocrine and Neuroendocrine	18-40 yo	No	no	no	no	0	0	5	5	Yes	African	PDX	no	N/A		Yes
+743489	743489-274-T	RCC	Other	Common	Renal cell carcinoma, NOS	papillary and clear cell features	Genitourinary	18-40 yo	No	no	no	no	1	1	4	6	Yes	Admixture	PDX	no	N/A		Yes
+743489	743489-281-T	RCC	Other	Common	Renal cell carcinoma, NOS	papillary and clear cell features	Genitourinary	18-40 yo	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	no	N/A		Yes
+744664	744664-207-M	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+746538	746538-026-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+746718	746718-042-R	BLCA	BLCA	Common	Transitional cell car. - uroth.	-	Genitourinary	41-89 yo	No	yes	no	yes	0	0	6	7	Yes	Admixture	Germline	no	N/A		Yes
+746757	746757-062-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	8	9	Not Reported	European	Originator	no	N/A		Yes
+747225	747225-056-R	CESC	Other	Rare	Squamous cervical cancer	non-keratinizing	Gynecologic	18-40 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+747524	747524-062-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	yes	no	no	0	0	5	5	Yes	European	Germline	no	N/A		Yes
+748385	748385-122-R	IDC	Other	Common	Invasive breast carcinoma	Ductal	Breast	41-89 yo	No	yes	no	yes	0	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+753774	753774-173-T	COAD	COADREAD	Common	Adenocarcinoma - colon	invasive	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	4	6	Yes	Admixture	PDX	no	N/A		Yes
+753928	753928-310-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	Undifferentiated pleomorphic	Musculoskeletal	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	Admixture	PDX	no	N/A		Yes
+755229	755229-096-R	IDC	Other	Common	Invasive breast carcinoma	Ductal	Breast	41-89 yo	No	no	no	yes	0	1	6	8	Yes	European	Originator	no	N/A		Yes
+755483	755483-174-R	PLRMS	SARCOMA	Rare	Rhabdomyosarcoma, NOS	Adult type pleomorphic	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	4	5	Yes	European	Originator	no	N/A		Yes
+755484	755484-060-R	IDC	Other	Common	Invasive breast carcinoma	TNBC, Ductal	Breast	41-89 yo	No	no	no	no	0	0	7	7	Not Reported	Admixture	PDX	no	N/A		Yes
+756784	756784-338-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+761449	761449-099-R	SOC	Other	Rare	Ovarian epithelial cancer	serous carcinoma 	Gynecologic	41-89 yo	No	yes	no	no	0	0	5	5	Yes	European	Germline	no	N/A		Yes
+761936	761936-265-R	SYNS	SARCOMA	Rare	Synovial sarcoma	-	Musculoskeletal	18-40 yo	No	yes	no	yes	0	0	6	7	Yes	European	Germline	no	N/A		Yes
+762968	762968-020-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	1	1	6	9	Yes	European	Germline	no	N/A		Yes
+764289	764289-091-R	HGSOC	Other	Rare	Ovarian epithelial cancer	Serous adenocarcinoma	Gynecologic	41-89 yo	No	no	no	yes	0	0	4	5	Yes	European	Originator	no	N/A		Yes
+764511	764511-343-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	5	7	Not Reported	European	PDX	no	N/A		Yes
+764851	764851-200-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	1	6	8	Not Reported	European	Germline	no	N/A		Yes
+765268	765268-160-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	yes	0	0	1	2	Yes	Admixture	Originator	no	N/A		Yes
+765638	765638-272-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	5	5	Yes	European	PDX	no	N/A		Yes
+765993	765993-094-R	NPC	HNSC	Rare	Nasopharyngeal carcinoma	Keratinizing squamous cell	Head and Neck	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+766827	766827-280-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	no	N/A		Yes
+767577	767577-098-T	CHS	SARCOMA	Rare	Chondrosarcoma	-	Musculoskeletal	41-89 yo	No	yes	no	yes	0	0	3	4	Yes	Admixture	Germline	no	N/A		Yes
+768376	768376-177-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	no	0	0	2	2	Not Reported	European	Originator	no	N/A		Yes
+769687	769687-267-B	DLBCLNOS	Other	Common	Diffuse large B-cell lymphoma	-	Hematologic/Blood	41-89 yo	Yes	no	no	no	0	0	2	2	Not Reported	Admixture	PDX	no	N/A		Yes
+771244	771244-064-R	VSC	Other	Rare	Vulvar cancer, NOS	Squamous cell	Gynecologic	41-89 yo	No	yes	no	no	0	1	0	1	Not Reported	European	PDX	no	N/A		Yes
+771265	771265-069-T	IDC	Other	Common	Invasive breast carcinoma	Ductal; TNBC	Breast	41-89 yo	No	no	no	no	0	0	5	5	Yes	European	PDX	no	N/A		Yes
+771514	771514-170-T	ACCC	Other	Rare	Salivary gland cancer	acinic cell	Head and Neck	41-89 yo	No	yes	no	no	0	0	4	4	Yes	European	Germline	no	N/A		Yes
+772245	772245-204-R	RMS	SARCOMA	Rare	Rhabdomyosarcoma, NOS	-	Musculoskeletal	41-89 yo	No	yes	no	no	1	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+772611	772611-094-R	BLSC	BLCA	Common	Urothelial/bladder cancer, NOS	Squamous Cell Carcinoma of the Bladder	Genitourinary	41-89 yo	No	yes	no	yes	0	1	6	8	Not Reported	European	Germline	no	N/A		Yes
+773273	773273-077-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	18-40 yo	No	yes	no	no	1	0	6	7	Yes	European	Germline	no	N/A		Yes
+773659	773659-155-R	SKLMM	Other	Common	Melanoma	atypical lentiginous melanocytes w/spitzoid features	Skin	18-40 yo	No	no	no	no	1	1	6	8	Yes	European	PDX	no	N/A		Yes
+775788	775788-239-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	18-40 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+777334	777334-354-R1	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	18-40 yo	No	yes	no	no	1	1	6	8	Yes	European	Germline	no	N/A		Yes
+777334	777334-354-R2	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	18-40 yo	No	yes	no	no	1	0	6	7	Yes	European	Germline	no	N/A		Yes
+777334	777334-354-R3	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	18-40 yo	No	yes	no	yes	1	0	6	8	Yes	European	Germline	no	N/A		Yes
+777334	777334-354-R5	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	18-40 yo	No	yes	no	no	1	0	6	7	Yes	European	Germline	no	N/A		Yes
+777953	777953-297-R2	UCP	Other	Recalcitrant	Adenocarcinoma - pancreas	Pleomorphic Giant Cell carcinoma subtype	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	0	0	1	Yes	European	PDX	no	N/A		Yes
+777953	777953-297-R4	UCP	Other	Recalcitrant	Adenocarcinoma - pancreas	Pleomorphic Giant Cell carcinoma subtype	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	6	8	Yes	European	PDX	no	N/A		Yes
+778377	778377-087-R	OVT	Other	Rare	Ovarian epithelial cancer	"adenocarcinoma, papillary component
+"	Gynecologic	41-89 yo	No	no	no	yes	1	1	6	9	Not Reported	European	Originator	no	N/A		Yes
+779473	779473-192-R	ACCC	Other	Rare	Salivary gland cancer	Acinic cell carcinoma	Head and Neck	18-40 yo	No	yes	no	no	0	0	7	7	Not Reported	European	Germline	no	N/A		Yes
+779769	779769-127-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	4	6	Not Reported	European	PDX	no	N/A		Yes
+781652	781652-347-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+782815	782815-120-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	6	8	Not Reported	European	PDX	no	N/A		Yes
+784116	784116-028-R	LXSC	HNSC	Rare	Laryngeal squamous cell carcinoma	-	Head and Neck	41-89 yo	No	yes	no	no	1	0	6	7	Not Reported	Admixture	Germline	no	N/A		Yes
+784581	784581-064-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	1	1	5	8	Not Reported	Admixture	Germline	no	N/A		Yes
+784911	784911-089-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	1	1	6	9	Yes	Admixture	Germline	no	N/A		Yes
+786545	786545-187-R	LIPO	SARCOMA	Rare	Liposarcoma	-	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+787269	787269-337-R	MCC	Other	Rare	Merkel cell tumor	-	Endocrine and Neuroendocrine	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+787684	787684-078-R	EOV	Other	Rare	Ovarian epithelial cancer	Endometrioid adenocarcinoma of the ovary	Gynecologic	41-89 yo	No	no	no	yes	0	0	4	5	Not Reported	Admixture	Originator	no	N/A		Yes
+788476	788476-176-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	yes	no	no	1	1	1	3	Not Reported	European	Germline	no	N/A		Yes
+791794	791794-340-R	CESC	Other	Rare	Squamous cervical cancer	-	Gynecologic	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+791948	791948-236-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+792271	792271-235-R	DSRCT	Other	Rare	Desmoplas. small round cell tumor	-	Unknown Primary	18-40 yo	No	no	no	yes	0	0	4	5	Not Reported	African	Originator	no	N/A		Yes
+793825	793825-330-R	CSNOS	Other	Common	Invasive breast carcinoma	Ductal, TNBC	Breast	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	African	Originator	no	N/A		Yes
+794511	794511-305-R	ACYC	Other	Rare	Head & neck cancer, NOS	adenoid cystic carcinoma of the nasopharynx	Head and Neck	18-40 yo	No	no	no	no	0	0	5	5	Not Reported	East Asian	PDX	no	N/A		Yes
+811622	811622-057-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	Spindle Cell Sarcoma 	Musculoskeletal	41-89 yo	No	yes	no	no	1	1	6	8	Not Reported	European	Germline	no	N/A		Yes
+812982	812982-163-R	NSCLC	NSCLC	Common	Non-small cell lung cancer, NOS	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+813469	813469-196-T	LUAS	NSCLC	Common	Non-small cell lung cancer, NOS	Adenosquamous 	Respiratory/Thoracic	41-89 yo	No	no	no	no	1	0	0	1	Yes	European	PDX	no	N/A		Yes
+813773	813773-016-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	pleomorphic spindle cell	Musculoskeletal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+813916	813916-060-R	LUNE	Other	Rare	Neuroendocrine cancer, NOS	large cell neuroendocrine carcinoma of the lung	Endocrine and Neuroendocrine	41-89 yo	No	yes	no	yes	0	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+814844	814844-326-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	1	4	6	Yes	Admixture	Originator	no	N/A		Yes
+817829	817829-284-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	1	4	7	Not Reported	European	Originator	no	N/A		Yes
+819968	819968-124-R1	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	intrahepatic	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	5	5	Yes	European	Originator	no	N/A		Yes
+819968	819968-124-R2	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	intrahepatic	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+819968	819968-124-R3	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	intrahepatic	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	5	6	Yes	European	Originator	no	N/A		Yes
+819968	819968-124-R5	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	intrahepatic	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	Originator	no	N/A		Yes
+821394	821394-179-R	MFH	SARCOMA	Rare	Malignant fibrous histiocytoma	undifferentiated pleomorphic sarcoma	Musculoskeletal	41-89 yo	No	yes	no	yes	1	0	6	8	Not Reported	European	Germline	no	N/A		Yes
+823721	823721-103-R	MFS	SARCOMA	Rare	Fibrosarcoma - not infantile	Myxofibrosarcoma	Musculoskeletal	41-89 yo	No	yes	no	yes	1	0	6	8	Not Reported	European	Germline	no	N/A		Yes
+824345	824345-141-R	BRCA	Other	Common	Invasive breast carcinoma	TNBC	Breast	41-89 yo	No	yes	no	yes	0	0	6	7	Not Reported	European	Germline	no	N/A		Yes
+824376	824376-263-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	nonkeratinizing	Head and Neck	41-89 yo	No	no	no	no	0	0	4	4	Not Reported	European	PDX	no	N/A		Yes
+825383	825383-124-R	LXSC	HNSC	Rare	Laryngeal squamous cell carcinoma	-	Head and Neck	41-89 yo	No	no	no	no	0	0	5	5	Yes	European	PDX	no	N/A		Yes
+825966	825966-067-R	COAD	COADREAD	Common	Adenocarcinoma - colon	mucinous features	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	1	1	5	8	Yes	European	Germline	no	N/A		Yes
+825997	825997-103-R	BLSC	BLCA	Common	Urothelial/bladder cancer, NOS	Bladder, Invasive with squamous differentiation	Genitourinary	41-89 yo	No	no	no	yes	0	0	7	8	Yes	Admixture	Originator	no	N/A		Yes
+827475	827475-031-R6	ARMS	Other	Rare	Alveolar rhabdomyosarcoma	-	Respiratory/Thoracic	<18 yo	No	no	no	yes	1	0	6	8	Yes	European	Originator	no	N/A		Yes
+827478	827478-307-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	invasive  	Respiratory/Thoracic	41-89 yo	No	yes	no	no	0	1	4	5	Yes	European	Germline	no	N/A		Yes
+827998	827998-364-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	yes	no	no	0	1	5	6	Not Reported	European	Germline	no	N/A		Yes
+832693	832693-133-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	yes	no	no	0	1	6	7	Not Reported	European	Germline	no	N/A		Yes
+833975	833975-119-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	4	4	Not Reported	European	Germline	no	N/A		Yes
+834989	834989-109-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	pleomorphic	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	4	5	Not Reported	Admixture	Originator	no	N/A		Yes
+835911	835911-074-R	SOC	Other	Rare	Ovarian epithelial cancer	Serous Carcinoma 	Gynecologic	41-89 yo	No	no	no	no	0	0	5	5	Yes	European	PDX	no	N/A		Yes
+837344	837344-123-M	OS	SARCOMA	Rare	Osteosarcoma	multifocal sclerosing	Musculoskeletal	18-40 yo	No	no	no	no	0	0	5	5	Not Reported	Admixture	PDX	no	N/A		Yes
+839793	839793-233-R4	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	7	7	Yes	European	PDX	no	N/A		Yes
+841331	841331-253-R	SACA	Other	Rare	Salivary gland cancer	Carcinoma	Head and Neck	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+842348	842348-055-R	USC	Other	Common	Serous endometrial adenocarcinoma	-	Gynecologic	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	African	Originator	no	N/A		Yes
+843126	843126-344-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	no	1	0	5	6	Yes	European	PDX	no	N/A		Yes
+843782	843782-103-R	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	1	0	0	1	Not Reported	European	PDX	no	N/A		Yes
+845534	845534-334-R	LIPO	SARCOMA	Rare	Liposarcoma	pleomorphic, spindle cell neoplasm	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+845751	845751-090-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	yes	no	no	0	0	5	5	Not Reported	European	Germline	no	N/A		Yes
+846914	846914-101-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	yes	no	no	1	1	5	7	Not Reported	European	Germline	no	N/A		Yes
+847625	847625-237-R1	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	ductal	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+847625	847625-237-R2	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	ductal	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+847625	847625-237-R3	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	ductal	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+848979	848979-319-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	invasive 	Head and Neck	41-89 yo	No	no	no	yes	1	0	6	8	Not Reported	European	Originator	no	N/A		Yes
+849917	849917-123-R	NHL	Other	Common	NHL, NOS	B-cell	Hematologic/Blood	41-89 yo	No	no	no	yes	0	0	4	5	Yes	Admixture	Originator	no	N/A		Yes
+851163	851163-221-R	LXSC	HNSC	Rare	Laryngeal squamous cell carcinoma	w/sarcomatoid features 	Head and Neck	41-89 yo	No	no	no	no	0	0	4	4	Yes	Admixture	PDX	no	N/A		Yes
+854754	854754-265-R1	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+854754	854754-265-R2	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	5	5	Yes	European	PDX	no	N/A		Yes
+854754	854754-265-R4	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+854754	854754-265-R5	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+854754	854754-265-R6	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+854966	854966-285-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	invasive	Head and Neck	41-89 yo	No	no	no	no	1	1	5	7	Not Reported	European	PDX	no	N/A		Yes
+855422	855422-203-R	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	papillary bladder cancer	Genitourinary	41-89 yo	No	no	no	no	1	0	6	7	Not Reported	European	PDX	no	N/A		Yes
+855521	855521-117-R	CESC	Other	Rare	Squamous cervical cancer	-	Gynecologic	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	Admixture	PDX	no	N/A		Yes
+857714	857714-316-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	no	0	1	6	7	Not Reported	European	Originator	no	N/A		Yes
+857933	857933-349-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	6	8	Not Reported	European	PDX	no	N/A		Yes
+862259	862259-027-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	1	6	7	Not Reported	European	Germline	no	N/A		Yes
+862795	862795-172-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	5	7	Yes	Admixture	Germline	no	N/A		Yes
+862989	862989-056-R	STAD	Other	Rare	Adenocarcinoma - stomach	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	1	7	9	Not Reported	African	Germline	no	N/A		Yes
+863532	863532-251-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	yes	yes	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+863886	863886-044-R	LMS	SARCOMA	Rare	Leiomyosarcoma - not uterine	-	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	4	5	Not Reported	European	Originator	no	N/A		Yes
+864199	864199-072-R	ESCA	Other	Common	Adenocarcinoma - esophagus	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	South Asian	Germline	no	N/A		Yes
+864244	864244-320-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	yes	1	1	6	9	Not Reported	European	Originator	no	N/A		Yes
+865297	865297-335-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	no	0	0	5	5	Yes	European	PDX	no	N/A		Yes
+866234	866234-130-R	READ	COADREAD	Common	Adenocarcinoma - rectum	invasive	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	6	8	Not Reported	European	Germline	no	N/A		Yes
+867381	867381-070-R	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	no	N/A		Yes
+867631	867631-120-R	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	 papillary, suspicious for Transitional Cell Carcinoma [TCC]	Genitourinary	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	Admixture	PDX	no	N/A		Yes
+868679	868679-213-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	1	6	9	Not Reported	Admixture	Originator	no	N/A		Yes
+868763	868763-120-R	IDC	Other	Common	Invasive breast carcinoma	Ductal TNBC	Breast	41-89 yo	No	yes	no	no	0	1	6	7	Not Reported	African	Germline	no	N/A		Yes
+868977	868977-042-T	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	European	Germline	no	N/A		Yes
+869283	869283-356-T	CCOV	Other	Rare	Ovarian epithelial cancer	Clear Cell 	Gynecologic	41-89 yo	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	no	N/A		Yes
+869496	869496-051-R	MACR	COADREAD	Common	Adenocarcinoma - rectum	mucinous 	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	0	6	7	Not Reported	Admixture	Germline	no	N/A		Yes
+871537	871537-170-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	-	Head and Neck	41-89 yo	No	no	no	no	0	0	7	7	Not Reported	European	PDX	no	N/A		Yes
+872464	872464-203-R	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+873145	873145-292-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	no	no	yes	1	1	6	9	Yes	Admixture	Originator	no	N/A		Yes
+873942	873942-020-R	SARCNOS	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	-	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+874868	874868-142-R	HNSC	HNSC	Rare	H & N squamous cell car., NOS	Invasive	Head and Neck	41-89 yo	No	yes	no	yes	1	0	5	7	Yes	European	Germline	no	N/A		Yes
+874934	874934-013-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	no	no	no	0	0	5	5	Yes	European	PDX	no	N/A		Yes
+874969	874969-338-R	UCS	Other	Rare	Carcinosarcoma of the uterus	-	Gynecologic	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+875164	875164-322-T	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	yes	1	1	6	9	Not Reported	Admixture	Originator	no	N/A		Yes
+875755	875755-015-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	yes	1	0	0	2	Yes	European	Originator	no	N/A		Yes
+876135	876135-273-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	yes	2	1	6	10	Yes	European	Originator	no	N/A		Yes
+876398	876398-156-R	OVT	Other	Rare	Ovarian cancer, NOS	mesonephric-like adenocarcinoma, possible Mullerian origin	Gynecologic	41-89 yo	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	no	N/A		Yes
+876862	876862-298-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	≥90 yo	No	no	no	no	1	1	0	2	Not Reported	European	PDX	no	N/A		Yes
+877282	877282-077-R	SNSC	Other	Rare	H & N squamous cell car., NOS	Sinonasal SCC, non-keratinizing 	Head and Neck	41-89 yo	No	yes	no	yes	0	1	6	8	Not Reported	Admixture	Germline	no	N/A		Yes
+879694	879694-015-R	IDC	Other	Common	Invasive breast carcinoma	ductal, TNBC	Breast	41-89 yo	No	no	no	yes	0	1	6	8	Not Reported	Admixture	Originator	no	N/A		Yes
+881428	881428-146-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	Keratinizing 	Head and Neck	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	Admixture	Originator	no	N/A		Yes
+882747	882747-286-R	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	squamous features	Genitourinary	41-89 yo	No	no	no	no	1	0	0	1	Not Reported	European	PDX	no	N/A		Yes
+883227	883227-348-R	SIC	Other	Rare	Adenocarcinoma - small intest.	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	5	5	Not Reported	Admixture	Germline	no	N/A		Yes
+883617	883617-216-R	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	Invasive of the bladder with focal squamous differentiation	Genitourinary	41-89 yo	No	no	no	no	1	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+884544	884544-143-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	2	1	6	10	Yes	European	Germline	no	N/A		Yes
+884782	884782-307-R	SARCNOS	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	-	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+884914	884914-226-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	no	N/A		Yes
+885512	885512-296-R	MMBC	Other	Common	Invasive breast carcinoma	TNBC, mixed ductal carcinoma and metaplastic squamous cell carcinoma	Breast	41-89 yo	No	yes	no	yes	1	1	6	9	Not Reported	Admixture	Germline	no	N/A		Yes
+885724	885724-159-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+886529	886529-316-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	4	4	Not Reported	Admixture	Originator	no	N/A		Yes
+886662	886662-343-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	yes	0	1	6	8	Not Reported	European	Originator	no	N/A		Yes
+886688	886688-043-R	MACR	COADREAD	Common	Adenocarcinoma - colon	Intra mucosal	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	1	0	1	Not Reported	European	Germline	no	N/A		Yes
+887288	887288-157-R3	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	ductal	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	0	1	Yes	European	PDX	no	N/A		Yes
+888918	888918-336-R	BRCA	Other	Common	Invasive breast carcinoma	-	Breast	18-40 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+889142	889142-216-R	BLSC	BLCA	Common	Urothelial/bladder cancer, NOS	Squamous cell	Genitourinary	41-89 yo	No	yes	no	no	1	0	6	7	Not Reported	Admixture	Germline	no	N/A		Yes
+891866	891866-317-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	yes	no	no	1	0	5	6	Yes	European	Germline	no	N/A		Yes
+891969	891969-043-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	conventional type	Head and Neck	41-89 yo	No	yes	no	yes	0	0	6	7	Yes	European	Germline	no	N/A		Yes
+892284	892284-177-R	PLEMESO	Other	Rare	Mesothelioma	Diffuse Malignant Epithelioid	Unknown Primary	41-89 yo	No	no	no	no	1	0	6	7	Not Reported	European	PDX	no	N/A		Yes
+892531	892531-110-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	African	PDX	no	N/A		Yes
+893448	893448-089-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+894883	894883-131-R	ANSC	Other	Rare	Squamous cell carcinoma - anus	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	4	4	Not Reported	European	PDX	no	N/A		Yes
+897434	897434-029-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	yes	0	1	5	7	Not Reported	European	PDX	no	N/A		Yes
+898857	898857-211-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	no	1	1	6	8	Yes	European	PDX	no	N/A		Yes
+899872	899872-116-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	no	no	yes	1	1	7	10	Yes	European	Originator	no	N/A		Yes
+899932	899932-113-R3	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	yes	2	1	6	10	Yes	European	Originator	no	N/A		Yes
+899932	899932-113-R4	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	no	1	0	6	7	Yes	European	Originator	no	N/A		Yes
+899932	899932-113-R5	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	yes	1	1	6	9	Yes	European	Originator	no	N/A		Yes
+899932	899932-113-R6	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	yes	2	1	6	10	Yes	European	Originator	no	N/A		Yes
+899932	899932-113-R7	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	yes	1	1	6	9	Yes	European	Originator	no	N/A		Yes
+899932	899932-113-R8	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	yes	1	1	6	9	Yes	European	Originator	no	N/A		Yes
+911461	911461-104-R	UCCC	Other	Rare	Uterine cancer, NOS	Invasive, Clear cell carcinoma of the endometrium	Gynecologic	41-89 yo	No	no	no	yes	1	0	6	8	Yes	European	Originator	no	N/A		Yes
+912662	912662-144-R	NSGCT	Other	Rare	Testicular nonseminomat. GCT, NOS	Mixed Teratoma 	Germ Cell	18-40 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+913291	913291-066-R	IDC	Other	Common	Invasive breast carcinoma	Ductal	Breast	41-89 yo	No	yes	no	no	0	1	6	7	Not Reported	European	Germline	no	N/A		Yes
+913389	913389-277-R	MACR	COADREAD	Common	Adenocarcinoma - colon	mucinous	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	1	6	8	Yes	European	Originator	no	N/A		Yes
+914463	914463-074-R	MAAP	Other	Rare	Gastrointestinal cancer, NOS	appendiceal mucinous carcinoma	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	4	4	Yes	European	Germline	no	N/A		Yes
+914883	914883-182-B	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	Yes	no	no	no	1	0	4	5	Not Reported	Admixture	PDX	no	N/A		Yes
+915372	915372-287-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	-	Head and Neck	41-89 yo	No	yes	no	no	1	0	6	7	Yes	European	Germline	no	N/A		Yes
+918122	918122-036-R	MFS	SARCOMA	Rare	Fibrosarcoma - not infantile	Myxofibrosarcoma	Musculoskeletal	41-89 yo	No	yes	no	yes	0	0	5	6	Yes	European	Germline	no	N/A		Yes
+919269	919269-233-R1	COADREAD	COADREAD	Common	Colorectal cancer, NOS	rectosigmoid adenocarcinoma 	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	6	8	Yes	European	Originator	no	N/A		Yes
+919269	919269-233-R2	COADREAD	COADREAD	Common	Colorectal cancer, NOS	rectosigmoid adenocarcinoma 	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	5	7	Yes	European	Originator	no	N/A		Yes
+919269	919269-233-R3	COADREAD	COADREAD	Common	Colorectal cancer, NOS	rectosigmoid adenocarcinoma 	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	1	5	8	Yes	European	Originator	no	N/A		Yes
+919269	919269-233-R4	COADREAD	COADREAD	Common	Colorectal cancer, NOS	rectosigmoid adenocarcinoma 	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	1	5	8	Yes	European	Originator	no	N/A		Yes
+919269	919269-233-R5	COADREAD	COADREAD	Common	Colorectal cancer, NOS	rectosigmoid adenocarcinoma 	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	6	8	Yes	European	Originator	no	N/A		Yes
+919269	919269-233-R6	COADREAD	COADREAD	Common	Colorectal cancer, NOS	rectosigmoid adenocarcinoma 	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	0	1	Yes	European	Originator	no	N/A		Yes
+921179	921179-137-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	no	N/A		Yes
+922882	922882-316-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	European	Germline	no	N/A		Yes
+922993	922993-354-T	USC	Other	Common	Serous endometrial adenocarcinoma	-	Gynecologic	41-89 yo	No	no	no	no	2	1	5	8	Not Reported	African	PDX	no	N/A		Yes
+926638	926638-142-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	yes	no	yes	1	0	0	2	Not Reported	European	Germline	no	N/A		Yes
+929823	929823-356-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	yes	yes	no	1	0	6	7	Not Reported	European	PDX	no	N/A		Yes
+931267	931267-113-T	COADREAD	COADREAD	Common	Colorectal cancer, NOS	-	Digestive/Gastrointestinal	18-40 yo	No	yes	no	yes	0	0	5	6	Not Reported	Admixture	Germline	no	N/A		Yes
+932174	932174-294-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	-	Head and Neck	41-89 yo	No	yes	no	no	0	0	4	4	Not Reported	European	Germline	no	N/A		Yes
+933738	933738-175-T	PEMESO	Other	Rare	Mesothelioma	-	Unknown Primary	41-89 yo	No	yes	no	yes	0	0	4	5	Not Reported	European	Germline	no	N/A		Yes
+935938	935938-334-R	SIC	Other	Rare	Adenocarcinoma - small intest.	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	6	8	Yes	European	Germline	no	N/A		Yes
+936559	936559-144-R	VSC	Other	Rare	Vulvar cancer, NOS	squamous cell carcinoma	Gynecologic	41-89 yo	No	no	no	yes	1	1	6	9	Yes	European	Originator	no	N/A		Yes
+936977	936977-285-R	MFH	SARCOMA	Rare	Malignant fibrous histiocytoma	undifferentiated pleomorphic sarcoma	Musculoskeletal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	Admixture	PDX	no	N/A		Yes
+937885	937885-149-R	HGSOC	Other	Rare	Ovarian epithelial cancer	serous carcinoma 	Gynecologic	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	no	N/A		Yes
+939949	939949-128-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	European	Germline	no	N/A		Yes
+941425	941425-263-T	MESO	Other	Rare	Mesothelioma	-	Unknown Primary	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+941728	941728-121-R	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	yes	no	yes	1	0	6	8	Not Reported	European	Germline	no	N/A		Yes
+942526	942526-266-R	HGSOC	Other	Rare	Ovarian epithelial cancer	serous adenocarcinoma	Gynecologic	18-40 yo	No	no	no	no	0	1	0	1	Yes	European	PDX	no	N/A		Yes
+942848	942848-086-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	no	no	yes	1	0	5	7	Not Reported	Admixture	Originator	no	N/A		Yes
+943836	943836-067-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	 pleomorphic	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+944381	944381-210-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	0	6	7	Yes	African	Germline	no	N/A		Yes
+944545	944545-341-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+945468	945468-187-T	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	4	6	Not Reported	European	PDX	no	N/A		Yes
+945586	945586-337-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	no	no	no	1	1	6	8	Yes	European	PDX	no	N/A		Yes
+946996	946996-313-R	MRLS	SARCOMA	Rare	Liposarcoma	Myxoid 	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+947675	947675-243-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	1	5	7	Not Reported	European	Originator	no	N/A		Yes
+947725	947725-317-R	READ	COADREAD	Common	Adenocarcinoma - rectum	Intramucosal	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	1	6	8	Not Reported	European	Germline	no	N/A		Yes
+947758	947758-054-R	COAD	COADREAD	Common	Adenocarcinoma - colon	mucinous differentiation	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	1	1	6	9	Not Reported	Admixture	Germline	no	N/A		Yes
+947993	947993-071-R	UEC	Other	Common	Endometrioid endomet. adenocar.	neuroendocrine features	Gynecologic	41-89 yo	No	yes	no	no	2	1	4	7	Not Reported	European	Germline	no	N/A		Yes
+949359	949359-179-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+949433	949433-175-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	Oropharyngeal 	Head and Neck	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+949626	949626-316-R	SARCNOS	SARCOMA	Rare	Soft tissue neoplasm, NOS	pleomorphic	Musculoskeletal	41-89 yo	No	yes	no	yes	1	0	6	8	Not Reported	Admixture	Germline	no	N/A		Yes
+949853	949853-013-R	GIST	Other	Rare	Gastrointestinal stromal tumor	spindle type	Digestive/Gastrointestinal	18-40 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+952719	952719-076-R	LUAD	NSCLC	Common	Lung adenocarcinoma	 	Respiratory/Thoracic	41-89 yo	No	yes	no	yes	0	0	7	8	Yes	African	Germline	no	N/A		Yes
+952924	952924-235-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	2	1	6	9	Not Reported	Admixture	PDX	no	N/A		Yes
+953693	953693-121-R3	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	Ductal	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	6	7	Yes	European	Originator	no	N/A		Yes
+953936	953936-095-R	CESC	Other	Rare	Squamous cervical cancer	Invasive, with adenosquamous features	Gynecologic	41-89 yo	No	no	no	no	1	1	0	2	Not Reported	African	PDX	no	N/A		Yes
+955516	955516-236-R2	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	-	Head and Neck	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	no	N/A		Yes
+957923	957923-259-R	SYNS	SARCOMA	Rare	Synovial sarcoma	-	Musculoskeletal	18-40 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+957936	957936-168-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	Oropharyngeal	Head and Neck	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	Admixture	PDX	no	N/A		Yes
+958279	958279-163-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	Admixture	Germline	no	N/A		Yes
+958667	958667-338-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	6	8	Yes	European	PDX	no	N/A		Yes
+958698	958698-291-R	LMS	SARCOMA	Rare	Leiomyosarcoma - not uterine	sinonasal	Musculoskeletal	41-89 yo	No	no	no	no	0	0	5	5	Yes	European	PDX	no	N/A		Yes
+958767	958767-090-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	yes	no	no	1	0	6	7	Yes	Admixture	Germline	no	N/A		Yes
+959411	959411-043-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	1	0	2	Not Reported	European	Germline	no	N/A		Yes
+959717	959717-210-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	cutaneous signet-ring	Head and Neck	41-89 yo	No	yes	no	no	0	0	4	4	Not Reported	Admixture	Germline	no	N/A		Yes
+961439	961439-057-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	pleomorphic with myxoid features	Musculoskeletal	18-40 yo	No	no	no	no	0	0	6	6	Not Reported	Admixture	PDX	no	N/A		Yes
+961994	961994-133-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	yes	no	no	0	0	6	6	Not Reported	European	Germline	no	N/A		Yes
+964232	964232-139-R	BLCA	BLCA	Common	Transitional cell car. - uroth.	Multifocal high-grade papillary	Genitourinary	18-40 yo	No	no	no	no	1	0	0	1	Not Reported	European	PDX	no	N/A		Yes
+965255	965255-017-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	no	no	no	1	0	6	7	Yes	European	PDX	no	N/A		Yes
+965729	965729-122-R	PRCC	Other	Common	Papillary renal cell carcinoma	Type 2	Genitourinary	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+966289	966289-007-R4	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	carcinoma w/rhabdoid features	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	6	8	Yes	European	PDX	no	N/A		Yes
+967225	967225-005-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	no	N/A		Yes
+967376	967376-340-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	6	8	Not Reported	European	PDX	no	N/A		Yes
+967599	967599-140-R	UCCC	Other	Rare	Uterine cancer, NOS	Endometrial clear cell carcinoma 	Gynecologic	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	no	N/A		Yes
+967739	967739-261-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	0	1	Yes	African	PDX	no	N/A		Yes
+968212	968212-105-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	no	N/A		Yes
+968666	968666-278-R	NETNOS	Other	Rare	Neuroendocrine cancer, NOS	-	Endocrine and Neuroendocrine	41-89 yo	No	no	no	no	1	0	0	1	Yes	European	PDX	no	N/A		Yes
+969688	969688-162-R	OPHSC	HNSC	Rare	Pharyngeal squam. cell carcinoma	Tonsil SCC 	Head and Neck	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	no	N/A		Yes
+969956	969956-357-R	SARCNOS	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	-	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	4	5	Not Reported	European	Originator	no	N/A		Yes
+971133	971133-131-M	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	no	N/A		Yes
+971451	971451-060-R	DDLS	SARCOMA	Rare	Liposarcoma	dedifferentiated	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	4	5	Not Reported	European	Originator	no	N/A		Yes
+972766	972766-346-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+972917	972917-350-R	ARMS	Other	Rare	Alveolar rhabdomyosarcoma	-	Respiratory/Thoracic	18-40 yo	No	no	no	yes	0	0	5	6	Yes	African	Originator	no	N/A		Yes
+974183	974183-353-R	NETNOS	Other	Rare	Neuroendocrine cancer, NOS	-	Endocrine and Neuroendocrine	41-89 yo	No	yes	no	no	0	1	0	1	Not Reported	European	Germline	no	N/A		Yes
+974727	974727-301-T	IDC	Other	Common	Invasive breast carcinoma	Ductal, TNBC	Breast	18-40 yo	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	no	N/A		Yes
+974816	974816-308-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	yes	0	1	6	8	Yes	Admixture	Germline	no	N/A		Yes
+975524	975524-054-R	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	spindle cell	Musculoskeletal	41-89 yo	No	no	no	yes	1	1	6	9	Yes	European	Originator	no	N/A		Yes
+979548	979548-314-T	COAD	COADREAD	Common	Adenocarcinoma - colon	neuroendocrine features	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	5	5	Yes	European	PDX	no	N/A		Yes
+979744	979744-088-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	no	N/A		Yes
+979852	979852-250-R	PLRMS	SARCOMA	Rare	Rhabdomyosarcoma, NOS	Pleomorphic, Adult-Type	Musculoskeletal	41-89 yo	No	no	no	yes	0	0	5	6	Not Reported	European	Originator	no	N/A		Yes
+979925	979925-282-R	UEC	Other	Common	Endometrioid endomet. adenocar.	-	Gynecologic	41-89 yo	No	no	no	no	1	0	0	1	Not Reported	European	PDX	no	N/A		Yes
+981166	981166-024-R	HNSC	HNSC	Rare	H & N squamous cell car., NOS	-	Head and Neck	41-89 yo	No	yes	no	no	0	1	5	6	Not Reported	European	Germline	no	N/A		Yes
+981375	981375-231-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	yes	no	no	0	0	4	4	Not Reported	African	Germline	no	N/A		Yes
+981439	981439-253-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	1	1	4	7	Yes	European	Originator	no	N/A		Yes
+982778	982778-135-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	yes	no	no	1	1	6	8	Not Reported	European	Germline	no	N/A		Yes
+983718	983718-287-R	MACR	COADREAD	Common	Adenocarcinoma - colon	Invasive signet ring cells and mucinous features.	Digestive/Gastrointestinal	41-89 yo	No	no	no	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+983925	983925-294-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	no	1	0	0	1	Yes	European	PDX	no	N/A		Yes
+983979	983979-030-R	ANSC	Other	Rare	Squamous cell carcinoma - anus	"transitional cell features
+"	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	6	8	Not Reported	European	PDX	no	N/A		Yes
+987419	987419-145-R	OUTT	Other	Rare	Female reprod. system cancer, NOS	adenocarcinoma with intestinal features	Gynecologic	41-89 yo	No	no	no	yes	1	1	6	9	Yes	European	Originator	no	N/A		Yes
+987651	987651-099-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	Invasive Keratinizing	Head and Neck	41-89 yo	No	yes	no	no	2	1	0	3	Not Reported	South Asian	Germline	no	N/A		Yes
+988467	988467-305-R	MFH	SARCOMA	Rare	Malignant fibrous histiocytoma	angiomatoid, undifferentiated pleomorphic sarcoma	Musculoskeletal	41-89 yo	No	yes	yes	yes	0	0	6	7	Not Reported	European	Originator	no	N/A		Yes
+989133	989133-093-R	LCLC	Other	Common	Non-small cell lung cancer, NOS	large cell undifferentiated carcinoma	Respiratory/Thoracic	41-89 yo	No	yes	no	yes	1	1	6	9	Not Reported	European	Germline	no	N/A		Yes
+989762	989762-245-R	CCRCC	Other	Common	RCC, clear cell adenocarcinoma	-	Genitourinary	41-89 yo	No	no	no	no	1	0	0	1	Not Reported	Admixture	PDX	no	N/A		Yes
+991263	991263-137-R1	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	18-40 yo	No	yes	no	no	1	1	6	8	Yes	European	Germline	no	N/A		Yes
+991263	991263-137-R2	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	18-40 yo	No	yes	no	no	1	1	4	6	Yes	European	Germline	no	N/A		Yes
+992656	992656-260-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	yes	no	yes	1	0	6	8	Yes	European	Germline	no	N/A		Yes
+993429	993429-296-R	UCS	Other	Rare	Carcinosarcoma of the uterus	-	Gynecologic	41-89 yo	No	no	no	yes	1	0	6	8	Yes	Admixture	Originator	no	N/A		Yes
+994434	994434-217-R	RCSNOS	SARCOMA	Rare	Soft tissue neoplasm, NOS	undifferentiated small round cell sarcoma (CIC-DUX4 fusion)	Musculoskeletal	18-40 yo	No	no	no	no	0	0	6	6	Not Reported	Admixture	PDX	no	N/A		Yes
+994459	994459-135-R	OCSC	HNSC	Rare	Lip/oral cavity squam. cell car.	-	Head and Neck	41-89 yo	No	no	no	no	1	1	6	8	Not Reported	European	PDX	no	N/A		Yes
+994819	994819-140-R	IDC	Other	Common	Invasive breast carcinoma	ductal, TNBC	Breast	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	Admixture	PDX	no	N/A		Yes
+994946	994946-033-R	MEL	MEL	Common	Melanoma	-	Skin	41-89 yo	No	no	no	no	1	0	4	5	Not Reported	Admixture	PDX	no	N/A		Yes
+995276	995276-142-R	VMM	Other	Common	Melanoma	Vulvar	Skin	41-89 yo	No	yes	no	yes	0	0	5	6	Not Reported	Admixture	Germline	no	N/A		Yes
+996942	996942-123-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	no	N/A		Yes
+997537	997537-175-T	COAD	COADREAD	Common	Adenocarcinoma - colon	Invasive 	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	4	6	Yes	European	PDX	no	N/A		Yes
+997726	997726-040-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	Invasive	Respiratory/Thoracic	41-89 yo	No	yes	no	yes	1	0	7	9	Not Reported	Admixture	Germline	no	N/A		Yes
+BL0269	BL0269-F402	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	-	Genitourinary	Unknown	No	no	no	no	0	0	5	5	Yes	European	PDX	Yes	Jackson Laboratories		PDX MTA-restricted; Available from Jackson Labs
+BL0293	BL0293-F563	SCB	BLCA	Common	Urothelial/bladder cancer, NOS	sarcomatoid transitional cell ca	Genitourinary	Unknown	No	no	no	no	0	1	5	6	Not Reported	European	PDX	Yes	Jackson Laboratories		Yes
+BL0382	BL0382-F1232	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	Transitional Cell Ca	Genitourinary	Unknown	No	no	no	no	0	0	3	3	Yes	European	PDX	Yes	Jackson Laboratories		Yes
+BL0470	BL0470-F1820	BLCA	BLCA	Common	Urothelial/bladder cancer, NOS	papillary	Genitourinary	Unknown	No	no	no	no	0	0	4	4	Not Reported	European	PDX	Yes	Jackson Laboratories		PDX MTA-restricted; Available from Jackson Labs
+BL0479	BL0479-F1894	BLCA	BLCA	Common	Transitional cell car. - uroth.	-	Genitourinary	Unknown	No	no	no	no	1	1	5	7	Not Reported	European	PDX	Yes	Jackson Laboratories		Yes
+BR0620	BR0620-F039	BRCANOS	Other	Common	Breast cancer, NOS	-	Breast	Unknown	No	no	no	no	0	0	6	6	Not Reported	East Asian	PDX	Yes	Jackson Laboratories		PDX MTA-restricted; Available from Jackson Labs
+CN0330	CN0330-F216	COAD	COADREAD	Common	Adenocarcinoma - colon	Adenocarcinoma of splenic flexure	Digestive/Gastrointestinal	Unknown	No	no	no	no	0	0	5	5	Not Reported	European	PDX	Yes	Jackson Laboratories		Yes
+CN0375	CN0375-F725	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	Unknown	No	no	no	no	1	1	6	8	Yes	Admixture	PDX	Yes	Jackson Laboratories		PDX MTA-restricted; Available from Jackson Labs
+CN0428	CN0428-F1126	READ	COADREAD	Common	Adenocarcinoma - rectum	Oligometastatic Rectal Cancer	Digestive/Gastrointestinal	Unknown	No	no	no	no	0	0	5	5	Yes	European	PDX	Yes	Jackson Laboratories		PDX MTA-restricted; Available from Jackson Labs
+CN0446	CN0446-F447	SRCCR	Other	Rare	Anal cancer	Signet Ring Cell	Digestive/Gastrointestinal	Unknown	No	no	no	no	0	0	8	8	Yes	European	PDX	Yes	Jackson Laboratories		PDX MTA-restricted; Available from Jackson Labs
+K00052	K00052-001-T	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	Unknown	No	no	no	no	1	0	6	7	Yes	European	PDX	Yes	Jackson Laboratories	TM00302, LG1306	Yes
+K01621	K01621-295-R	ASTR	Other	Common	Glioblastoma multiforme	Astrocytoma	Neurologic	Unknown	No	no	no	no	0	0	5	5	Not Reported	European	PDX	Yes	University of Alabama	GBM-X12P	Undergoing final quality control review
+K02507	K02507-261-T	THPA	Other	Rare	Papillary thyroid carcinoma	-	Endocrine and Neuroendocrine	18-40 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.011	Yes
+K03247	K03247-164-R	IDC	Other	Common	Invasive breast carcinoma	TNBC, ductal	Breast	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	Admixture	PDX	Yes	Baylor College of Medicine: PDXNet	BCM-15051	Yes
+K03759	K03759-074-R	GBM	Other	Common	Glioblastoma multiforme	Mesenchymal	Neurologic	Unknown	No	no	no	no	0	0	5	5	Not Reported	Admixture	PDX	Yes	University of Alabama	GBM-XBT39	Undergoing final quality control review
+K06184	K06184-153-R	MEL	MEL	Common	Melanoma	cutaneous	Skin	41-89 yo	No	no	no	no	1	0	0	1	Yes	Admixture	PDX	Yes	Mayo Clinic: Sarkaria	M85	Undergoing final quality control review
+K08837	K08837-004-R	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	7	7	Not Reported	European	PDX	Yes	MD Anderson Cancer Center: PDXNet	TC858	Yes
+K08984	K08984-229-T	CSCC	Other	Common	Squamous cell carcinoma - skin	-	Skin	41-89 yo	No	no	no	no	0	0	7	7	Yes	European	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.008	Yes
+K09457	K09457-251-R	PRAD	Other	Rare	Prostate cancer, NOS	adenocarcinoma	Genitourinary	41-89 yo	No	no	no	no	0	0	5	5	Yes	European	PDX	Yes	Fred Hutchinson Cancer Center: Corey	LuCaP 147	Yes
+K09457	K09457-251-X	PRAD	Other	Rare	Prostate cancer, NOS	adenocarcinoma	Genitourinary	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	Yes	Fred Hutchinson Cancer Center: Corey	LuCaP 147CR	Yes
+K11103	K11103-046-T	MFH	SARCOMA	Rare	Non-Rhabdo. soft tissue sarcoma	Spindle cell and pleomorphic sarcoma 	Musculoskeletal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	Yes	MD Anderson Cancer Center: Meric-Bernstam	PDX.003.063	Yes
+K11815	K11815-334-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	18-40 yo	No	no	no	no	0	1	6	7	Yes	Admixture	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.036	Yes
+K12432	K12432-244-X	CSNOS	Other	Common	Invasive breast carcinoma	IDC	Breast	41-89 yo	No	no	no	no	0	0	1	1	Yes	European	PDX	Yes	Huntsman Cancer Institute Utah: PDXNet	HCI-040EI	Undergoing final quality control review
+K12877	K12877-001-R	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	Unknown	No	no	no	no	1	1	6	8	Not Reported	European	PDX	Yes	Jackson Laboratories	J000093018	Yes
+K13674	K13674-079-T	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	5	6	Yes	East Asian	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.074	Yes
+K14711	K14711-072-R	PROSTATE	Other	Rare	Prostate cancer, NOS	-	Genitourinary	41-89 yo	No	no	no	no	0	0	7	7	Yes	European	PDX	Yes	Fred Hutchinson Cancer Center: Corey	LuCaP 167	Yes
+K16634	K16634-038-T	USC	Other	Common	Serous endometrial adenocarcinoma	-	Gynecologic	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	Yes	MD Anderson Cancer Center: Meric-Bernstam	PDX.003.061	Yes
+K16732	K16732-211-R	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	Yes	MD Anderson Cancer Center: PDXNet	TC806	Yes
+K20847	K20847-001-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	Unknown	No	no	no	no	0	1	6	7	Yes	Admixture	PDX	Yes	Jackson Laboratories	TM01258	Yes
+K21392	K21392-128-T	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.090	Yes
+K22795	K22795-001-R	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	Unknown	No	no	no	no	1	1	6	8	Not Reported	European	PDX	Yes	Jackson Laboratories	TM01533F148	Yes
+K24384	K24384-001-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	Unknown	No	no	no	no	1	1	9	11	Yes	European	PDX	Yes	Jackson Laboratories	TM00310 (PA0202)	PDX MTA-restricted; Available from Jackson Labs
+K24623	K24623-012-T	THPA	Other	Rare	Papillary thyroid carcinoma	adenocarcinoma	Endocrine and Neuroendocrine	41-89 yo	No	no	no	no	1	0	4	5	Yes	South Asian	PDX	Yes	MD Anderson Cancer Center: Meric-Bernstam	PDX.003.047	Yes
+K26406	K26406-001-R	IDC	Other	Common	Invasive breast carcinoma	ductal, TNBC	Breast	Unknown	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	Yes	Baylor College of Medicine: Lewis	BCM-2665	Yes
+K27874	K27874-074-R	BRCA	Other	Common	Invasive breast carcinoma	TNBC	Breast	18-40 yo	No	no	no	no	0	0	6	6	Yes	African	PDX	Yes	Baylor College of Medicine: Lewis	BCM-2147	Yes
+K28037	K28037-099-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	4	6	Yes	Admixture	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.080	Yes
+K30722	K30722-221-R	BRCA	Other	Common	Invasive breast carcinoma	-	Breast	18-40 yo	No	no	no	no	0	0	1	1	Yes	African	PDX	Yes	MD Anderson Cancer Center: PDXNet	BCX.147B	Undergoing final quality control review
+K31318	K31318-253-M	PRAD	Other	Rare	Prostate cancer, NOS	adenocarcinoma	Genitourinary	41-89 yo	No	no	no	no	0	0	7	7	Yes	European	PDX	Yes	Fred Hutchinson Cancer Center: Corey	LuCaP 136	Yes
+K31318	K31318-253-X	PRAD	Other	Rare	Prostate cancer, NOS	adenocarcinoma	Genitourinary	41-89 yo	No	no	no	no	0	0	5	5	Yes	European	PDX	Yes	Fred Hutchinson Cancer Center: Corey	LuCaP 136CR	Yes
+K32475	K32475-227-T	SIC	Other	Rare	Adenocarcinoma - small intest.	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	6	8	Yes	Admixture	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.126	Yes
+K33807	K33807-207-R	BRCA	Other	Common	Invasive breast carcinoma	-	Breast	41-89 yo	No	no	no	no	0	0	8	8	Yes	Admixture	PDX	Yes	Baylor College of Medicine: Lewis	BCM-15115	Yes
+K41856	K41856-061-R1	PRAD	Other	Rare	Prostate cancer, NOS	adenocarcinoma	Genitourinary	41-89 yo	No	no	no	no	0	0	1	1	Yes	European	PDX	Yes	Fred Hutchinson Cancer Center: Corey	LuCaP 170.1	Undergoing final quality control review
+K41856	K41856-061-R2	PRAD	Other	Rare	Prostate cancer, NOS	adenocarcinoma	Genitourinary	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	Yes	Fred Hutchinson Cancer Center: Corey	LuCaP 170.2	Yes
+K42656	K42656-251-R	GBM	Other	Common	Glioblastoma multiforme	Classical	Neurologic	Unknown	No	no	no	no	0	0	7	7	Not Reported	European	PDX	Yes	University of Alabama	GBM-X1066	Undergoing final quality control review
+K43197	K43197-176-R	IDC	Other	Common	Invasive breast carcinoma	infiltrating ductal	Breast	Unknown	No	no	no	no	0	0	5	5	Yes	European	PDX	Yes	Baylor College of Medicine: Lewis	3472	Yes
+K43514	K43514-072-R	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	1	1	Not Reported	European	PDX	Yes	MD Anderson Cancer Center: PDXNet	TC974	Undergoing final quality control review
+K47512	K47512-296-T	NETNOS	Other	Rare	Neuroendocrine cancer, NOS	appendix adenocarcinoma	Endocrine and Neuroendocrine	41-89 yo	No	no	no	no	0	0	1	1	Yes	European	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.167	Undergoing final quality control review
+K50210	K50210-064-T	SIC	Other	Rare	Adenocarcinoma - small intest.	-	Digestive/Gastrointestinal	18-40 yo	No	no	no	no	0	0	6	6	Not Reported	African	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.070	Yes
+K50866	K50866-060-T	ESCA	Other	Common	Adenocarcinoma - esophagus	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.069	Yes
+K52426	K52426-315-R	PAST	Other	Rare	Pilocytic astrocytoma	Pediatric low-grade glioma	Neurologic	<18 yo	No	no	no	no	1	0	0	1	Not Reported	Admixture	PDX	Yes	Johns Hopkins University: Eberhart	JHH-NF1-PA1	Yes
+K53272	K53272-088-T	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	0	2	Yes	European	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.076	Undergoing final quality control review
+K55356	K55356-117-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	18-40 yo	No	no	no	no	0	1	6	7	Yes	Admixture	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.087	Yes
+K59669	K59669-250-R1	PRAD	Other	Rare	Prostate cancer, NOS	adenocarcinoma	Genitourinary	41-89 yo	No	no	no	no	0	0	6	6	Yes	European	PDX	Yes	Fred Hutchinson Cancer Center: Corey	LuCaP 174.1	Yes
+K60574	K60574-136-T	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	2	3	Yes	African	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.093	Undergoing final quality control review
+K62884	K62884-151-T	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	adenocarcinoma	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	6	7	Not Reported	Admixture	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.100	Yes
+K64430	K64430-001-R	PAAD	PAAD	Recalcitrant	Adenocarcinoma - pancreas	-	Digestive/Gastrointestinal	Unknown	No	no	no	no	0	0	6	6	Yes	European	PDX	Yes	Jackson Laboratories	J000096053	Yes
+K64889	K64889-285-T	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.019	Yes
+K66101	K66101-001-R	SRCBC	BLCA	Common	Urothelial/bladder cancer, NOS	adenocarcinoma, bladder signet ring	Genitourinary	Unknown	No	no	no	no	0	0	6	6	Yes	European	PDX	Yes	Jackson Laboratories	TM01353	Yes
+K68440	K68440-261-T	IDC	Other	Common	Invasive breast carcinoma	ductal	Breast	41-89 yo	No	no	no	no	0	0	4	4	Not Reported	European	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.010	Yes
+K68450	K68450-031-R1	PRAD	Other	Rare	Prostate cancer, NOS	acinar adenocarcinoma	Genitourinary	41-89 yo	No	no	no	no	0	0	1	1	Yes	European	PDX	Yes	Fred Hutchinson Cancer Center: Corey	LuCaP 189.3	Undergoing final quality control review
+K68450	K68450-031-R2	PRAD	Other	Rare	Prostate cancer, NOS	acinar adenocarcinoma	Genitourinary	41-89 yo	No	no	no	no	1	0	5	6	Yes	European	PDX	Yes	Fred Hutchinson Cancer Center: Corey	LuCaP 189.4	Yes
+K69424	K69424-012-T	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	adenocarcinoma	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	Yes	MD Anderson Cancer Center: Meric-Bernstam	PDX.003.048	Yes
+K69846	K69846-001-R	IPN	Other	Rare	Liver/hepatobiliary cancer	adenosquamous carcinoma arising in the distal extrahepatic common bile duct	Digestive/Gastrointestinal	Unknown	No	no	no	no	0	0	4	4	Not Reported	Admixture	PDX	Yes	Jackson Laboratories	TM01225	Yes
+K70243	K70243-053-R	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	adenocarcinoma	Digestive/Gastrointestinal	18-40 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	Yes	MD Anderson Cancer Center: Meric-Bernstam	PDX.003.067	Yes
+K71423	K71423-304-R	LUPC	Other	Common	Non-small cell lung cancer, NOS	Pleomorphic carcinoma	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	4	4	Not Reported	European	PDX	Yes	MD Anderson Cancer Center: PDXNet	TC833	Yes
+K74698	K74698-298-T	BRCA	Other	Common	Invasive breast carcinoma	-	Breast	41-89 yo	No	no	no	no	1	0	5	6	Yes	European	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.025	Yes
+K75429	K75429-239-R	PROSTATE	Other	Rare	Prostate cancer, NOS	-	Genitourinary	41-89 yo	No	no	no	no	0	0	7	7	Not Reported	European	PDX	Yes	Fred Hutchinson Cancer Center: Corey	LuCaP 93	Yes
+K79811	K79811-243-R	GBM	Other	Common	Glioblastoma multiforme	Neural	Neurologic	Unknown	No	no	no	no	0	0	4	4	Not Reported	European	PDX	Yes	University of Alabama	GBM-X1066	Undergoing final quality control review
+K83135	K83135-075-R1	PRAD	Other	Rare	Prostate cancer, NOS	adenocarcinoma	Genitourinary	Unknown	No	no	no	no	0	0	5	5	Yes	European	PDX	Yes	Fred Hutchinson Cancer Center: Corey	LuCaP 208.1	Yes
+K83135	K83135-075-R2	PRAD	Other	Rare	Prostate cancer, NOS	adenocarcinoma	Genitourinary	Unknown	No	no	no	no	0	0	6	6	Yes	European	PDX	Yes	Fred Hutchinson Cancer Center: Corey	LuCaP 208.2	Yes
+K83135	K83135-075-R3	PRAD	Other	Rare	Prostate cancer, NOS	adenocarcinoma	Genitourinary	Unknown	No	no	no	no	0	0	6	6	Yes	European	PDX	Yes	Fred Hutchinson Cancer Center: Corey	LuCaP 208.4	Yes
+K85775	K85775-138-T	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	adenocarcinoma	Digestive/Gastrointestinal	18-40 yo	No	no	no	no	0	1	0	1	Yes	Admixture	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.096	Undergoing final quality control review
+K85775	K85775-163-T	CHOL	Other	Rare	Cholangiocar.- intra/extrahepatic	adenocarcinoma	Digestive/Gastrointestinal	18-40 yo	No	no	no	no	0	1	3	4	Yes	Admixture	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.105 	Yes
+K86415	K86415-001-R	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	Unknown	No	no	no	no	1	1	6	8	Not Reported	European	PDX	Yes	Jackson Laboratories	J000096652	Yes
+K87607	K87607-352-T	SCLC	Other	Recalcitrant	Small cell lung cancer	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	Yes	MD Anderson Cancer Center: PDXNet	TC852	Yes
+K88036	K88036-263-T	BRCA	Other	Common	Invasive breast carcinoma	TNBC	Breast	41-89 yo	No	no	no	no	0	0	5	5	Yes	Admixture	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.013	Yes
+K93363	K93363-136-R	READ	COADREAD	Common	Adenocarcinoma - rectum	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	Yes	MD Anderson Cancer Center: PDXNet	PDX.003.094	Yes
+K98449	K98449-230-R	ASTR	Other	Common	Glioblastoma multiforme	high-grade astrocytoma	Neurologic	Unknown	No	no	no	no	0	0	6	6	Not Reported	Admixture	PDX	Yes	University of Alabama	GBM-X1046	Undergoing final quality control review
+K98450	K98450-129-R	COAD	COADREAD	Common	Adenocarcinoma - colon	-	Digestive/Gastrointestinal	41-89 yo	No	no	no	no	1	1	6	8	Yes	European	PDX	Yes	Mayo Clinic: Sarkaria	M82	Yes
+LG0476	LG0476-F007	LUSC	NSCLC	Common	Squamous cell lung carcinoma	Squamous Cell Carcinoma	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	6	6	Not Reported	European	PDX	Yes	Jackson Laboratories	LG0476-F007	PDX MTA-restricted; Available from Jackson Labs
+LG0481	LG0481-F231	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	1	6	7	Not Reported	European	PDX	Yes	Jackson Laboratories	LG0481-F231	PDX MTA-restricted; Available from Jackson Labs
+LG0494	LG0494-F337	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	Unknown	No	no	no	no	0	0	1	1	Not Reported	Admixture	PDX	Yes	Jackson Laboratories	LG0494-F337	PDX MTA-restricted; Available from Jackson Labs
+LG0520	LG0520-F434	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	6	6	Yes	Admixture	PDX	Yes	Jackson Laboratories	LG0520-F434	PDX MTA-restricted; Available from Jackson Labs
+LG0542	LG0542-F535	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	1	1	Not Reported	European	PDX	Yes	Jackson Laboratories	LG0542-F535	PDX MTA-restricted; Available from Jackson Labs
+LG0551	LG0551-F552	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	1	6	7	Yes	European	PDX	Yes	Jackson Laboratories	LG0551-F552	PDX MTA-restricted; Available from Jackson Labs
+LG0556	LG0556-F006	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	Unknown	No	no	no	no	0	0	5	5	Not Reported	Admixture	PDX	Yes	Jackson Laboratories	LG0556-F006	PDX MTA-restricted; Available from Jackson Labs
+LG0567	LG0567-F671	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	Unknown	No	no	no	no	1	1	6	8	Not Reported	Admixture	PDX	Yes	Jackson Laboratories	LG0567-F671	PDX MTA-restricted; Available from Jackson Labs
+LG0703	LG0703-F948	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	Unknown	No	no	no	no	1	0	5	6	Yes	East Asian	PDX	Yes	Jackson Laboratories	LG0703-F948	PDX MTA-restricted; Available from Jackson Labs
+LG0807	LG0807-F1297	NSCLC	NSCLC	Common	Non-small cell lung cancer, NOS	-	Respiratory/Thoracic	Unknown	No	no	no	no	0	0	5	5	Yes	Admixture	PDX	Yes	Jackson Laboratories	LG0807-F1297	PDX MTA-restricted; Available from Jackson Labs
+LG0830	LG0830-F1385	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	5	5	Not Reported	European	PDX	Yes	Jackson Laboratories	LG0830-F1385	PDX MTA-restricted; Available from Jackson Labs
+LG0978	LG0978-F1565	LUNE	Other	Rare	Neuroendocrine cancer, NOS	Large cell neuroendocrine carcinoma	Endocrine and Neuroendocrine	Unknown	No	no	no	no	0	0	6	6	Not Reported	European	PDX	Yes	Jackson Laboratories	LG0978-F1565	PDX MTA-restricted; Available from Jackson Labs
+LG1011	LG1011-PE1607	LUAD	NSCLC	Common	Lung adenocarcinoma	adenocarcinoma	Respiratory/Thoracic	Unknown	No	no	no	no	0	0	6	6	Yes	East Asian	PDX	Yes	Jackson Laboratories	LG1011-PE1607	PDX MTA-restricted; Available from Jackson Labs
+LG1049	LG1049-F1704	LUAD	NSCLC	Common	Lung adenocarcinoma	Adenocarcinoma	Respiratory/Thoracic	Unknown	No	no	no	no	0	0	6	6	Yes	European	PDX	Yes	Jackson Laboratories	LG1049-F1704	PDX MTA-restricted; Available from Jackson Labs
+LG1102	LG1102-F1846	SPCC	Other	Common	Non-small cell lung cancer, NOS	Spindle cell Sarcomatoid carcinoma	Respiratory/Thoracic	Unknown	No	no	no	no	0	0	6	6	Yes	European	PDX	Yes	Jackson Laboratories	LG1102-F1846	PDX MTA-restricted; Available from Jackson Labs
+LG1189	LG1189-F1952	LUAD	NSCLC	Common	Lung adenocarcinoma	-	Respiratory/Thoracic	41-89 yo	No	no	no	no	0	0	8	8	Not Reported	European	PDX	Yes	Jackson Laboratories	LG1189-F1952	PDX MTA-restricted; Available from Jackson Labs
+LG1197	LG1197-F385	LUSC	NSCLC	Common	Squamous cell lung carcinoma	-	Respiratory/Thoracic	Unknown	No	no	no	no	0	0	6	6	Not Reported	European	PDX	Yes	Jackson Laboratories	LG1197-F385	PDX MTA-restricted; Available from Jackson Labs
+SA0350	SA0350-F605	HGESS	Other	Rare	Uterine cancer, NOS	"Endometrial Stromal Sarcoma, high grade
+"	Gynecologic	41-89 yo	No	no	no	no	0	0	5	5	Yes	Admixture	PDX	Yes	Jackson Laboratories	SA0350-F605	PDX MTA-restricted; Available from Jackson Labs
+SA0426	SA0426-F1136	ULMS	SARCOMA	Rare	Leiomyosarcoma - uterus	-	Musculoskeletal	Unknown	No	no	no	no	0	0	4	4	Yes	Admixture	PDX	Yes	Jackson Laboratories	SA0426-F1136	Yes
+ST0110	ST0110-F1568	GIST	Other	Rare	Gastrointestinal stromal tumor	-	Digestive/Gastrointestinal	Unknown	No	no	no	no	0	0	3	3	Not Reported	Admixture	PDX	Yes	Jackson Laboratories	ST0110-F1568	PDX MTA-restricted; Available from Jackson Labs
