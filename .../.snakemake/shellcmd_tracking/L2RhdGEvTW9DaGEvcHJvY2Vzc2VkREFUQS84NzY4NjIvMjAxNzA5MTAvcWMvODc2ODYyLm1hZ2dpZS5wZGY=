@@ -1,0 +1,15 @@
+
+	#################################
+	module load samtools/1.2
+	echo -e "Model\tSample\tScore\tSites" >/data/MoCha/processedDATA/876862/20170910/qc/876862.maggie.txt
+	for file2 in /data/MoCha/processedDATA/MAGGIE//*.codingsynon.sorted.vcf.gz	
+		do
+			name=`basename ${file2} .codingsynon.sorted.vcf.gz`
+			name=`echo ${name}|sed -e 's/.star//g'|sed -e 's/.bwa//g'`
+			score=`bcftools gtcheck -g /data/MoCha/processedDATA/MAGGIE/876862~298-R~V1-organoid~WES.codingsynon.sorted.vcf.gz -G 1 ${file2} |grep ^CN |cut -f2,4 |awk '{OFS="\t"}{print +$1,$2}'`
+			echo -e "876862\t${name}\t${score}"
+		done >>/data/MoCha/processedDATA/876862/20170910/qc/876862.maggie.txt
+	module load R
+	/data/MoCha/patidarr/ngs_pipeline/scripts/PlotMaggie.R --input=/data/MoCha/processedDATA/876862/20170910/qc/876862.maggie.txt --patient=876862 --output=/data/MoCha/processedDATA/876862/20170910/qc/876862.maggie.pdf
+	#################################
+	

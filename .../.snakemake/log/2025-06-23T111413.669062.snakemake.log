@@ -1,0 +1,4 @@
+KeyError in line 11 of /vf/users/MoCha/github/PDMR_landscape_paper_public/ngs_pipeline/ngs_pipeline.rules:
+'NGS_PIPELINE'
+  File "/vf/users/MoCha/github/PDMR_landscape_paper_public/ngs_pipeline/ngs_pipeline.rules", line 11, in <module>
+  File "/usr/local/apps/snakemake/conda/envs/5.24.1/lib/python3.7/os.py", line 681, in __getitem__

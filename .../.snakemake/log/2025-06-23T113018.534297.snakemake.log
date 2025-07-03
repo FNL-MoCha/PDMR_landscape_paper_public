@@ -1,0 +1,3 @@
+KeyError in line 52 of /vf/users/MoCha/github/PDMR_landscape_paper_public/ngs_pipeline/ngs_pipeline.rules:
+'DNASeq'
+  File "/vf/users/MoCha/github/PDMR_landscape_paper_public/ngs_pipeline/ngs_pipeline.rules", line 52, in <module>
