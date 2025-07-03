@@ -1,0 +1,183 @@
+if 'DNASeq' in config:
+	for subject in config['DNASeq']:
+		for sample in config['DNASeq'][subject]:
+			TARGET    += [subject+"/"+TIME+"/"+sample+"/oncoKB/"+sample+".maf"]
+			#TARGET    += [subject+"/"+TIME+"/"+sample+"/oncoKB/"+sample+".cnv"]
+			#TARGET    += [subject+"/"+TIME+"/"+sample+"/oncoKB/"+sample+".oncoKB.clinical.txt"]
+			if config['sample_type'][sample] == 'Tumor':
+				if config['sample_captures'][sample] in config['cnvkit_ref']:
+					if 'PDC' in sample:
+						print()
+					elif 'organoid' in sample:
+						print()
+					else:
+						TARGET    += [subject+"/"+TIME+"/"+sample+"/oncoKB/"+sample+".maf"]
+						TARGET    += [subject+"/"+TIME+"/"+sample+"/oncoKB/"+sample+".cnv"]
+						TARGET    += [subject+"/"+TIME+"/"+sample+"/oncoKB/"+sample+".oncoKB.clinical.txt"]
+						TARGET    += [subject+"/"+TIME+"/oncoKB/"+subject+".maf"]
+						TARGET    += [subject+"/"+TIME+"/oncoKB/"+subject+".cnv"]
+						TARGET    += [subject+"/"+TIME+"/oncoKB/"+subject+".oncoKB.clinical.txt"]
+rule oncokb_maf:
+	input:
+		maf="{subject}/{TIME}/{sample}/calls/{sample}.variants.maf",
+	output:
+		maf="{subject}/{TIME}/{sample}/oncoKB/{sample}.maf",
+		clinical="{subject}/{TIME}/{sample}/oncoKB/{sample}.clinical.txt",
+		oncokb="{subject}/{TIME}/{sample}/oncoKB/{sample}.oncoKB.txt"
+	params:
+		rulename  = "oncokb_maf",
+		batch     = config[config['host']]["job_default"],
+		script    = NGS_PIPELINE+"/scripts/filterMAF_oncoKB_050522.py",
+		script2   = NGS_PIPELINE+"/scripts/filterMAF4Genes.pl",
+		script3   = NGS_PIPELINE+"/scripts/oncokb_annotation.sh",
+		script4   = NGS_PIPELINE+"/scripts/add_oncoKB_version.py",
+		blacklist = NGS_PIPELINE+"/scripts/oncoKB_blacklist",
+		work_dir  = WORK_DIR,
+		readme    = WORK_DIR+"Oncokb_readme",
+		diagnosis = lambda wildcards: config['diagnosis'][wildcards.subject]
+	shell: """
+	#######################
+	echo -e "SAMPLE_ID\\tONCOTREE_CODE" >{output.clinical}
+	echo -e "{wildcards.sample}\\t{params.diagnosis}" >>{output.clinical}
+	python3.9 /data/MoCha/patidarr/oncokb-annotator-2.0.0/GenerateReadMe.py -o {params.readme}
+	python3.9 /data/MoCha/patidarr/oncokb-annotator-2.0.0/MafAnnotator.py -i {input.maf} -o {output.maf} -t {params.diagnosis} -b a45b9d80-9725-4921-a6d0-c67c29ac7edd
+
+	python3.9 {params.script} -f {output.maf} >{output.maf}.tmp
+	perl {params.script2} {params.blacklist} {output.maf}.tmp > {output.maf}.tmp2
+	rm {output.maf}.tmp
+	mv -f {output.maf}.tmp2 {output.maf}
+
+
+        #Add oncoKB version to maf file
+        python3.9 {params.script4} -f {output.maf} -i {params.readme} > {output.oncokb}
+
+
+	#######################
+	"""
+
+rule oncokb_cnv:
+	input:
+		"{subject}/{TIME}/{sample}/cnvkit/{sample}.cns"
+	output:
+		cnv="{subject}/{TIME}/{sample}/oncoKB/{sample}.cnv",
+	params:
+		rulename  = "oncokb_cnv",
+		batch     = config[config['host']]["job_default"],
+		work_dir  = WORK_DIR,
+		hugo      = config["hugo_list"],
+		script    = NGS_PIPELINE+"/scripts/processCNA.pl",
+		script2   = NGS_PIPELINE+"/scripts/filterCNA.pl",
+		script3   = NGS_PIPELINE+"/scripts/oncokb_annotation.sh",
+		diagnosis = lambda wildcards: config['diagnosis'][wildcards.subject]
+	shell: """
+	#######################
+	perl {params.script} {input} {params.hugo} {wildcards.sample} >{wildcards.subject}/{TIME}/{wildcards.sample}/oncoKB/{wildcards.sample}.tmp.cnv.txt
+	paste {params.hugo} {wildcards.subject}/{TIME}/{wildcards.sample}/oncoKB/{wildcards.sample}.tmp.cnv.txt |perl {params.script2} - {wildcards.sample} >{wildcards.subject}/{TIME}/{wildcards.sample}/oncoKB/{wildcards.sample}.cnv.txt
+	rm -rf {wildcards.subject}/{TIME}/oncoKB/*.tmp.cnv.txt
+
+	python3.9 /data/MoCha/patidarr/oncokb-annotator-2.0.0/CnaAnnotator.py -i {wildcards.subject}/{TIME}/{wildcards.sample}/oncoKB/{wildcards.sample}.cnv.txt -o {output.cnv} -t {params.diagnosis} -b a45b9d80-9725-4921-a6d0-c67c29ac7edd
+
+        rm -rf {wildcards.subject}/{TIME}/{wildcards.sample}/oncoKB/{wildcards.sample}*.cnv.txt
+	#######################
+	"""
+
+rule oncokb_summary:
+	input:
+		maf="{subject}/{TIME}/{sample}/oncoKB/{sample}.maf",
+		clinical="{subject}/{TIME}/{sample}/oncoKB/{sample}.clinical.txt",
+		cnv="{subject}/{TIME}/{sample}/oncoKB/{sample}.cnv"
+	output:
+		clinical="{subject}/{TIME}/{sample}/oncoKB/{sample}.oncoKB.clinical.txt",
+	params:
+		rulename  = "oncokb_summary",
+		script3   = NGS_PIPELINE+"/scripts/oncokb_annotation_summary.sh",
+		batch     = config[config['host']]["job_default"],
+		work_dir  = WORK_DIR,
+	shell: """
+	#######################
+	python3.9 /data/MoCha/patidarr/oncokb-annotator-2.0.0/ClinicalDataAnnotator.py -i {input.clinical} -o {output.clinical} -a {input.maf},{input.cnv}
+	#######################
+	"""
+
+rule oncokb_maf_patient:
+	input:
+		maf="{subject}/{TIME}/{subject}.consensus.maf",
+	output:
+		maf="{subject}/{TIME}/oncoKB/{subject}.maf",
+		clinical="{subject}/{TIME}/oncoKB/{subject}.clinical.txt",
+		oncokb="{subject}/{TIME}/oncoKB/{subject}.oncoKB.txt"
+	params:
+		rulename  = "oncokb_maf_patient",
+		batch     = config[config['host']]["job_oncokb"],
+		script    = NGS_PIPELINE+"/scripts/filterMAF_oncoKB_050522.py",
+		script2   = NGS_PIPELINE+"/scripts/filterMAF4Genes.pl",
+		script3   = NGS_PIPELINE+"/scripts/oncokb_annotation.sh",
+		script4   = NGS_PIPELINE+"/scripts/add_oncoKB_version.py",
+                blacklist = NGS_PIPELINE+"/scripts/oncoKB_blacklist",
+		work_dir  = WORK_DIR,
+		readme    = WORK_DIR+"/Oncokb_readme",
+		diagnosis = lambda wildcards: config['diagnosis'][wildcards.subject]
+	shell: """
+	#######################
+	echo -e "SAMPLE_ID\\tONCOTREE_CODE" >{output.clinical}
+	echo -e "{wildcards.subject}\\t{params.diagnosis}" >>{output.clinical}
+	python3.9 /data/MoCha/patidarr/oncokb-annotator-2.0.0/GenerateReadMe.py -o {params.readme}
+        python3.9 /data/MoCha/patidarr/oncokb-annotator-2.0.0/MafAnnotator.py -i {input.maf} -o {output.maf} -t {params.diagnosis} -b a45b9d80-9725-4921-a6d0-c67c29ac7edd
+
+	python3.9 {params.script} -f {output.maf} >{output.maf}.tmp
+	perl {params.script2} {params.blacklist} {output.maf}.tmp > {output.maf}.tmp2
+	rm {output.maf}.tmp
+	mv -f {output.maf}.tmp2 {output.maf}
+
+	python3.9 {params.script4} -f {output.maf} -i {params.readme} > {output.oncokb}
+	
+	#######################
+	"""
+
+rule oncokb_cnv_patient:
+	input:
+		lambda wildcards: subCNV[wildcards.subject]
+	output:
+		cnv="{subject}/{TIME}/oncoKB/{subject}.cnv",
+	params:
+		rulename  = "oncokb_cnv_patient",
+		batch     = config[config['host']]["job_default"],
+		work_dir  = WORK_DIR,
+		hugo      = config["hugo_list"],
+		script    = NGS_PIPELINE+"/scripts/processCNA.pl",
+		script2   = NGS_PIPELINE+"/scripts/filterCNA.pl",
+		script3   = NGS_PIPELINE+"/scripts/oncokb_annotation.sh",
+		diagnosis = lambda wildcards: config['diagnosis'][wildcards.subject]
+	shell: """
+	#######################
+	for file in {input}
+	do	
+		name=`basename ${{file}} .seg`
+		perl {params.script} {wildcards.subject}/{TIME}/${{name}}/cnvkit/${{name}}.cns {params.hugo} ${{name}} >{wildcards.subject}/{TIME}/oncoKB/${{name}}.tmp.cnv.txt
+	done
+	paste {params.hugo} {wildcards.subject}/{TIME}/oncoKB/*.tmp.cnv.txt |perl {params.script2} - {wildcards.subject} >{wildcards.subject}/{TIME}/oncoKB/{wildcards.subject}.cnv.txt
+	rm -rf {wildcards.subject}/{TIME}/oncoKB/*.tmp.cnv.txt
+
+	python3.9 /data/MoCha/patidarr/oncokb-annotator-2.0.0/CnaAnnotator.py -i {wildcards.subject}/{TIME}/oncoKB/{wildcards.subject}.cnv.txt -o {output.cnv} -t {params.diagnosis} -b a45b9d80-9725-4921-a6d0-c67c29ac7edd
+
+	rm -rf {wildcards.subject}/{TIME}/oncoKB/{wildcards.subject}*.cnv.txt
+	#######################
+	"""
+
+rule oncokb_summary_patient:
+	input:
+		maf="{subject}/{TIME}/oncoKB/{subject}.maf",
+		clinical="{subject}/{TIME}/oncoKB/{subject}.clinical.txt",
+		cnv="{subject}/{TIME}/oncoKB/{subject}.cnv"
+	output:
+		clinical="{subject}/{TIME}/oncoKB/{subject}.oncoKB.clinical.txt",
+	params:
+		rulename  = "oncokb_summary_patient",
+		batch     = config[config['host']]["job_default"],
+		script3   = NGS_PIPELINE+"/scripts/oncokb_annotation_summary.sh",
+		work_dir  = WORK_DIR,
+	shell: """
+	#######################
+	python3.9 /data/MoCha/patidarr/oncokb-annotator-2.0.0/ClinicalDataAnnotator.py -i {input.clinical} -o {output.clinical} -a {input.maf},{input.cnv}
+	#######################
+	"""

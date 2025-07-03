@@ -1,0 +1,180 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+use Getopt::Long;
+use Pod::Usage;
+use Time::Piece;
+my $NGS_PIPELINE;
+my $mode = 'd';
+my $time='20160415';
+my $dataDir="";
+my $sheet="samplesheet.json";
+if (`dirname $0` =~ /^\./){
+	$NGS_PIPELINE = `pwd`;
+	chomp $NGS_PIPELINE;
+}
+else{
+	$NGS_PIPELINE = `dirname $0`;
+	chomp $NGS_PIPELINE;
+}
+
+if (`hostname` =~ /cn/ or `hostname` =~ /biowulf.nih.gov/){
+	$dataDir="/data/MoCha/DATA/";
+}
+elsif(`hostname` =~ /fr-s-hpc-head-1/){
+	print STDERR "Don't know the default Fastq Location\n";
+	die;
+}
+
+my $workDir="";
+my $dryrun;
+my $help;
+GetOptions(
+		'dryrun'	=>\$dryrun,
+		'mode|m=s'      =>\$mode,
+		'datadir|d=s'   =>\$dataDir,
+		'workdir|w=s'   =>\$workDir,
+		'sheet|s=s'   	=>\$sheet,
+		'help|h'      	=>\$help,
+	  )or pod2usage();
+
+$help and pod2usage ();
+
+if (!$mode){
+	print STDERR "ERROR: must specify '-mode'\n";
+	print STDERR "\t Possible values are:\n";
+	print STDERR "\t\td (development) Default\n";
+	print STDERR "\t\tp (production)\n";
+	exit;
+}
+if (!$dataDir){
+        print STDERR "On biowulf the raw data is stored in /data/MoCha/DATA/\n";
+	print STDERR "If your data is coming from somewhere else specify using this variable\n";
+        exit;
+}
+if (!$workDir){
+	print STDERR "This is required. Location where you would like to write results\n\n";
+	exit;
+}
+if (!$sheet){
+	print STDERR "Be default it is assumed that samplesheet.json is present in working directory\n";
+	print STDERR "if your samplesheet.json is not present in working directory, please give full path\n";
+	print STDERR "relative paths are not full path\n";
+	exit;
+}
+
+if ($mode eq 'p'){
+	$time=`date +"%Y%m%d"`;
+	chomp $time;
+}
+elsif($mode eq 'd'){
+	$time=$time;
+}
+else{
+	$time=$mode;
+}
+my $NOW=`echo \$(date +"%Y%m%d_%H%M%S")`;
+chomp $NOW;
+if (`hostname` =~ /cn/ or `hostname` =~ /biowulf.nih.gov/){
+	if ($dryrun){
+		my $cmd = "(
+		export TMP=$NOW
+		export TIME=$time
+		module load snakemake/5.24.1
+		export NGS_PIPELINE=$NGS_PIPELINE
+		export WORK_DIR=$workDir
+		export DATA_DIR=$dataDir
+		export ACT_DIR=\"/Actionable/\"
+		export HOST=\"biowulf.nih.gov\"
+		SNAKEFILE=$NGS_PIPELINE/ngs_pipeline.rules
+		SAM_CONFIG=$sheet
+		snakemake --directory \$WORK_DIR --snakefile \$SNAKEFILE --configfile \$SAM_CONFIG --dryrun -p -r --ri -R rnaseq_final
+		rm -rf $workDir/ngs_pipeline_$NOW.csv
+		)";
+		print "$cmd\n";
+		exec "$cmd";
+	}
+	else{
+		`mkdir -p "$workDir/log/"`;
+		`sbatch -e $workDir/log/ngs-pipeline.e -o $workDir/log/ngs-pipeline.o --export=time=$mode,ngs=$NGS_PIPELINE,dataDir=$dataDir,workDir=$workDir,sheet=$sheet --cpus-per-task=1 --partition=norm --time=4-0:00:00 $NGS_PIPELINE/submit_snakemake.sh`;
+		#`sbatch -e $workDir/log/ngs-pipeline.e -o $workDir/log/ngs-pipeline.o --export=time=$mode,ngs=$NGS_PIPELINE,dataDir=$dataDir,workDir=$workDir,sheet=$sheet --cpus-per-task=1 --partition=norm --time=10:00:00 $NGS_PIPELINE/submit_snakemake.sh`;
+	}
+}
+else{
+	print STDERR "This pipeline is not configured to run on this host `hostname`\n";
+	print STDERR "Please change configuration files as well as Snakemake file to accomodate the same\n";
+	die;
+}
+=head1 SYNOPSIS
+
+ launch -mode d -datadir /data/MoCha/DATA/ -workdir /data/MoCha/processedDATA/ -s /data/MoCha/processedDATA/SampleSheets/samplesheet.json
+ ###############################################################
+ Arguments: 
+
+        -h, -help, --help Print this message.
+
+        -m, -mode	This sets up the time in the patient directory, in production mode the time is dynamically decided, 
+			 in dev mode a pre set time is used for debugging purposes.
+			 if new libraries are secqueced from a case -m <previous Data> could be used as mode.
+		Accpeted values:
+			p =production mode <todays date>	
+			d =development mode <preset date 20160415>
+			<20160415> = to use this is caseID for the sample. this sould only be done with single subject json file
+
+	-d, -datadir	On biowulf the raw data is stored in /data/MoCha/DATA/
+			  If your data is coming from somewhere else specify using this variable
+			  -datadir "/data/MoCha/DATA/"
+
+	-w, -workdir	Working directory where all the results will be stored. there are defaults to be used specific to host.
+	-s, -sheet 	A json file created using $NGS_PIPELINE/scripts/makeJSON.py
+			this dictates how the pipeline will ran.
+				default name is samplesheet.json in working directory.
+				if present somewhere else please give full path.
+ ##############################################################
+
+	##########################################
+	#
+	#	It is assumed that workdir contains the samplesheet.json
+	#		if not the case use -s <full path of samplesheet.json>
+	#
+	##########################################
+	#
+	#	DryRun
+	#
+	##########################################
+	#
+	#
+	#	Biowulf
+	#
+		export TMP="20160415"
+		export TIME="20160415"
+		module load snakemake/5.24.1
+                export NGS_PIPELINE="/data/MoCha/patidarr/ngs_pipeline/"
+                export WORK_DIR="`pwd`"
+                export DATA_DIR="/data/MoCha/DATA/"
+                export ACT_DIR="/Actionable/"
+                export HOST="biowulf.nih.gov"
+                SNAKEFILE=$NGS_PIPELINE/ngs_pipeline.rules
+                SAM_CONFIG=$WORK_DIR/samplesheet.json
+		snakemake --directory $WORK_DIR --snakefile $SNAKEFILE --configfile $SAM_CONFIG --dryrun -p -r
+	
+
+	#Summary 
+	#  snakemake --directory $WORK_DIR --snakefile $SNAKEFILE --configfile $SAM_CONFIG --summary
+	
+	# DRY Run with Print out the shell commands that will be executed
+	#  snakemake --directory $WORK_DIR --snakefile $SNAKEFILE --configfile $SAM_CONFIG --dryrun -p -r
+
+	#DAG 
+	#  snakemake --directory $WORK_DIR --snakefile $SNAKEFILE --configfile $SAM_CONFIG --dag | dot -Tpng > dag.png
+
+	#Rulegraph
+	#  snakemake --directory $WORK_DIR --snakefile $SNAKEFILE --configfile $SAM_CONFIG -n --forceall --rulegraph | dot -Tpng > Rulegraph.png
+
+	# Mail Rulegraph and DAG to self
+	#  echo DAG |mutt -s "DAG" -a dag.png -a Rulegraph.png -- patidarr@mail.nih.gov
+	                                                                                                                      
+
+ For questions or comments, please contact: Rajesh Patidar <rajesh.patidar@nih.gov>
+
+=cut

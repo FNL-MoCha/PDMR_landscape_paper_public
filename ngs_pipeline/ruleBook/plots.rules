@@ -1,0 +1,75 @@
+#TARGET     += expand("{subject}/{TIME}/qc/{subject}.coveragePlot.png",TIME=TIME, subject=PATIENTS)
+#TARGET     += expand("{subject}/{TIME}/qc/{subject}.hotspot_coverage.png", TIME=TIME, subject=PATIENTS)
+if 'DNASeq' in config:
+	for subject in config['DNASeq']:
+		for library in config['DNASeq'][subject]:
+			TARGET    += [subject+"/"+TIME+"/qc/"+subject+".hotspot_coverage.png"]
+			TARGET    += [subject+"/"+TIME+"/qc/"+subject+".coveragePlot.png"]
+			if config['sample_captures'][library] not in config['Panel_List']:
+				# any output which is desired on all libraries but Panel goes here, the list of panel captures should be maintained in the Panel_List in config file
+				TARGET    += [subject+"/"+TIME+"/qc/"+subject+".circos.png"]
+				TARGET    += [subject+"/"+TIME+"/qc/"+subject+".ideogram.png"]
+############
+# CoveragePlot
+############
+rule coverageplot:
+	input:
+		covFiles=lambda wildcards: SUB_COV[wildcards.subject],
+		coverage =NGS_PIPELINE + "/scripts/coverage.R"
+	output: "{subject}/{TIME}/qc/{subject}.coveragePlot.png",
+	version: config["version_R"]
+	params:
+		rulename = "coverageplot",
+		batch    = config[config['host']]["job_covplot"]
+	shell: """
+	#######################
+
+	cp -f {input.covFiles} ${{LOCAL}}
+
+	module load R/{version}
+	R --vanilla --slave --silent --args ${{LOCAL}} {output} {wildcards.subject} <{input.coverage}
+	#######################
+	"""
+############
+# Circos Plot
+############
+rule circos:
+	input:
+		lohFiles=lambda wildcards: SUB_LOH[wildcards.subject],
+		circos =NGS_PIPELINE + "/scripts/circos.R",
+		ideogram =NGS_PIPELINE + "/scripts/ideogram.R"
+	output:
+		circos="{subject}/{TIME}/qc/{subject}.circos.png",
+		ideogram="{subject}/{TIME}/qc/{subject}.ideogram.png",
+	version: config["version_R"]
+	params:
+		rulename = "circos",
+		batch    = config[config['host']]["job_covplot"]
+	shell: """
+	#######################
+	cp -f {input.lohFiles} ${{LOCAL}}
+	module load R/{version}
+	R --vanilla --slave --silent --args ${{LOCAL}} {output.circos} {wildcards.subject} <{input.circos}
+	R --vanilla --slave --silent --args ${{LOCAL}} {output.ideogram} {wildcards.subject} <{input.ideogram}
+	#######################
+	"""
+############
+# Box Plot Hotspot
+############
+rule boxplot_hotspot:
+	input:
+		covFiles=lambda wildcards: SUB_HOT[wildcards.subject],
+		boxplot =NGS_PIPELINE + "/scripts/boxplot.R"
+	output:
+		"{subject}/{TIME}/qc/{subject}.hotspot_coverage.png",
+	version: config["version_R"]
+	params:
+		rulename = "boxplot_hotspot",
+		batch    = config[config['host']]["job_covplot"]
+	shell: """
+	#######################
+	cp -f {input.covFiles} ${{LOCAL}}
+	module load R/4.0
+	R --vanilla --slave --silent --args ${{LOCAL}} {output} {wildcards.subject} <{input.boxplot}
+	#######################
+	"""

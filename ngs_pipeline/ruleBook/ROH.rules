@@ -1,0 +1,48 @@
+sampleLOH={}
+if 'DNASeq' in config:
+	for subject in config['DNASeq']:
+		for sample in config['DNASeq'][subject]:
+			if config['sample_captures'][sample] not in config['Panel_List']:
+				if subject not in sampleLOH:
+					sampleLOH[subject] =[subject+"/"+TIME+"/"+sample+"/qc/"+sample+".roh"]
+				else:
+					sampleLOH[subject] +=[subject+"/"+TIME+"/"+sample+"/qc/"+sample+".roh"]
+				TARGET    += [subject+"/"+TIME+"/"+sample+"/qc/"+sample+".roh"]
+				TARGET    += [subject+"/"+TIME+"/"+subject+".loh.seg"]
+
+rule roh:
+	input:
+		vcf="{subject}/{TIME}/{sample}/calls/{sample}.HC_DNASeq.raw.vcf",
+	output:
+        	"{subject}/{TIME}/{sample}/qc/{sample}.roh"
+	version: config["samtools_new"]
+	params:
+		rulename = "roh",
+		batch    = config[config['host']]["job_default"],
+		ref=config["ROH"]
+	shell: """
+	#######################
+	module load samtools/{version}
+	if [ {wildcards.subject} == 'control' ]; then 
+		touch {output}
+		exit;
+	fi
+	cat {input.vcf}|sed -e 's/chr//g' |grep -v "^X" |grep -v "^Y"| bcftools annotate -c CHROM,POS,REF,ALT,AF1KG -h {params.ref}/1000GP-AFs/AFs.tab.gz.hdr -a {params.ref}/1000GP-AFs/AFs.tab.gz - | bcftools roh --AF-tag AF1KG -M 100 -m {params.ref}/genetic-map/genetic_map_chr{{CHROM}}_combined_b37.txt -o {output}
+
+	#2814613329 Total Lengh - telomare and centromere for autosomes 
+
+	grep ^RG {output} |awk '{{if ($6>150000) print $6}}' | awk '{{n += $1}}; END{{print (n/2881033286)*100}}' >{output}.txt
+	#######################
+	"""
+rule roh_summary:
+	input: lambda wildcards: sampleLOH[wildcards.subject]
+	output: "{subject}/{TIME}/{subject}.loh.seg"
+	params:
+		rulename = "roh_summary",
+		batch    = config[config['host']]["job_default"]
+	shell: """
+	#######################
+	echo -e "ID\\tchrom\\tloc.start\\tloc.end\\tnum.mark\\tseg.mean" >{output}	
+	cat {input}|grep ^RG |awk '{{OFS="\\t"}}{{print $2,"chr"$3,$4,$5,$7,1}}' | sed -e 's/\~WES//g'>>{output}
+	#######################
+	"""

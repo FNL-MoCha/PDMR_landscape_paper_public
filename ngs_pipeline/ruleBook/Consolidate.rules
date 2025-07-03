@@ -1,0 +1,82 @@
+SUB_CON_QC = {}
+if 'DNASeq' in config:
+	for subject in config['DNASeq'].keys():
+		SUB_CON_QC[subject]  = ["{subject}/{TIME}/{sample}/qc/{sample}.consolidated_QC".format(TIME=TIME, subject=SAMPLE_TO_SUBJECT[s], sample=s) for s in config['DNASeq'][subject]]
+		TARGET += ["{subject}/{TIME}/qc/{subject}.consolidated_QC.txt".format(TIME=TIME, subject=SAMPLE_TO_SUBJECT[s], sample=s) for s in config['DNASeq'][subject]]
+	CON_QC  = ["{subject}/{TIME}/{sample}/qc/{sample}.consolidated_QC".format(TIME=TIME, subject=SAMPLE_TO_SUBJECT[s], sample=s) for s in SAMPLES]
+	TARGET += ["{subject}/{TIME}/{sample}/qc/{sample}.consolidated_QC".format(TIME=TIME, subject=SAMPLE_TO_SUBJECT[s], sample=s) for s in SAMPLES]
+
+############
+#       QC
+############
+rule dnaseq_qc:
+        input:
+                bam="{base}/{TIME}/{sample}/{sample}.bwa.final.bam",
+                hsMatrix="{base}/{TIME}/{sample}/qc/{sample}.hsmetrics",
+		gender="{base}/{TIME}/{sample}/qc/{sample}.gender",
+		target_intervals =lambda wildcards: config['target_intervals'][config['sample_captures'][wildcards.sample]],
+                tool= NGS_PIPELINE+ "/scripts/QC_stats_Final_up.py",
+		fastqc="{base}/{TIME}/{sample}/qc/fastqc/{sample}_R1_fastqc.html"
+        output: "{base}/{TIME}/{sample}/qc/{sample}.consolidated_QC"
+        version:
+                config['samtools']
+        params:
+                rulename        = "dnaseq_qc",
+                bedtools        = config['bedtools'],
+		python		= config["version_python"],
+		tool_perl       = NGS_PIPELINE+ "/scripts/addAttributes.pl",
+		source		= lambda wildcards: config['source'][wildcards.sample],
+                batch           = config[config['host']]["job_c_QC"],
+                diagnosis       = lambda wildcards: config['diagnosis'][wildcards.base]
+        shell:  """
+        #######################
+	module load python/{params.python}
+	module load samtools/{version}
+	module load bedtools/{params.bedtools}
+	human="NA"
+	if [[ {params.source} = 'PDX' ]]; then
+		human=`grep hg19 {wildcards.base}/{TIME}/FQ/{wildcards.sample}_stat.txt|cut -f2|awk '{{print int($1)}}'`
+	fi
+	#uniformity=`cut -f 22 {input.hsMatrix}| grep -A1 MEAN_TARGET_COVERAGE|tail -1| awk '{{print int($1*0.2)}}'`
+	uniformity=`cut -f 22 {input.hsMatrix}|sed '/^$/d'|tail -1| awk '{{print int($1*0.2)}}'`
+	gender=`cat {input.gender}|cut -f1 -d" "`
+	total_reads=`grep ^Total {wildcards.base}/{TIME}/{wildcards.sample}/qc/fastqc/{wildcards.sample}_R1_fastqc/fastqc_data.txt|cut -f2`
+	which python
+	echo "python {input.tool} {input.bam} {input.target_intervals} ${{LOCAL}} {wildcards.base} {wildcards.sample}  {params.diagnosis} ${{gender}} ${{total_reads}} ${{human}} ${{uniformity}}"
+	python {input.tool} {input.bam} {input.target_intervals} ${{LOCAL}} {wildcards.base} {wildcards.sample} {params.diagnosis} ${{gender}} ${{total_reads}} ${{human}} ${{uniformity}} > {output}.tmp
+	perl   {params.tool_perl} {wildcards.sample} {input.hsMatrix} {output}.tmp  >{output}
+	rm -rf {output}.tmp
+        #######################
+        """
+############
+#       QC Summary for Patient
+############
+rule patient_qc_summary:
+	input : lambda wildcards: SUB_CON_QC[wildcards.subject]
+	output: "{subject}/{TIME}/qc/{subject}.consolidated_QC.txt"
+	params:
+		rulename  = "patient_qc_summary",
+		batch     = config[config['host']]["job_default"]
+	shell: """
+	#######################
+	export LC_ALL=C
+	cat {input} |sort |uniq |sed -e '/^$/d'>{output}
+	#######################
+	"""
+############
+#	QC Summary for Cohort
+############
+rule cohort_qc_summry:
+	input : CON_QC
+	output: "Consolidated_QC.txt"
+	params:
+		rulename  = "cohort_qc_summry",
+		batch	  = config[config['host']]["job_default"]
+	shell: """
+	#######################
+	touch {output}
+	export LC_ALL=C
+	cat {input} {output} |sort|uniq |sed -e '/^$/d'>{output}.tmp
+	mv {output}.tmp {output}
+	#######################
+	"""

@@ -1,0 +1,212 @@
+CONSENSUS_VCF={}
+if 'DNASeq' in config:
+	for subject in config['DNASeq']:
+		for sample in config['DNASeq'][subject]:
+			TARGET    += [subject+"/"+TIME+"/"+sample+"/calls/"+sample+".merged.vcf"]
+			TARGET    += [subject+"/"+TIME+"/"+sample+"/calls/"+sample+".variants.maf"]
+			TARGET    += [subject+"/"+TIME+"/"+sample+"/calls/"+sample+".genemed.vcf"]
+			TARGET    += [subject+"/"+TIME+"/"+sample+"/calls/"+sample+".oncology.vcf"]
+			TARGET    += [subject+"/"+TIME+"/"+sample+"/calls/"+sample+".oncology.maf"]
+			if config['sample_type'][sample] == 'Tumor':
+				if 'PDC' in sample:
+					print()	
+				elif 'organoid' in sample:
+					print()
+				else:
+					if subject not in CONSENSUS_VCF:
+						CONSENSUS_VCF[subject] =[subject+"/"+TIME+"/"+sample+"/calls/"+sample+".merged.vcf"]
+					else:
+						TARGET    += [subject+"/"+TIME+"/"+subject+".consensus.vcf"]
+						TARGET    += [subject+"/"+TIME+"/"+subject+".consensus.maf"]
+						CONSENSUS_VCF[subject] +=[subject+"/"+TIME+"/"+sample+"/calls/"+sample+".merged.vcf"]
+
+#######################
+# Merge HC with Platypus results for delivery
+#######################
+rule hapcaller_platypus:
+	input:
+		hc="{subject}/{TIME}/{sample}/calls/{sample}.HC_DNASeq.raw.vcf",
+		plat="{subject}/{TIME}/{sample}/calls/{sample}.Platypus.raw.vcf",
+		ref=config["reference"],
+		Twobit=config["reference"].replace('.fasta', '.2bit'),
+		script=NGS_PIPELINE+"/scripts/reformatVCF.pl",
+		script2=NGS_PIPELINE+"/scripts/joinAdjacentSNPs_up.py"
+	output:
+		vcf="{subject}/{TIME}/{sample}/calls/{sample}.merged.vcf"
+	version: config["GATK"]
+	params:
+		rulename = "hapcaller_platypus",
+		batch    = config[config['host']]["job_HC_PLAT"]
+	shell: """
+	#######################
+	module load samtools
+	# Please put twoBitToFa available on UCSC genome browser to bin in your home (https://genome.ucsc.edu/goldenpath/help/twoBit.html)
+	python {input.script2} -v {input.hc} -o ${{LOCAL}}/HC.vcf.tmp 1 {wildcards.subject}/{wildcards.TIME}/{wildcards.sample}/{wildcards.sample}.bwa.final.bam {input.Twobit}	
+	perl {input.script} ${{LOCAL}}/HC.vcf.tmp vcf >${{LOCAL}}/HC.vcf
+	perl {input.script} {input.plat} vcf >${{LOCAL}}/PL.vcf
+
+	module load GATK/3.8-1
+	GATK -m ${{MEM}}g CombineVariants\
+		 -R {input.ref}\
+		 -dcov 10000\
+		 --variant:HC ${{LOCAL}}/HC.vcf\
+		 --variant:Platypus ${{LOCAL}}/PL.vcf\
+		 -o {output} -genotypeMergeOptions PRIORITIZE\
+		 -priority HC,Platypus\
+		 -nt ${{THREADS}}
+	#java -Xmx${{MEM}}g -XX:ParallelGCThreads=${{THREADS}}\
+	#-Djava.io.tmpdir=${{LOCAL}} -jar $GATK_JAR\
+	#-T CombineVariants
+
+	#######################
+	"""
+
+#######################
+# Convert to MAF to be loaded to cbioportal
+#######################
+rule vcf2maf:
+	input: 
+		vcf="{subject}/{TIME}/{sample}/calls/{sample}.merged.vcf",
+		ref=config["reference"]
+	output: 
+		"{subject}/{TIME}/{sample}/calls/{sample}.variants.maf",
+		"{subject}/{TIME}/{sample}/calls/{sample}.merged.vep.vcf"
+	version: config["vcf2maf"]
+	params:
+		rulename = "vcf2maf",
+		isoforms = config['mskcc_isoforms'],
+		script1  = NGS_PIPELINE+"/scripts/filterMAF.pl",
+		script2  = NGS_PIPELINE+"/scripts/slimMAF.pl",
+
+		batch    = config[config['host']]["job_vcf2maf"]
+	shell: """
+	#######################
+	module load VEP/92 vcf2maf/{version}
+	cp {input.vcf} /${{LOCAL}}/
+
+	#vcf2maf.pl --input-vcf ${{LOCAL}}/{wildcards.sample}.merged.vcf --output-maf ${{LOCAL}}/{wildcards.sample}.variants.maf --tumor-id {wildcards.sample} --ref-fasta {input.ref} --vep-custom /fdb/VEP/89/cache/ExAC.r0.3.1.sites.vep.vcf.gz --vep-path $VEP_HOME/bin --vep-forks ${{THREADS}} --vep-data $VEP_CACHEDIR --custom-enst {params.isoforms}
+
+	vcf2maf.pl --input-vcf ${{LOCAL}}/{wildcards.sample}.merged.vcf --output-maf ${{LOCAL}}/{wildcards.sample}.variants.maf --tumor-id {wildcards.sample} --ref-fasta {input.ref} --filter-vcf /fdb/VEP/89/cache/ExAC.r0.3.1.sites.vep.vcf.gz --vep-path $VEP_HOME/bin --vep-forks ${{THREADS}} --vep-data $VEP_CACHEDIR --custom-enst {params.isoforms}
+	{params.script1} ${{LOCAL}}/{wildcards.sample}.variants.maf |{params.script2} - |sed -e 's/\\t$//g' >{wildcards.subject}/{TIME}/{wildcards.sample}/calls/{wildcards.sample}.variants.maf
+	cp ${{LOCAL}}/{wildcards.sample}.merged.vep.vcf {wildcards.subject}/{TIME}/{wildcards.sample}/calls/
+	#######################
+	"""
+#######################
+# VCF file with variants overlapping MPACT v2.0 bed file
+#######################
+rule genemed:
+	input:
+		vcf="{subject}/{TIME}/{sample}/calls/{sample}.merged.vep.vcf",
+		bed=config['MPACT_BED']
+	output:
+		"{subject}/{TIME}/{sample}/calls/{sample}.genemed.vcf"
+	params:
+		rulename ="genemed",
+		batch    = config[config['host']]["job_default"],
+		script   = NGS_PIPELINE+"/scripts/filter_vep.pl"
+	shell: """
+	#######################
+	module load bedtools
+	intersectBed -a {input.vcf} -b {input.bed} -u -header |{params.script} - > {output}
+	#######################
+	"""
+#######################
+# VCF file with variants 33 genes, list provided by Anand Dutta
+# This is to be loaded on PDMR Germline Mutations Associated with Cancer (*.vcf)
+#######################
+rule germline_predis_vars:
+	input:
+		vcf="{subject}/{TIME}/{sample}/calls/{sample}.merged.vep.vcf",
+		bed=config["annovar_data"]+config["acmg_v2"]
+	output:
+		"{subject}/{TIME}/{sample}/calls/{sample}.oncology.vcf"
+	params:
+		rulename ="germline_predis_vars",
+		batch    = config[config['host']]["job_default"],
+		script   = NGS_PIPELINE+"/scripts/filter_vep.pl"
+	shell: """
+	#######################
+	module load bedtools
+	intersectBed -a {input.vcf} -b {input.bed} -u -header |{params.script} - > {output}
+	#######################
+	"""
+#######################
+# GermlineMutationAssWithCancer vcf==> maf
+#######################
+rule vcf2maf_oncology:
+        input:
+                vcf="{subject}/{TIME}/{sample}/calls/{sample}.oncology.vcf",
+                ref=config["reference"]
+        output:
+                "{subject}/{TIME}/{sample}/calls/{sample}.oncology.maf",
+        version: config["vcf2maf"]
+        params:
+                rulename = "vcf2maf_oncology",
+                isoforms = config['mskcc_isoforms'],
+                script1  = NGS_PIPELINE+"/scripts/filterMAF.pl",
+		script2  = NGS_PIPELINE+"/scripts/slimMAF.pl",	
+                batch    = config[config['host']]["job_vcf2maf"]
+        shell: """
+        #######################
+        module load VEP/92 vcf2maf/{version}
+        cp {input.vcf} /${{LOCAL}}/{wildcards.sample}.vep.vcf
+        vcf2maf.pl --input-vcf ${{LOCAL}}/{wildcards.sample}.vep.vcf --output-maf ${{LOCAL}}/{wildcards.sample}.variants.maf --tumor-id {wildcards.sample} --ref-fasta {input.ref} --filter-vcf /fdb/VEP/89/cache/ExAC.r0.3.1.sites.vep.vcf.gz --vep-path $VEP_HOME/bin --vep-forks ${{THREADS}} --vep-data $VEP_CACHEDIR --custom-enst {params.isoforms}
+        cp ${{LOCAL}}/{wildcards.sample}.variants.maf {output}
+        #######################
+        """
+#######################
+# VCF Consensus file for delivery
+#######################
+rule consensus_vcf:
+	input: 
+		lambda wildcards: CONSENSUS_VCF[wildcards.subject]
+	output:
+		"{subject}/{TIME}/{subject}.consensus.vcf"	
+	params:
+		rulename = "consensus_vcf",
+		fix      = NGS_PIPELINE+"/scripts/fixconsensesVCF.pl",
+		batch    = config[config['host']]["job_vcf2maf"]
+	shell: """
+	#######################
+	module load vcftools
+	cp {input} ${{LOCAL}}/
+	a=`/bin/ls -1 ${{LOCAL}}/*.vcf |wc -l`
+	if [ ${{a}} -gt 1 ]; then
+		echo "I have ${{a}} files"
+		for file in ${{LOCAL}}/*.vcf; do sed -i 's/ID=AF,Number=1,Type=Integer/ID=AF,Number=1,Type=Float/g' ${{file}}; done
+		for file in ${{LOCAL}}/*.vcf; do bgzip -c ${{file}} >${{file}}.gz; tabix -p vcf ${{file}}.gz; done
+		bcftools merge  ${{LOCAL}}/*.vcf.gz -O z -o ${{LOCAL}}/merge.vcf.gz
+		tabix -p vcf ${{LOCAL}}/merge.vcf.gz
+		vcf-isec -f -n +${{a}} ${{LOCAL}}/merge.vcf.gz ${{LOCAL}}/{wildcards.subject}*.vcf.gz |{params.fix} - {wildcards.subject} |cut -f 1-10 > {output}
+	else
+		echo "Only 1 file, no consensus but need to change sample name to model name"
+		{params.fix} {input} {wildcards.subject} > {output} 
+	fi
+	
+	#######################
+	"""
+#######################
+# Convert to MAF to be loaded to cbioportal
+#######################
+rule vcf2maf_patient:
+	input:
+		vcf="{subject}/{TIME}/{subject}.consensus.vcf",
+		ref=config["reference"]
+	output: "{subject}/{TIME}/{subject}.consensus.maf"
+	version: config['vcf2maf']
+	params:
+		rulename = "vcf2maf_patient",
+		isoforms = config['mskcc_isoforms'],
+		script1  = NGS_PIPELINE+"/scripts/filterMAF.pl",
+		script2  = NGS_PIPELINE+"/scripts/slimMAF.pl",
+		batch    = config[config['host']]["job_vcf2maf"]
+	shell: """
+	#######################
+	module load VEP/92 vcf2maf/{version}
+	cp {input.vcf} /${{LOCAL}}/
+	vcf2maf.pl --input-vcf ${{LOCAL}}/{wildcards.subject}.consensus.vcf --output-maf ${{LOCAL}}/{wildcards.subject}.consensus.maf --tumor-id {wildcards.subject} --ref-fasta {input.ref} --filter-vcf /fdb/VEP/89/cache/ExAC.r0.3.1.sites.vep.vcf.gz --vep-path $VEP_HOME/bin --vep-forks ${{THREADS}} --vep-data $VEP_CACHEDIR --custom-enst {params.isoforms}
+	{params.script1} ${{LOCAL}}/{wildcards.subject}.consensus.maf |{params.script2} - |sed -e 's/\\t$//g' >${{LOCAL}}/{wildcards.subject}.consensus.filtered.maf
+	cp ${{LOCAL}}/{wildcards.subject}.consensus.vep.vcf {wildcards.subject}/{TIME}/
+	cp ${{LOCAL}}/{wildcards.subject}.consensus.filtered.maf {wildcards.subject}/{TIME}/{wildcards.subject}.consensus.maf
+	#######################
+	"""

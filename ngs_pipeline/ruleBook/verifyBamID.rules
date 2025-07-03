@@ -1,0 +1,98 @@
+for subject in config['DNASeq']:
+	for sample in config['DNASeq'][subject]:
+		if config['sample_captures'][sample] in config['verifyBamID_vcf']:
+			TARGET     +=[subject+"/"+TIME+"/"+sample+"/verifyBamID/"+sample+".selfSM"] 
+conPair ={}
+if len(config['matched_normal']) > 0:
+	for Tumor in config['matched_normal']:
+		for Normal in config['matched_normal'][Tumor]:
+			TumorIn   = "{subject}/{TIME}/{sample}/qc/{sample}.conpair.mpileup".format(TIME=TIME, subject=SAMPLE_TO_SUBJECT[Tumor], sample=Tumor)
+			NormalIn  = "{subject}/{TIME}/{sample}/qc/{sample}.conpair.mpileup".format(TIME=TIME, subject=SAMPLE_TO_SUBJECT[Normal], sample=Normal)
+			conPair[Tumor] = [TumorIn , NormalIn]
+			TARGET += ["{subject}/{TIME}/{sample}/qc/{sample}.concod.txt".format(TIME=TIME, subject=SAMPLE_TO_SUBJECT[Tumor], sample=Tumor)]
+			TARGET += ["{subject}/{TIME}/{sample}/qc/{sample}.conta.txt".format(TIME=TIME, subject=SAMPLE_TO_SUBJECT[Tumor], sample=Tumor)]
+########################
+#	verifyBamID 1.1.3 
+########################
+rule verify_bam_id:
+	input:
+		bam="{subject}/{TIME}/{sample}/{sample}.bwa.final.bam",
+		vcf=lambda wildcards: config['verifyBamID_vcf'][config['sample_captures'][wildcards.sample]],
+	output:
+		"{subject}/{TIME}/{sample}/verifyBamID/{sample}.selfSM"
+	version: config["verifybamid"]
+	params:
+		rulename  = "verify_bam_id",
+		batch	  = config[config['host']]["job_default"]
+	shell: """
+	#######################
+	module load verifybamid/{version}
+	verifyBamID --vcf {input.vcf} --bam {input.bam} --maxDepth 3000 --ignoreRG --site --chip-none --precise --minMapQ 30 --minQ 20 --minAF 0.05 --out {wildcards.subject}/{wildcards.TIME}/{wildcards.sample}/verifyBamID/{wildcards.sample}
+	#######################
+	"""
+########################
+#   conpair
+########################
+rule conpair_pileup:
+	input:
+		bam="{subject}/{TIME}/{sample}/{sample}.bwa.final.bam",
+		ref=config["reference"],
+		marker=config['conpair_marker']
+	output:
+		temp("{subject}/{TIME}/{sample}/qc/{sample}.conpair.mpileup")
+	version: config['conpair']
+	params:
+		rulename = "conpair_pileup",
+		batch    = config[config['host']]["job_gatk"]
+	shell: """
+	#######################
+	module load conpair/{version}
+	module load python
+	module load GATK/3.8-1
+	run_gatk_pileup_for_sample.py -B {input.bam} -O {output} -R {input.ref} -M {input.marker}
+	#######################
+	"""
+########################
+#   conpair
+########################
+rule conpair_concod:
+	input:	
+		lambda wildcards: conPair[wildcards.Tumor],
+		marker=config['conpair_marker'].replace("bed","txt")
+	output:
+		"{subject}/{TIME}/{Tumor}/qc/{Tumor}.concod.txt"
+	version: config['conpair']
+	params:
+		rulename = "conpair_concod",
+		batch    = config[config['host']]["job_default"]
+	shell: """
+	#######################
+	module load conpair/{version} python
+	module load GATK/3.8-1
+	verify_concordance.py -T {input[0]} -N {input[1]} -O {output} -C 20 -Q 30 -B 20 -M {input.marker}
+	#######################
+	"""
+########################
+#   conpair
+########################
+rule conpair_conta:
+	input: 
+		lambda wildcards: conPair[wildcards.Tumor],
+		marker=config['conpair_marker'].replace("bed","txt")
+	output:
+		"{subject}/{TIME}/{Tumor}/qc/{Tumor}.conta.txt"
+	version: config['conpair']
+	params: 
+		rulename = "conpair_conta",
+		batch    = config[config['host']]["job_default"],
+		normal   = lambda wildcards: config['matched_normal'][wildcards.Tumor]
+	shell: """
+	#######################
+	module load conpair/{version}
+	module load python
+	module load GATK/3.8-1
+	estimate_tumor_normal_contamination.py -T {input[0]} -N {input[1]} -O {output} -Q 30 -M {input.marker}
+	sed -i 's/Tumor sample contamination level: /{wildcards.Tumor}\\t/g' {output}
+	sed -i 's/Normal sample contamination level: /{params.normal}\\t/g' {output}
+	#######################
+	"""

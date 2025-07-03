@@ -1,0 +1,105 @@
+SequenzaPairs ={}
+if 'matched_normal' in config:
+	if len(config['matched_normal']) > 0:
+		for Tumor in config['matched_normal']:
+			for Normal in config['matched_normal'][Tumor]:
+				SequenzaPairs[Tumor] = ["{subject}/{TIME}/{sample}/{sample}.mpileup.gz".format(TIME=TIME, subject=SAMPLE_TO_SUBJECT[Normal], sample=Normal), "{subject}/{TIME}/{sample}/{sample}.mpileup.gz".format(TIME=TIME, subject=SAMPLE_TO_SUBJECT[Tumor], sample=Tumor) ]
+	for sample in config['matched_normal'].keys():
+		subject=SAMPLE_TO_SUBJECT[sample]
+		TARGET +=[subject+"/"+TIME+"/"+sample+"/sequenza/"+sample+"/"+sample+"_alternative_fit.pdf"]	
+		TARGET +=[subject+"/"+TIME+"/"+sample+"/sequenza/"+sample+".txt"]
+
+############
+#       run pileup to create input for sequenza
+############
+# Using Older version of samtools for this purpose
+rule pileup4sequenza:
+	input:
+		bam="{base}/{TIME}/{sample}/{sample}.bwa.final.bam",
+		ref=config["reference"],
+		genome=config["reference"].replace(".fasta",".genome"),
+		interval= lambda wildcards: config['target_intervals'][config['sample_captures'][wildcards.sample]],
+		seq=NGS_PIPELINE+ "/scripts/sequenza-utils.py"
+	output: temp("{base}/{TIME}/{sample}/{sample}.mpileup.gz")
+	version: config["samtools"]
+	params:
+		rulename  = "pileup4sequenza",
+		batch     = config[config['host']]["job_Sequenza"],
+	shell: """
+	#######################
+	module load bedtools/2.30.0
+	slopBed -i {input.interval} -g {input.genome} -b 200 |mergeBed -i - >${{LOCAL}}/Region.bed	
+	module load samtools/{version}
+	cp {input.bam} ${{LOCAL}}/
+	samtools mpileup -Q 20 -q 30 -L ${{LOCAL}}/Region.bed  -f {input.ref} ${{LOCAL}}/{wildcards.sample}.bwa.final.bam | gzip > ${{LOCAL}}/{wildcards.sample}.mpileup.gz
+	cp ${{LOCAL}}/{wildcards.sample}.mpileup.gz {output}
+	#######################
+	"""
+############
+# seuqnza
+############
+
+rule sequenza:
+	input:
+		files=lambda wildcards: SequenzaPairs[wildcards.Tumor],
+		seq=NGS_PIPELINE+ "/scripts/sequenza-utils.py",
+		gc_ref=config["annovar_data"]+config["gc50Base"],
+		RCode=NGS_PIPELINE+ "/scripts/run_sequenza_pipeline.R",
+	output:
+		"{subject}/{TIME}/{Tumor}/sequenza/{Tumor}/{Tumor}_CN_bars.pdf",
+		"{subject}/{TIME}/{Tumor}/sequenza/{Tumor}/{Tumor}_CP_contours.pdf",
+		"{subject}/{TIME}/{Tumor}/sequenza/{Tumor}/{Tumor}_alternative_fit.pdf",
+		"{subject}/{TIME}/{Tumor}/sequenza/{Tumor}/{Tumor}_alternative_solutions.txt",
+		"{subject}/{TIME}/{Tumor}/sequenza/{Tumor}/{Tumor}_chromosome_view.pdf",
+		"{subject}/{TIME}/{Tumor}/sequenza/{Tumor}/{Tumor}_confints_CP.txt",
+		"{subject}/{TIME}/{Tumor}/sequenza/{Tumor}/{Tumor}_genome_view.pdf",
+		"{subject}/{TIME}/{Tumor}/sequenza/{Tumor}/{Tumor}_model_fit.pdf",
+		"{subject}/{TIME}/{Tumor}/sequenza/{Tumor}/{Tumor}_mutations.txt",
+		"{subject}/{TIME}/{Tumor}/sequenza/{Tumor}/{Tumor}_segments.txt",
+		"{subject}/{TIME}/{Tumor}/sequenza/{Tumor}/{Tumor}_sequenza_cp_table.RData",
+		"{subject}/{TIME}/{Tumor}/sequenza/{Tumor}/{Tumor}_sequenza_extract.RData",
+		"{subject}/{TIME}/{Tumor}/sequenza/{Tumor}/{Tumor}_sequenza_log.txt",
+		all=temp("{subject}/{TIME}/{Tumor}/sequenza/{Tumor}.seqz.gz"),
+		bin=temp("{subject}/{TIME}/{Tumor}/sequenza/{Tumor}.seqz_small")
+	version: config['pypy']
+	params:
+		rulename = "sequenza",
+		R	 = config["version_R"],
+		batch    = config[config['host']]['job_Sequenza']
+	shell: """
+	#######################
+	module load pypy/{version}
+	module load sequenza-utils
+	sequenza-utils bam2seqz -p -gc {input.gc_ref} -n {input.files[0]} -t {input.files[1]} |gzip >{output.all}
+	#sequenza-utils seqz_binning -w 50 -s {output.all} | gzip > {output.bin}
+	sequenza-utils seqz_binning -w 50 -s {output.all} > {output.bin}
+	module load R/{params.R}
+	cd {wildcards.subject}/{wildcards.TIME}/{wildcards.Tumor}/sequenza/
+	{input.RCode} --sample {wildcards.Tumor}
+	#######################
+	"""
+
+rule annotate_sequenza:
+	input:
+		file="{subject}/{TIME}/{Tumor}/sequenza/{Tumor}/{Tumor}_segments.txt",
+		interval="/data/MoCha/patidarr/ref/design/Sureselect.v5.refseq.ensembl.noUTR.notfound.target.hg19.bed",
+		convertor=NGS_PIPELINE+"/scripts/GeneAnnotation.v1.pl",
+		geneList=config["annovar_data"]+config["geneList"]
+	output:
+		"{subject}/{TIME}/{Tumor}/sequenza/{Tumor}.txt"
+	version: config["bedtools"]
+	params:
+		rulename = "annotate_sequenza",
+		batch    = config[config['host']]['job_default']
+	shell: """
+	#######################
+	set +eo pipefail
+        module load bedtools/{version}
+        sed -e 's/"//g' {input.file} |sed -e 's/chromosome/#chromosome/' | bedtools intersect  -wa -a {input.interval} -b - |grep -v NOTFOUND |sed -e 's/___/\\t/g'| cut -f 1-4| bedtools expand -c 4 >{output}.temp
+        sed -e 's/"//g' {input.file} |sed -e 's/chromosome/#chromosome/' |head -1 >{output}.temp1
+        sed -i 's/end.pos\\tBf/end.pos\\tGene\\tBf/g' {output}.temp1
+        sed -e 's/"//g' {input.file} |sed -e 's/chromosome/#chromosome/' |intersectBed -a {output}.temp -b - -wb |cut -f 1-4,8-100 >>{output}.temp1
+        perl {input.convertor} {input.geneList} {output}.temp1 3 >{output}
+        rm -rf {output}.temp {output}.temp1	
+	#######################
+	"""

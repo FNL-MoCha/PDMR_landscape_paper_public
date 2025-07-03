@@ -1,0 +1,72 @@
+varHeat={}
+varMat={}
+for subject in config['DNASeq']:
+	for sample in config['DNASeq'][subject]:
+		if config["sample_type"][sample] =='Tumor':
+			if config['sample_captures'][sample] in config['cnvkit_ref']:
+				TARGET +=[subject+"/"+TIME+"/variantHeatmap/"+subject+".matrix"]
+				if subject not in varHeat:
+					varHeat[subject] =[subject+"/"+TIME+"/"+sample+"/calls/"+sample+".variants.maf"] 
+					varMat[subject] =[subject+"/"+TIME+"/"+"variantHeatmap/"+sample+".pileup"]
+				else:
+					varHeat[subject] +=[subject+"/"+TIME+"/"+sample+"/calls/"+sample+".variants.maf"]
+					varMat[subject] +=[subject+"/"+TIME+"/"+"variantHeatmap/"+sample+".pileup"]
+############
+#       Variant Heatmap
+############
+rule variant_list:
+	input:
+		lambda wildcards: varHeat[wildcards.subject]
+	output:
+		"{subject}/{TIME}/variantHeatmap/{subject}.positions"
+	params:
+		rulename  = "variant_list",
+		batch     = config[config['host']]["job_default"],
+		script	  = NGS_PIPELINE+"/scripts/maf2annovar.v2.pl"
+	shell: """
+	#######################
+	echo -e "Chr\\tStart\\tEnd\\tRef\\tAlt\\tGene" >{output}
+	cat {input}|perl {params.script}  - |grep -v "-"|sort |uniq |grep -v "PCLO\|FLG\|BAGE2\|TPTE\|TTN\|CSMD1\|CSMD3\|RYR2\|RYR3\|MUC7\|MUC16\|MUC4\|MUC17\|MUC5B\|OR10G9\|OR2G6\|OR4C6\|OR4M2\|OR2T4\|OR5L2\|OR2T33\|MUC6\|HLA\|PRSS3\|MUC3A\|OR\|ZNF\|TAS1R" >>{output}
+	#######################
+	"""
+############
+#       Variant Heatmap Step 2
+############
+rule variant_pileup:
+	input:
+		pos="{subject}/{TIME}/variantHeatmap/{subject}.positions",
+		bam="{subject}/{TIME}/{sample}/{sample}.bwa.final.bam"
+	output:
+		"{subject}/{TIME}/variantHeatmap/{sample}.pileup"
+	params:
+		rulename  = "variant_pileup",
+		script    = NGS_PIPELINE+"/scripts/mpileup.v1.pl",
+		batch     = config[config['host']]["job_default"]
+	shell: """
+	#######################
+	module load samtools
+	perl {params.script} {input.pos} {input.bam} >{output}	
+	#######################
+	"""
+############
+#       Variant Heatmap Step 3
+############	
+rule variantheatmap:
+	input:
+		lambda wildcards: varMat[wildcards.subject]
+	output:
+		"{subject}/{TIME}/variantHeatmap/{subject}.matrix"
+	params:
+		rulename  = "variantheatmap",
+		script    = NGS_PIPELINE+"/scripts/heatmap.R",
+		batch     = config[config['host']]["job_default"]
+	shell: """
+	#######################
+	module load R
+	paste {wildcards.subject}/{wildcards.TIME}/variantHeatmap/{wildcards.subject}.positions {input} |sed -e 's/~WES//g' > {output}
+	sam=`awk '{{print NF}}' {output}|uniq`
+	if [ "${{sam}}" -gt 7 ]; then
+		{params.script} -s {wildcards.subject} -t {wildcards.TIME}
+	fi
+	#######################
+	"""

@@ -1,0 +1,79 @@
+if 'RNASeq' in config:
+	for subject  in config['RNASeq'].keys():
+		for sample in config['RNASeq'][subject]:
+				TARGET    +=  [subject+"/"+TIME+"/"+sample+"/HLA/optitype/"+sample+".optitype.tsv"]
+
+if 'DNASeq' in config:
+	for subject  in config['DNASeq'].keys():
+		for sample in config['DNASeq'][subject]:
+				TARGET    +=  [subject+"/"+TIME+"/"+sample+"/HLA/optitype/"+sample+".optitype.tsv"]
+
+
+################
+# optitype
+###############
+rule optitype:
+	input:
+		ancient("{base}/{TIME}/FQ/{sample}_stat.txt")
+		#R=lambda wildcards: FQ[wildcards.sample]
+	output:
+		"{base}/{TIME}/{sample}/HLA/optitype/{sample}.optitype.tsv",
+		"{base}/{TIME}/{sample}/HLA/optitype/{sample}.coverage.pdf"
+	params:
+		rulename="optitype",
+		batch 	=config[config['host']]["job_optitype"],
+		library =lambda wildcards: config['sample_type'][wildcards.sample],
+		source  =lambda wildcards: config["source"][wildcards.sample]
+	resources:
+		objput=1
+	shell: """
+	##########################
+	module load seqan/2.4.0 optitype samtools
+	r1=`echo {wildcards.base}/{wildcards.TIME}/FQ/{wildcards.sample}_R1.fastq.gz`
+        r1_hg19=`echo {wildcards.base}/{wildcards.TIME}/FQ/{wildcards.sample}_hg19_R1.fastq.gz`
+
+	
+        if [ {params.source} == 'PDX' ]; then
+		if [ -f $r1_hg19 ];then
+			cp {wildcards.base}/{wildcards.TIME}/FQ/{wildcards.sample}_hg19_R1.fastq.gz ${{LOCAL}}/
+			cp {wildcards.base}/{wildcards.TIME}/FQ/{wildcards.sample}_hg19_R2.fastq.gz ${{LOCAL}}/
+		else
+                	obj_get -v MoCha {wildcards.sample}_hg19_R1.fastq.gz --directory ${{LOCAL}}/
+                	obj_get -v MoCha {wildcards.sample}_hg19_R2.fastq.gz --directory ${{LOCAL}}/
+		fi
+        else
+		if [ -f $r1 ]; then
+			cp {wildcards.base}/{wildcards.TIME}/FQ/{wildcards.sample}_R1.fastq.gz ${{LOCAL}}/
+			mv ${{LOCAL}}/*{wildcards.sample}_R1.fastq.gz ${{LOCAL}}/R1; mv ${{LOCAL}}/R1 ${{LOCAL}}/{wildcards.sample}_hg19_R1.fastq.gz
+			cp {wildcards.base}/{wildcards.TIME}/FQ/{wildcards.sample}_R2.fastq.gz ${{LOCAL}}/
+			mv ${{LOCAL}}/*{wildcards.sample}_R2.fastq.gz ${{LOCAL}}/R2; mv ${{LOCAL}}/R2 ${{LOCAL}}/{wildcards.sample}_hg19_R2.fastq.gz
+		else
+	                obj_get -v MoCha *{wildcards.sample}_R1.fastq.gz --directory ${{LOCAL}}/
+        	        mv ${{LOCAL}}/*{wildcards.sample}_R1.fastq.gz ${{LOCAL}}/R1; mv ${{LOCAL}}/R1 ${{LOCAL}}/{wildcards.sample}_hg19_R1.fastq.gz
+	                obj_get -v MoCha *{wildcards.sample}_R2.fastq.gz --directory ${{LOCAL}}/
+        	        mv ${{LOCAL}}/*{wildcards.sample}_R2.fastq.gz ${{LOCAL}}/R2; mv ${{LOCAL}}/R2 ${{LOCAL}}/{wildcards.sample}_hg19_R2.fastq.gz
+		fi
+        fi
+
+	if [ {params.library} == 'RNASeq' ]; then
+		razers3 -i 95 -m 1 -dr 0 -tc 20 -o ${{LOCAL}}/{wildcards.sample}_1.bam $OPTITYPE_HOME/data/hla_reference_rna.fasta ${{LOCAL}}/{wildcards.sample}_hg19_R1.fastq.gz
+		razers3 -i 95 -m 1 -dr 0 -tc 20 -o ${{LOCAL}}/{wildcards.sample}_2.bam $OPTITYPE_HOME/data/hla_reference_rna.fasta ${{LOCAL}}/{wildcards.sample}_hg19_R2.fastq.gz
+	else
+		razers3 -i 95 -m 1 -dr 0 -tc 20 -o ${{LOCAL}}/{wildcards.sample}_1.bam $OPTITYPE_HOME/data/hla_reference_dna.fasta ${{LOCAL}}/{wildcards.sample}_hg19_R1.fastq.gz
+                razers3 -i 95 -m 1 -dr 0 -tc 20 -o ${{LOCAL}}/{wildcards.sample}_2.bam $OPTITYPE_HOME/data/hla_reference_dna.fasta ${{LOCAL}}/{wildcards.sample}_hg19_R2.fastq.gz
+	fi
+
+	samtools bam2fq ${{LOCAL}}/{wildcards.sample}_1.bam >${{LOCAL}}/{wildcards.sample}_1.fastq
+	samtools bam2fq ${{LOCAL}}/{wildcards.sample}_2.bam >${{LOCAL}}/{wildcards.sample}_2.fastq
+
+	unset time
+	if [ {params.library} == 'RNASeq' ]; then
+	    OptiTypePipeline.py -i ${{LOCAL}}/{wildcards.sample}_1.fastq ${{LOCAL}}/{wildcards.sample}_2.fastq  --rna -v -o ${{LOCAL}}/{wildcards.sample} -c /data/MoCha/patidarr/config.ini
+	else
+	    OptiTypePipeline.py -i ${{LOCAL}}/{wildcards.sample}_1.fastq ${{LOCAL}}/{wildcards.sample}_2.fastq  --dna -v -o ${{LOCAL}}/{wildcards.sample} -c /data/MoCha/patidarr/config.ini
+	fi
+
+	cp ${{LOCAL}}/{wildcards.sample}/*/*result.tsv {wildcards.base}/{TIME}/{wildcards.sample}/HLA/optitype/{wildcards.sample}.optitype.tsv
+	cp ${{LOCAL}}/{wildcards.sample}/*/*coverage_plot.pdf {wildcards.base}/{TIME}/{wildcards.sample}/HLA/optitype/{wildcards.sample}.coverage.pdf
+	#######################
+	"""

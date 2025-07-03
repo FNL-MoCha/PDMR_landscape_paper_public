@@ -1,0 +1,21 @@
+rule haplotyper:
+	input: 	
+		bam="{subject}/{TIME}/{sample}/{sample}.bwa.final.bam",
+		ref=config["reference"],
+		dbsnp=config["dbsnp"],
+		interval=lambda wildcards: config['target_intervals'][config['sample_captures'][wildcards.sample]].replace("target", "targetbp"),
+	output:
+		vcf="{subject}/{TIME}/{sample}/calls/{sample}.HC_DNASeq.raw.vcf"
+	version: config["GATK"]
+	params:
+		rulename = "haplotyper",
+		batch    = config[config['host']]["job_HC"],
+		sentieon  = config["sentieon"]
+	shell: """
+	#######################
+	module -q load {params.sentieon} 2>/dev/null
+	echo "Using Sentieon"
+	sentieon driver --temp_dir ${{LOCAL}}/ -t ${{THREADS}} -r {input.ref} -i {input.bam} --interval {input.interval} --algo Haplotyper -d {input.dbsnp} --min_base_qual 20 --min_map_qual 30 ${{LOCAL}}/{wildcards.sample}.HC_DNASeq.raw.vcf
+	cp ${{LOCAL}}/{wildcards.sample}.HC_DNASeq.raw.vcf {output.vcf}
+	#######################
+	"""

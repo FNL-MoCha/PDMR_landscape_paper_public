@@ -1,0 +1,86 @@
+SUBJ_RSEM={}
+if 'RNASeq' in config:
+	for subject  in config['RNASeq'].keys():
+		for sample in config['RNASeq'][subject]:
+			if subject not in SUBJ_RSEM:
+				SUBJ_RSEM[subject] =[subject+"/"+TIME+"/"+sample+"/RSEM/"+sample+".genes.results"]
+			else:
+				SUBJ_RSEM[subject] +=[subject+"/"+TIME+"/"+sample+"/RSEM/"+sample+".genes.results"]
+				TARGET    +=  [subject+"/"+TIME+"/qc/"+subject+".RNASEQ_CoorelationHeatmap.pdf"]
+############
+# RSEM 
+#############
+rule rsem:
+	input:
+		ancient("{base}/{TIME}/FQ/{sample}_stat.txt")
+	output:
+		"{base}/{TIME}/{sample}/RSEM/{sample}.isoforms.results",
+		"{base}/{TIME}/{sample}/RSEM/{sample}.genes.results",
+	version: config['rsem']
+	params:
+		rulename   ="rsem",
+		batch      =config[config['host']]['job_RSEM'],
+		script	   =NGS_PIPELINE+"/scripts/RSEM_renorm.R",
+		index      =config["rsemIndex"],
+		bowtie     =config["bowtie2"],
+		source     =lambda wildcards: config["source"][wildcards.sample],
+	resources:
+		objputRSEM=1
+	shell: """
+	#######################
+	module load rsem/{version}
+	module load bowtie/{params.bowtie}
+	r1=`echo {wildcards.base}/{wildcards.TIME}/FQ/{wildcards.sample}_R1.fastq.gz`
+        r1_hg19=`echo {wildcards.base}/{wildcards.TIME}/FQ/{wildcards.sample}_hg19_R1.fastq.gz`
+	
+	if [ {params.source} == 'PDX' ]; then
+		if [ -f $r1_hg19 ]; then
+			cp {wildcards.base}/{wildcards.TIME}/FQ/{wildcards.sample}_hg19_R1.fastq.gz ${{LOCAL}}/
+                        cp {wildcards.base}/{wildcards.TIME}/FQ/{wildcards.sample}_hg19_R2.fastq.gz ${{LOCAL}}/
+		else
+			obj_get -v MoCha {wildcards.sample}_hg19_R1.fastq.gz --directory ${{LOCAL}}/
+			obj_get -v MoCha {wildcards.sample}_hg19_R2.fastq.gz --directory ${{LOCAL}}/
+		fi
+	else
+		if [ -f $r1 ]; then
+			cp {wildcards.base}/{wildcards.TIME}/FQ/{wildcards.sample}_R1.fastq.gz ${{LOCAL}}/
+			mv ${{LOCAL}}/*{wildcards.sample}_R1.fastq.gz ${{LOCAL}}/R1; mv ${{LOCAL}}/R1 ${{LOCAL}}/{wildcards.sample}_hg19_R1.fastq.gz
+			cp {wildcards.base}/{wildcards.TIME}/FQ/{wildcards.sample}_R2.fastq.gz ${{LOCAL}}/
+			mv ${{LOCAL}}/*{wildcards.sample}_R2.fastq.gz ${{LOCAL}}/R2; mv ${{LOCAL}}/R2 ${{LOCAL}}/{wildcards.sample}_hg19_R2.fastq.gz
+		else
+			obj_get -v MoCha *{wildcards.sample}_R1.fastq.gz --directory ${{LOCAL}}/
+			mv ${{LOCAL}}/*{wildcards.sample}_R1.fastq.gz ${{LOCAL}}/R1; mv ${{LOCAL}}/R1 ${{LOCAL}}/{wildcards.sample}_hg19_R1.fastq.gz
+			obj_get -v MoCha *{wildcards.sample}_R2.fastq.gz --directory ${{LOCAL}}/
+			mv ${{LOCAL}}/*{wildcards.sample}_R2.fastq.gz ${{LOCAL}}/R2; mv ${{LOCAL}}/R2 ${{LOCAL}}/{wildcards.sample}_hg19_R2.fastq.gz
+		fi
+	fi
+
+	
+	rsem-calculate-expression -p ${{THREADS}} --output-genome-bam --bowtie2 --forward-prob 0 --paired-end ${{LOCAL}}/{wildcards.sample}_hg19_R1.fastq.gz ${{LOCAL}}/{wildcards.sample}_hg19_R2.fastq.gz {params.index} ${{LOCAL}}/{wildcards.sample}
+	module load R
+	{params.script} ${{LOCAL}}/{wildcards.sample}.isoforms.results ${{LOCAL}}/{wildcards.sample}.genes.results {wildcards.base}/{wildcards.TIME}/{wildcards.sample}/RSEM/{wildcards.sample}.isoforms.results {wildcards.base}/{wildcards.TIME}/{wildcards.sample}/RSEM/{wildcards.sample}.genes.results
+	#cp ${{LOCAL}}/{wildcards.sample}.genes.results {wildcards.base}/{wildcards.TIME}/{wildcards.sample}/RSEM/{wildcards.sample}.genes.results
+	#cp ${{LOCAL}}/{wildcards.sample}.isoforms.results {wildcards.base}/{wildcards.TIME}/{wildcards.sample}/RSEM/{wildcards.sample}.isoforms.results
+	#######################
+	"""
+############
+# RSEM Coorelation Plot
+############
+rule rna_corr_plot:
+	input:
+		lambda wildcards: SUBJ_RSEM[wildcards.subject]
+	output:
+		"{subject}/{TIME}/qc/{subject}.RNASEQ_CoorelationHeatmap.pdf"
+	params:
+		rulename  ="rna_corr_plot",
+		batch     =config[config['host']]['job_default'],
+		script1	  =NGS_PIPELINE+"/scripts/assemble_RNASEQ_gene.py",
+		script2   =NGS_PIPELINE+"/scripts/correlation_heatmap.R"
+	shell: """
+	#######################
+	cp {input} ${{LOCAL}}
+	python {params.script1} ${{LOCAL}} ${{LOCAL}}/{wildcards.subject}.csv
+	module load R
+	{params.script2} --input=${{LOCAL}}/{wildcards.subject}.csv --patient={wildcards.subject} --output={output}
+	#######################
+	"""

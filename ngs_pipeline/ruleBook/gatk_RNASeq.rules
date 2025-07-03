@@ -1,0 +1,98 @@
+############
+#       GATK_RNASeq
+############
+############
+#       GATK Best Practices
+############
+rule gatk_rnaseq_step1:
+        input:  bam="{base}/{TIME}/{sample}/{sample}.star.dd.bam",
+                bai="{base}/{TIME}/{sample}/{sample}.star.dd.bam.bai",
+                ref=config["reference"],
+                phase1=config["1000G_phase1"],
+                mills=config["Mills_and_1000G"]
+        output:
+                bam=temp("{base}/{TIME}/{sample}/{sample}.star.trim.bam"),
+                index=temp("{base}/{TIME}/{sample}/{sample}.star.trim.bam.bai"),
+        version: config["GATK"]
+        params:
+                rulename  = "gatk_rnaseq_step1",
+                sentieon  = config["sentieon"],
+                batch     = config[config['host']]["job_gatk_R1"]
+        shell: """
+        #######################
+        module load sentieon-genomics/201911
+        sentieon driver --temp_dir ${{LOCAL}}/ --interval /data/MoCha/patidarr/ref/ucsc.hg19.canonicalChr.bed --traverse_param 1000000/10000 -r {input.ref} -t ${{THREADS}} -i {input.bam} --algo RNASplitReadsAtJunction --reassign_mapq 255:60 {output.bam}
+
+        #module load GATK/{version}    
+        #java -Xmx${{MEM}}g -Djava.io.tmpdir=${{LOCAL}} -jar $GATK_JAR -T SplitNCigarReads -R {input.ref} -I {input.bam} -o {output.bam} -rf ReassignOneMappingQuality -RMQF 255 -RMQT 60 -U ALLOW_N_CIGAR_READS
+        ######################
+        """
+############
+#       GATK Best Practices
+############
+rule gatk_rnaseq_step2:
+        input:  bam="{base}/{TIME}/{sample}/{sample}.star.trim.bam",
+                bai="{base}/{TIME}/{sample}/{sample}.star.trim.bam.bai",
+                ref=config["reference"],
+                phase1=config["1000G_phase1"],
+                mills=config["Mills_and_1000G"]
+        output:
+                bam=temp("{base}/{TIME}/{sample}/{sample}.star.lr.bam"),
+                index=temp("{base}/{TIME}/{sample}/{sample}.star.lr.bam.bai"),
+        version: config["GATK"]
+        params:
+                rulename  = "gatk_rnaseq_step2",
+                sentieon  = config["sentieon"],
+                batch     = config[config['host']]["job_gatk_R2"]
+        shell: """
+        #######################
+        module load {params.sentieon}
+        sentieon driver --temp_dir ${{LOCAL}}/  -r {input.ref}  -t ${{THREADS}} -i {input.bam} --algo Realigner -k {input.mills}  -k {input.phase1} {output.bam}
+	######################
+        """
+############
+#       GATK Best Practices
+############
+rule gatk_rnaseq_step3:
+        input:  bam="{base}/{TIME}/{sample}/{sample}.star.lr.bam",
+                bai="{base}/{TIME}/{sample}/{sample}.star.lr.bam.bai",
+                ref=config["reference"],
+                phase1=config["1000G_phase1"],
+                mills=config["Mills_and_1000G"]
+        output:
+                mat=temp("{base}/{TIME}/{sample}/{sample}.star.recalibration.matrix.txt"),
+        version: config["GATK"]
+        params:
+                rulename  = "gatk_rnaseq_step3",
+                sentieon  = config["sentieon"],
+                batch     = config[config['host']]["job_gatk_R3"]
+        shell: """
+        #######################
+	module load {params.sentieon}
+	sentieon driver --temp_dir ${{LOCAL}}/ -r {input.ref} -t ${{THREADS}} -i {input.bam} --algo QualCal -k {input.phase1} -k {input.mills} {output.mat}
+        ######################
+        """
+############
+#       GATK Best Practices
+############
+rule gatk_rnaseq_step4:
+        input:  bam="{base}/{TIME}/{sample}/{sample}.star.lr.bam",
+                bai="{base}/{TIME}/{sample}/{sample}.star.lr.bam.bai",
+		mat="{base}/{TIME}/{sample}/{sample}.star.recalibration.matrix.txt",
+                ref=config["reference"],
+                phase1=config["1000G_phase1"],
+                mills=config["Mills_and_1000G"]
+        output:
+                bam="{base}/{TIME}/{sample}/{sample}.star.final.bam",
+                index="{base}/{TIME}/{sample}/{sample}.star.final.bam.bai",
+        version: config["GATK"]
+        params:
+                rulename  = "gatk_rnaseq_step4",
+                sentieon  = config["sentieon"],
+                batch     = config[config['host']]["job_gatk_R4"]
+        shell: """
+        #######################
+	module load {params.sentieon}
+	sentieon driver --temp_dir ${{LOCAL}}/ -t ${{THREADS}} -r {input.ref} -i {input.bam} -q {input.mat} --algo QualCal -k {input.phase1} -k {input.mills} ${{LOCAL}}/{wildcards.sample}.recalibrationPost.matrix.txt --algo ReadWriter {output.bam}	
+        ######################
+        """
