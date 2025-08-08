@@ -1,5 +1,7 @@
 Instructions:
 
+0. The required data to run some scripts are located in Figshare: https://figshare.com/account/items/29853116/
+
 1. For sup_code, run these in sequence:
 compute_pca_model_level_expression.R
 compute_PDX_TCGA_CCLE_data.R
