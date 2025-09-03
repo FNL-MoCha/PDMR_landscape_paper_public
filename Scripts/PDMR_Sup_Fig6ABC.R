@@ -101,29 +101,47 @@ samples_used=rownames(df_)[df_$histology!='READ' & df_$histology!='COADREAD']
 df_=df_[samples_used,]
 df_$histology[df_$histology=='SKCM']='MEL'
 
-ordered_samples=rownames(df_)[order(df_$histology,df_$cohort)]
 
-mat_=PDX_TCGA_CCLE_expression_z_score
-mat_=mat_[,ordered_samples]
-cor_=cor(mat_,method='spearman',use='complete.obs')
+heatmap_list=list()
+i=0
+histologies=c("BLCA", "COAD", "HNSC", "MEL", "LUAD", "LUSC", "LUAD or LUSC", "PAAD")
+for(histology in histologies){
+  i=i+1
   
+  if(histology=="LUAD or LUSC"){
+    df_histology=df_[df_$histology %in% c('LUAD','LUSC'),]
+  }else{
+    df_histology=df_[df_$histology==histology,]
+  }
+  ordered_samples_histology=rownames(df_histology)[order(df_histology$cohort)]
+  mat_=PDX_TCGA_CCLE_expression_z_score[,ordered_samples_histology]
+  cor_=cor(mat_,method='spearman',use='complete.obs')
+  
+  heatmap_list[[i]]=ComplexHeatmap::pheatmap(cor_,
+                                              annotation_row=df_histology[ordered_samples_histology,],
+                                              annotation_col=df_histology[ordered_samples_histology,],
+                                              annotation_colors = list(
+                                                cohort = c("PDX" = "#8a87de", "TCGA" = "#87cade","CCLE"="#c92c6e"),
+                                                histology = c("COAD"= "#e64b35", "HNSC" = "#0aa087","LUAD"="#3d5488","LUSC"="#749adb",
+                                                              "BLCA" = "#f49b7f", "PAAD" = "#8e0153", "MEL" = "#8391b4")
+                                              ),
+                                              cluster_rows = F,
+                                              cluster_cols = F,
+                                              show_colnames = F,show_rownames = F,
+                                              name=histology,
+                                              breaks = seq(-0.5, 0.5, length.out = 101),  # anchors color scale to [-0.5, 0.5]
+                                              use_raster=T)
+}
+
+
 pdf(file=paste0('sup_fig_6C.pdf'),paper = "a4r",width=11)
-ComplexHeatmap::pheatmap(cor_,
-               annotation_row=df_[ordered_samples,],
-               annotation_col=df_[ordered_samples,],
-               annotation_colors = list(
-                 cohort = c("PDX" = "#8a87de", "TCGA" = "#87cade","CCLE"="#c92c6e"),
-                 histology = c("COAD"= "#e64b35", "HNSC" = "#0aa087", "NSCLC" = "#3d5488","LUAD"="#3d5488",
-                               "LUSC"="#3d5488","BLCA" = "#f49b7f", "PAAD" = "#8e0153", "MEL" = "#8391b4")
-               ),
-               cluster_rows = F,
-               cluster_cols = F,
-               show_colnames = F,show_rownames = F,
-               name=legend_labels[i],
-               use_raster=T)
-
+heatmap_list[[1]]
+heatmap_list[[2]]
+heatmap_list[[3]]
+heatmap_list[[4]]
+heatmap_list[[5]]
+heatmap_list[[6]]
+heatmap_list[[7]]
+heatmap_list[[8]]
 dev.off()
-
-
-
 
