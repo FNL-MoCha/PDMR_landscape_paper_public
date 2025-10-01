@@ -1,0 +1,6 @@
+dataType	RNAseq
+dataMatrix	PAAD_originator_expression.tsv
+dataFormat	tsv
+geneIDType	geneSymbol
+logTransformed	no
+rangeK	2:10
