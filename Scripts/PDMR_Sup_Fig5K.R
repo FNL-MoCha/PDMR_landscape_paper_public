@@ -86,7 +86,7 @@ end-start #Time difference of 3.05186 mins
 
 
 #compare correlation distributions
-pdf('fig_3D_3.pdf')
+pdf('sup_fig_5K.pdf')
 par(mgp=c(1, 0.5, 0))
 boxplot(list(spearmans_models,spearmans_histology,spearmans_passages),ylim=c(0,1),xaxt='n',cex=2,cex.axis=2)
 dev.off()

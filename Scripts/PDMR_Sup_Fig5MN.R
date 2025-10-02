@@ -11,7 +11,7 @@ load('./data/meta_in_pub.RData')
 
 #ESTIMATE for different passages
 gene_expression=PDX_TCGA_CCLE_expression
-pdf(file=paste0('sup_fig_6F.pdf'),paper = "a4r",width=11)
+pdf(file=paste0('sup_fig_5M.pdf'),paper = "a4r",width=11)
 par(mfrow=c(2,3))
 par(mar = c(2,4,2,2))
 for(histology in c('BLCA','COAD','READ','HNSC','MEL','LUAD','LUSC','PAAD')){ #COADREAD not used from PDX data
@@ -51,7 +51,7 @@ par(mar = c(5, 4, 4, 2)) #set to default
 
 #Scatter plot for tumor fraction vs. correlation for originator-PDX
 gene_expression=log2(PDX_TCGA_CCLE_expression+1)
-pdf(file=paste0('sup_fig_6G.pdf'))
+pdf(file=paste0('sup_fig_5N.pdf'))
 par(mfrow=c(3,3),mar = c(2,2,2,1))
 for(histology in c('BLCA','COAD','READ','HNSC','MEL','LUAD','LUSC','PAAD')){ #COADREAD not used from PDX data
   

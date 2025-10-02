@@ -40,7 +40,7 @@ compute_spearmans=function(dat){
 spearmans_dat_original=compute_spearmans(model_dat_original)
 
 
-pdf('sup_fig_6E.pdf')
+pdf('sup_fig_5L.pdf')
 boxplot(spearmans_dat_original,ylim=c(0.6,1),cex.axis=2,main='Model vs. originator Spearman correlations')
 dev.off()
 
