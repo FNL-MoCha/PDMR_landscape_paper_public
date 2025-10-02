@@ -6,8 +6,8 @@ This folder contains R scripts used to generate the main and supplementary figur
 
 ## Inputs
 
-- **Large data files (Figshare):** Download from **Figshare**: https://figshare.com/account/items/29853116/  
-- **Other inputs:** Located in the repository’s `DATA/` folder.
+- Large data files: Download from Figshare https://figshare.com/account/items/29853116/  
+- Other inputs: Located in the repository’s `DATA/` folder.
 
 ---
 
