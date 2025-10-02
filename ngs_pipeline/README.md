@@ -1,7 +1,8 @@
 [![Snakemake](https://img.shields.io/badge/snakemake- >=3.8.0-brightgreen.svg?style=flat-square)](https://snakemake.bitbucket.io)
 
 ## Introduction
-This is the implementation of [KhanLab](https://ccr.cancer.gov/Genetics-Branch/javed-khan) NGS Pipeline using Snakemake.
+This NGS pipeline was designed for NCI Patient-Derived Models Repository (PDMR-https://dctd.cancer.gov/drug-discovery-development/reagents-materials/pdmr)
+
 ## Installation
 
 The easiest way to get this pipeline is to clone the repository.
