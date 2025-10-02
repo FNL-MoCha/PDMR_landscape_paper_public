@@ -5,7 +5,7 @@ This NGS pipeline is designed for NCI Patient-Derived Models Repository (PDMR) p
 
 ## Installation
 
-The easiest way to get this pipeline is to clone the repository.
+The easiest way for installation is to clone the repository using command below.
 ```
 git clone https://github.com/FNL-MoCha/PDMR_landscape_paper_public.git
 ```
