@@ -1,20 +1,22 @@
 [![Snakemake](https://img.shields.io/badge/snakemake- >=3.8.0-brightgreen.svg?style=flat-square)](https://snakemake.bitbucket.io)
 
 ## Introduction
-This is the implementation of [KhanLab](https://ccr.cancer.gov/Genetics-Branch/javed-khan) NGS Pipeline using Snakemake.
+This NGS pipeline was designed for NCI Patient-Derived Models Repository (PDMR) (https://dctd.cancer.gov/drug-discovery-development/reagents-materials/pdmr)
+
 ## Installation
 
 The easiest way to get this pipeline is to clone the repository.
+```
+git clone https://github.com/FNL-MoCha/PDMR_landscape_paper_public.git
+```
+This pipeline is available on NIH biowulf cluster, contact us (NCI_PDM_Repository@mail.nih.gov or mochanctn@mail.nih.gov) if you would like to do a test run.
 
-```
-git clone https://github.com/patidarr/ngs_pipeline.git
-```
-This pipeline is available on NIH biowulf cluster, contact me if you would like to do a test run. The data from this pipeline could directly be ported in [OncoGenomics-DB](https://clinomics.ncifcrf.gov/production/public/), an application created to visualize NGS data available to NIH users.
 ## Requirements
 [mutt](http://www.mutt.org/)  
 [gnu parallel](http://www.gnu.org/software/parallel/)  
 SLURM or PBS for resource management  
-Bioinformatics Tools Listed in [config files](config/config_common.json)  
+Bioinformatics Tools Listed in [config files](config/config_common.json)
+  
 ### Following R Packages
 - [OmicCircos](https://www.bioconductor.org/packages/release/bioc/html/OmicCircos.html)
 - [RColorBrewer](https://cran.r-project.org/web/packages/RColorBrewer/index.html)
