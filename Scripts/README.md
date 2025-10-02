@@ -2,14 +2,11 @@
 
 This folder contains R scripts used to generate the main and supplementary figures for the PDMR landscape paper.
 
----
 
 ## Inputs
 
 - Large data files: Download from Figshare https://figshare.com/account/items/29853116/  
 - Other inputs: Located in the repository’s `DATA/` folder.
-
----
 
 ## For the scripts in sup_code folder, run them in sequence
 
@@ -19,8 +16,6 @@ This folder contains R scripts used to generate the main and supplementary figur
 4. prepare_PDX_decoder_table.R
 5. run_decoder_PDX.sh
     * Note: The decoder package is not included due to size. The shell script contains the command to download it.
-
----
 
 ## The generated figures are in Figures folder
 
