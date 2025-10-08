@@ -33,8 +33,8 @@ This pipeline is available on NIH biowulf cluster, contact us (NCI_PDM_Repositor
 
 ## Documentations for PDMR NGS Pipeline
 ---
-- Annotation of Variants from Whole Exome Assay with OncoKB (https://dctd.cancer.gov/drug-discovery-development/reagents-materials/pdmr/using-pdmr/sops/mccrd-sop0053.pdf)
 - Whole Exome Sequencing Data Analysis Pipeline and Specifications(https://dctd.cancer.gov/drug-discovery-development/reagents-materials/pdmr/using-pdmr/sops/mccrd-sop0011.pdf)
+- Annotation of Variants from Whole Exome Assay with OncoKB (https://dctd.cancer.gov/drug-discovery-development/reagents-materials/pdmr/using-pdmr/sops/mccrd-sop0053.pdf)
 - Detection of Microsatellite Instability (MSI) Status from Whole Exome Sequencing Data (https://dctd.cancer.gov/drug-discovery-development/reagents-materials/pdmr/using-pdmr/sops/mccrd-sop0057.pdf)
 - Individual Ancestry Estimation from
 Whole Exome Sequencing Data (https://dctd.cancer.gov/drug-discovery-development/reagents-materials/pdmr/using-pdmr/sops/mccrd-sop0058.pdf)
