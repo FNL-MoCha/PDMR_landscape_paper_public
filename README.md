@@ -1,7 +1,5 @@
 ## Genomic Landscape and Preclinical Therapeutic Insights Developed from Xenograft, Organoid, and Cell Line Models in the NCI’s Patient-Derived Models Repository
 
-*Nature Cancer* (2025) [link]
-
 Biswajit Das*§, Li Chen*, Yvonne A. Evrard*, Ting-Chia Chang*, I-Fan Wu*, et al.
 
 §Corresponding author: Biswajit Das
@@ -9,6 +7,8 @@ Biswajit Das*§, Li Chen*, Yvonne A. Evrard*, Ting-Chia Chang*, I-Fan Wu*, et al
 These authors contributed equally to this work
 
 Email: dasbiswa@mail.nih.gov
+
+*Nature Cancer* (2025) [link]
 
 ## DESCRIPTION
 This Github repository contains scripts, figures and configurations to process next‑generation sequencing (NGS) data for the PDMR Landscape project.
