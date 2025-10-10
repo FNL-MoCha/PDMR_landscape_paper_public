@@ -1,81 +1,39 @@
-import itertools
-import os
-import collections
-import json
-import glob
-from snakemake.utils import R
-#from snakemake.utils import min_vession
-#min_version("3.2")
-#module load snakemake/3.8.0
-from snakemake.exceptions import MissingInputException
-
-#Author:        Rajesh Patidar
-#Email:         patidarr
-# This will make a output file for every model containing output of bcftools gtcheck
-
-# Snakemake Base location
-shell.prefix("""
-set -e -o pipefail
-module purge
-sleep 20s
-""")
-
-PATH="/data/MoCha/processedDATA/MAGGIE/"
-PAT_FILES = {}
-
-PATIENT ={}
-F=sorted(glob.glob(PATH+"*germline*WES*gz"))
-for files in F:
-	column = files.split("_")
-	patient=column[0].split("/")
-	PATIENT[patient[5]] =["/data/MoCha/processedDATA/"+patient[5]+"/20170910/qc/"+patient[5]+".maggie.txt"]
-	PAT_FILES[patient[5]] =[files]
-
-F=sorted(glob.glob(PATH+"*WES*gz"))
-for files in F:
-	column = files.split("~")
-	patient=column[0].split("/")
-	if "_germline" not in patient[5]:
-		PATIENT[patient[5]] =["/data/MoCha/processedDATA/"+patient[5]+"/20170910/qc/"+patient[5]+".maggie.txt"]
-		if patient[5] not in  PAT_FILES:
-			PAT_FILES[patient[5]] =[files]
-		
-F=sorted(glob.glob(PATH+"*RNASEQ*gz"))
-for files in F:
-	column = files.split("~")
-	patient=column[0].split("/")
-	if patient[5] not in  PAT_FILES:
-		PATIENT[patient[5]] =["/data/MoCha/processedDATA/"+patient[5]+"/20170910/qc/"+patient[5]+".maggie.txt"]
-		PAT_FILES[patient[5]] =[files]
-
-#################################
-#localrules: Final
-#################################
-rule Final:
-	input:	PATIENT.values()
-#################################
-#	This rule will make the Patient Level file
-#################################
-rule PatientLevel:
+#if 'DNASeq' in config:
+#	for subject in config['DNASeq']:
+#		for sample in config['DNASeq'][subject]:
+#			TARGET    += [subject+"/"+TIME+"/"+sample+"/qc/"+sample+".bwa.codingsynon.sorted.vcf.gz"]
+if 'RNASeq' in config:
+	for subject  in config['RNASeq'].keys():
+		for sample in config['RNASeq'][subject]:
+			TARGET    +=  [subject+"/"+TIME+"/"+sample+"/qc/"+sample+".star.codingsynon.sorted.vcf.gz"]
+############
+# MAGGIE
+#############
+rule maggie:
 	input:
-		lambda wildcards: PAT_FILES[wildcards.patient]
+		bam="{subject}/{TIME}/{sample}/{sample}.{aligner}.bam",
+		interval=config["MAGGIE_BED"].replace(".bed",".padded.bed"),
+		interval2=config["MAGGIE_BED"],
+		ref=config["reference"],	
 	output:
-		txt="/data/MoCha/processedDATA/{patient}/20170910/qc/{patient}.maggie.txt",
-		pdf="/data/MoCha/processedDATA/{patient}/20170910/qc/{patient}.maggie.pdf"
+		"{subject}/{TIME}/{sample}/qc/{sample}.{aligner}.codingsynon.sorted.vcf.gz"
 	params:
-		rulename   = "MAGGIE",
-	shell:"""
-	#################################
+		rulename   ="maggie",
+		batch      =config[config['host']]['job_MAGGIE'],
+	shell: """
+	#######################
 	module load samtools/1.2
-	echo -e "Model\\tSample\\tScore\\tSites" >{output.txt}
-	for file2 in {PATH}/*.codingsynon.sorted.vcf.gz	
-		do
-			name=`basename ${{file2}} .codingsynon.sorted.vcf.gz`
-			name=`echo ${{name}}|sed -e 's/.star//g'|sed -e 's/.bwa//g'`
-			score=`bcftools gtcheck -g {input} -G 1 ${{file2}} |grep ^CN |cut -f2,4 |awk '{{OFS="\\t"}}{{print +$1,$2}}'`
-			echo -e "{wildcards.patient}\\t${{name}}\\t${{score}}"
-		done >>{output.txt}
-	module load R
-	/data/MoCha/patidarr/ngs_pipeline/scripts/PlotMaggie.R --input={output.txt} --patient={wildcards.patient} --output={output.pdf}
-	#################################
+	samtools mpileup -ug -f {input.ref} -l {input.interval} {input.bam} |bcftools call -g 10 -c -O v -o ${{LOCAL}}/{wildcards.sample}.vcf
+	bgzip -i ${{LOCAL}}/{wildcards.sample}.vcf
+	tabix ${{LOCAL}}/{wildcards.sample}.vcf.gz
+	bcftools view -o ${{LOCAL}}/{wildcards.sample}.codingsynon.vcf.gz -O z -R {input.interval2} ${{LOCAL}}//{wildcards.sample}.vcf.gz
+
+	module load vcftools
+	vcf-sort -c ${{LOCAL}}/{wildcards.sample}.codingsynon.vcf.gz |bgzip > {wildcards.subject}/{wildcards.TIME}/{wildcards.sample}/qc/{wildcards.sample}.{wildcards.aligner}.codingsynon.sorted.vcf.gz
+	tabix  {wildcards.subject}/{wildcards.TIME}/{wildcards.sample}/qc/{wildcards.sample}.{wildcards.aligner}.codingsynon.sorted.vcf.gz
+
+
+	cp -rf {wildcards.subject}/{wildcards.TIME}/{wildcards.sample}/qc/{wildcards.sample}.{wildcards.aligner}.codingsynon.sorted.vcf.gz /data/MoCha/processedDATA/MAGGIE/{wildcards.sample}.codingsynon.sorted.vcf.gz
+	cp -rf {wildcards.subject}/{wildcards.TIME}/{wildcards.sample}/qc/{wildcards.sample}.{wildcards.aligner}.codingsynon.sorted.vcf.gz.tbi /data/MoCha/processedDATA/MAGGIE/{wildcards.sample}.codingsynon.sorted.vcf.gz.tbi
+	#######################
 	"""
