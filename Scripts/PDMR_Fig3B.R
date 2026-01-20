@@ -19,7 +19,7 @@ data_summary <- function(x) {
 
 ####################################################
 # combined figure for all passages, pdc and pdorg
-op <- read.csv("CNV_stability_paper_noPforfigure.csv", check.names = F, stringsAsFactors = F)
+op <- read.csv("../DATA/CNV_stability_paper_noPforfigure.csv", check.names = F, stringsAsFactors = F)
 op.ori <- op
 
 temp <- op$PDX.Passage.or.PDC.or.PDOrg.or.Patient.Orginator.specimen
