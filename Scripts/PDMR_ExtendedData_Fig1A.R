@@ -13,7 +13,7 @@ library(ggpmisc)
 library(ggsci)
 
 
-mat <- read.csv("oncoplot_data_pdc.csv", check.names = F, stringsAsFactors = F)
+mat <- read.csv("../DATA/oncoplot_data_pdc.csv", check.names = F, stringsAsFactors = F)
 
 # Function to set the size of the rectangle to be plotted as well as the color based on variat type
 alter_fun = list(
@@ -32,7 +32,7 @@ col = c(AMP = "#de2d26", DEL = "#3182bd",
 
 #Make the top annotations
 #need to sort the annotation file based on the matrix created by oncoplot
-clinical_input <- read.csv("./Supp_tables_pdc_metadata.csv", check.names = F, stringsAsFactors = F)
+clinical_input <- read.csv("../DATA/Supp_tables_pdc_metadata.csv", check.names = F, stringsAsFactors = F)
 
 
 mat2 <- mat[,2:dim(mat)[2]]
