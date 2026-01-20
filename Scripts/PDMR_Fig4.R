@@ -8,8 +8,8 @@ library(ggh4x)
 #> Loading required package: ggplot2
 
 
-input <- read.table("ppa_pdx.txt", header = T,sep="\t")
-input2<-read.table("ppa2_pdx.txt", header = T,sep = "\t")
+input <- read.table("../DATA/ppa_pdx.txt", header = T,sep="\t")
+input2<-read.table("../DATA/ppa2_pdx.txt", header = T,sep = "\t")
 #input2 <-input[grep("ORIGINATOR", input$PDX),]
 
 
@@ -56,7 +56,7 @@ input2<-read.table("ppa2_pdx.txt", header = T,sep = "\t")
 #st2 <- read.csv("Supp_tables_v27_st2.csv", check.names = F, stringsAsFactors = F)
 
 
-meta.data <- read.csv("Supp_tables_pdx_metadata.csv", check.names = F, stringsAsFactors = F)
+meta.data <- read.csv("../DATA/Supp_tables_pdx_metadata.csv", check.names = F, stringsAsFactors = F)
 
 t <- input$Model
 nt <- gsub("~","-", t)
@@ -117,12 +117,12 @@ dev.off()
 
 ###########################
 ### plot for ppa_pdc and ppa_pdorg
-ppa.pdc <- read.table("ppa_pdc.txt", header = T,sep="\t")
+ppa.pdc <- read.table("../DATA/ppa_pdc.txt", header = T,sep="\t")
 
 ppa.pdc$PPA_refOriginator <- ppa.pdc$Common/(ppa.pdc$Common+ppa.pdc$Originator.Only)
 ppa.pdc$source <- "PDC"
 
-ppa.pdorg <- read.table("ppa_pdorg.txt", header = T,sep="\t")
+ppa.pdorg <- read.table("../DATA/ppa_pdorg.txt", header = T,sep="\t")
 ppa.pdorg$PPA_refOriginator <- ppa.pdorg$Common/(ppa.pdorg$Common+ppa.pdorg$Originator.Only)
 ppa.pdorg$source <- "PDOrg"
 
