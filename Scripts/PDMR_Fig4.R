@@ -1,22 +1,3 @@
-input <- read.table("/Volumes/MoCha/processedDATA/MATH.txt", header = T,sep="\t")
-input2 <-input[grep("ORIGINATOR", input$Sample),]
-
-require(ggplot2)
-mysep <- function(x, ...) 
-  format(x, big.mark = ' ', trim = TRUE, scientific = FALSE, ...) 
-
-ggplot() +
-  geom_boxplot(data = input,aes(x=Model, y=MATH)) +
-  geom_point(data = input2,aes(x=Model, y=MATH,color = 'red'))+
-  theme_classic()+
-  scale_y_continuous(label= mysep,limits = c(0,150))+
-  scale_x_discrete(limits= unique(input$Model))+
-  theme(axis.text.x = element_text(colour = "black",angle = 90),
-    #legend.text=element_text(size=10),
-    legend.title = element_blank()
-    #axis.title = element_text(colour = "black", size = rel(1.5))
-  )
-
 ##############################################################
 
 require(ggplot2)
