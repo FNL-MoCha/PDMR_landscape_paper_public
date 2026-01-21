@@ -1,12 +1,12 @@
 library(dplyr)
 
-source('self_defined_functions.R')
+source('./sup_code/self_defined_functions.R')
 
 #load metadata
-load('../data/meta_in_pub.RData')
+load('./data/meta_in_pub.RData')
 
 #load gene expression aggregated at model level (Currently they don't include PDC, PDOrg)
-load('../data/model_dat_original.RData') 
+load('./data/model_dat_original.RData') 
 
 
 #statistical analysis for all cancer types using spearman
@@ -40,7 +40,7 @@ compute_spearmans=function(dat){
 spearmans_dat_original=compute_spearmans(model_dat_original)
 
 
-pdf('sup_fig_5L.pdf')
+pdf('Extended_Data_Fig_5D.pdf')
 boxplot(spearmans_dat_original,ylim=c(0.6,1),cex.axis=2,main='Model vs. originator Spearman correlations')
 dev.off()
 
