@@ -4,6 +4,7 @@ library(ggplot2)
 library(clusterProfiler)
 library(readxl)
 library(ComplexHeatmap)
+library(DESeq2)
 
 source('./sup_code/self_defined_functions.R')
 
@@ -40,7 +41,7 @@ res=res[!is.na(res$padj) & (res$padj<=padj) & (abs(res$log2FoldChange)>=log2(fol
 DE_complete=res
 
 
-pdf('figures_pdf/sup_fig_8A.pdf',width=10,height=10)
+pdf('Extended_Data_Fig_9A.pdf',width=10,height=10)
 GSEA_hallmark=perform_my_GSEA(DE_complete,'~/Documents/MoCha/util/h.all.v2022.1.Hs.symbols.gmt')
 GSEA_hallmark
 dev.off()
@@ -55,7 +56,7 @@ gene_stats = sort(gene_stats, decreasing = TRUE)
 GSEA_gene_list=fgsea::gmtPathways('~/Documents/MoCha/util/h.all.v2022.1.Hs.symbols.gmt')
 GSEA_gene_list=GSEA_gene_list[GSEA_hallmark$Results$pathway]
 
-pdf('figures_pdf/sup_fig_8B.pdf',width = 10,height = 12)
+pdf('Extended_Data_Fig_9B.pdf',width = 10,height = 12)
 plots <- list()
 for(pathway in names(GSEA_gene_list)){
   plot_=plotEnrichment(pathway = GSEA_gene_list[[pathway]], stats = gene_stats) + labs(title = pathway)
