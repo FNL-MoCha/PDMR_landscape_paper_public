@@ -7,7 +7,7 @@ source('self_defined_functions.R')
 
 
 #Load RNA-seq data
-load('../data/mutational_landscape_normalizedCount.RData') #loaded as: data.final
+load('./data/mutational_landscape_normalizedCount.RData') #loaded as: data.final
 if(identical(class(data.final),'data.frame')) data.final=as.matrix(data.final)
 colnames(data.final)=gsub('~','-',colnames(data.final))
 ##correct some originator names
@@ -18,13 +18,13 @@ cancer_type_in_publication=c('COADREAD','HNSC','NSCLC','BLCA','PAAD','MEL','SARC
 passage_to_use=c('Originator','P0','P1','P2','P3','P4','P5','P6','PDC','PDOrg')
 
 #load metadata
-load('../data/meta_in_pub.RData')
+load('./data/meta_in_pub.RData')
 
 dat=data.final[,meta_in_pub$sample] 
 
 
 
-load('../data/RNAseq_pca.RData')
+load('./data/RNAseq_pca.RData')
 pca=RNAseq_pca
 
 X=pca$x
