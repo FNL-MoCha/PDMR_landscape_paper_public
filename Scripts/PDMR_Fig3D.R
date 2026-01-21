@@ -48,31 +48,6 @@ major_component_expression=component_expression_matrix_list[[1]]+component_expre
 rest_component=component_expression_matrix_list[[4]]
 
 
-filler=rep(NA,ncol(COAD_originator_expression))
-mean_cor_list_K2=list(mean_cors_originator_PDX=filler,
-                      mean_cors_DeconOriginatorComponent1_PDX=filler,
-                      mean_cors_DeconOriginatorComponent2_PDX=filler,
-                      major_component_expression=filler,
-                      rest_component=filler)
-i=1
-for(originator_expression_mat in list(log2(COAD_originator_expression+1),
-                                      K2_component_expression_matrix_list[[1]],
-                                      K2_component_expression_matrix_list[[2]],
-                                      major_component_expression,
-                                      rest_component
-)){
-  mean_cors_=c()
-  for(originator in colnames(originator_expression_mat)){
-    model_=sub('~ORIGINATOR.*','',originator)
-    PDX_=colnames(COAD_PDX_expression)[grepl(model_,colnames(COAD_PDX_expression))]
-    
-    mean_cors_=c(mean_cors_,
-                 cor(originator_expression_mat[,originator,drop=F],COAD_PDX_expression[,PDX_] ,method='spearman') %>% mean)
-  }
-  mean_cor_list_K2[[i]]=mean_cors_
-  i=i+1
-}
-
 
 #Calculate tumor fraction for each major component and aggregate into 2: high tumor fraction vs. low tumor fraction
 pdf(file='./fig_3D_1.pdf',paper="letter")
@@ -116,10 +91,15 @@ for(originator_expression_mat in list(log2(COAD_originator_expression+1),
   mean_TF_components_cor_list[[i]]=mean_cors_
   i=i+1
 }
+mean_TF_components_cor_list_COAD=mean_TF_components_cor_list
+
+#remove the NaN value (due to no mathcing PDX sample for the originator)
+mean_TF_components_cor_list_COAD[[1]]=c(mean_TF_components_cor_list_COAD[[1]][1:45],mean_TF_components_cor_list_COAD[[1]][47:48])
+mean_TF_components_cor_list_COAD[[2]]=c(mean_TF_components_cor_list_COAD[[2]][1:45],mean_TF_components_cor_list_COAD[[2]][47:48])
+mean_TF_components_cor_list_COAD[[3]]=c(mean_TF_components_cor_list_COAD[[3]][1:45],mean_TF_components_cor_list_COAD[[3]][47:48])
 
 
-
-boxplot(mean_TF_components_cor_list,names=c('Paired originator vs. PDX',
+boxplot(mean_TF_components_cor_list_COAD,names=c('Paired originator vs. PDX',
                                             'Paired high TF component vs. PDX',
                                             'Paired low TF component vs. PDX'),
         main='Mean Spearman correlation distribution - COAD',
@@ -168,33 +148,6 @@ major_component_expression=component_expression_matrix_list[[1]]+component_expre
 rest_component=component_expression_matrix_list[[5]]+component_expression_matrix_list[[6]]
 
 
-
-filler=rep(NA,ncol(PAAD_originator_expression))
-mean_cor_list_K2=list(mean_cors_originator_PDX=filler,
-                      mean_cors_DeconOriginatorComponent1_PDX=filler,
-                      mean_cors_DeconOriginatorComponent2_PDX=filler,
-                      major_component_expression=filler,
-                      rest_component=filler)
-i=1
-for(originator_expression_mat in list(log2(PAAD_originator_expression+1),
-                                      K2_component_expression_matrix_list[[1]],
-                                      K2_component_expression_matrix_list[[2]],
-                                      major_component_expression,
-                                      rest_component
-)){
-  mean_cors_=c()
-  for(originator in colnames(originator_expression_mat)){
-    model_=sub('~ORIGINATOR.*','',originator)
-    PDX_=colnames(PAAD_PDX_expression)[grepl(model_,colnames(PAAD_PDX_expression))]
-    
-    mean_cors_=c(mean_cors_,
-                 cor(originator_expression_mat[,originator,drop=F],PAAD_PDX_expression[,PDX_] ,method='spearman') %>% mean)
-  }
-  mean_cor_list_K2[[i]]=mean_cors_
-  i=i+1
-}
-
-
 #Calculate tumor fraction for each major component and aggregate into 2: high tumor fraction vs. low tumor fraction
 pdf(file='./fig_3D_2.pdf',paper="letter")
 
@@ -239,10 +192,10 @@ for(originator_expression_mat in list(log2(PAAD_originator_expression+1),
   mean_TF_components_cor_list[[i]]=mean_cors_
   i=i+1
 }
+mean_TF_components_cor_list_PAAD=mean_TF_components_cor_list
 
 
-
-boxplot(mean_TF_components_cor_list,names=c('Paired originator vs. PDX',
+boxplot(mean_TF_components_cor_list_PAAD,names=c('Paired originator vs. PDX',
                                             'Paired high TF component vs. PDX',
                                             'Paired low TF component vs. PDX'),
         main='Mean Spearman correlation distribution - PAAD',
@@ -292,32 +245,6 @@ major_component_expression=component_expression_matrix_list[[1]]+component_expre
 rest_component=component_expression_matrix_list[[6]]
 
 
-filler=rep(NA,ncol(HNSC_originator_expression))
-mean_cor_list_K2=list(mean_cors_originator_PDX=filler,
-                      mean_cors_DeconOriginatorComponent1_PDX=filler,
-                      mean_cors_DeconOriginatorComponent2_PDX=filler,
-                      major_component_expression=filler,
-                      rest_component=filler)
-i=1
-for(originator_expression_mat in list(log2(HNSC_originator_expression+1),
-                                      K2_component_expression_matrix_list[[1]],
-                                      K2_component_expression_matrix_list[[2]],
-                                      major_component_expression,
-                                      rest_component
-)){
-  mean_cors_=c()
-  for(originator in colnames(originator_expression_mat)){
-    model_=sub('~ORIGINATOR.*','',originator)
-    PDX_=colnames(HNSC_PDX_expression)[grepl(model_,colnames(HNSC_PDX_expression))]
-    
-    mean_cors_=c(mean_cors_,
-                 cor(originator_expression_mat[,originator,drop=F],HNSC_PDX_expression[,PDX_] ,method='spearman') %>% mean)
-  }
-  mean_cor_list_K2[[i]]=mean_cors_
-  i=i+1
-}
-
-
 #Calculate tumor fraction for each major component and aggregate into 2: high tumor fraction vs. low tumor fraction
 pdf(file='./fig_3D_3.pdf',paper="letter")
 
@@ -362,10 +289,10 @@ for(originator_expression_mat in list(log2(HNSC_originator_expression+1),
   mean_TF_components_cor_list[[i]]=mean_cors_
   i=i+1
 }
+mean_TF_components_cor_list_HNSC=mean_TF_components_cor_list
 
 
-
-boxplot(mean_TF_components_cor_list,names=c('Paired originator vs. PDX',
+boxplot(mean_TF_components_cor_list_HNSC,names=c('Paired originator vs. PDX',
                                             'Paired high TF component vs. PDX',
                                             'Paired low TF component vs. PDX'),
         main='Mean Spearman correlation distribution - HNSC',
