@@ -1,6 +1,6 @@
 ## Genomic Landscape and Preclinical Therapeutic Insights Developed from Xenograft, Organoid, and Cell Line Models in the NCI’s Patient-Derived Models Repository
 
-Biswajit Das*§, Li Chen*, Yvonne A. Evrard*, Ting-Chia Chang*, I-Fan Wu*, et al.
+Biswajit Das*§, Li Chen*, Yvonne A. Evrard*, Ting-Chia Chang*, Peter I-Fan Wu*, et al.
 
 §Corresponding author: Biswajit Das
 
