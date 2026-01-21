@@ -4,6 +4,7 @@ library(ggplot2)
 library(clusterProfiler)
 library(readxl)
 library(ComplexHeatmap)
+library(DESeq2)
 
 source('./sup_code/self_defined_functions.R')
 
@@ -50,6 +51,7 @@ model_dat_original=dat
 
 models_have_RNAseq=sup_tab$`PDX Model`
 EFSx4=sapply(models_have_RNAseq,function(model) EFSx4[sup_tab$`PDX Model`==model])
+names(EFSx4)=models_have_RNAseq
 histology=sapply(models_have_RNAseq,function(model) sup_tab$`Tumor histology (Oncotree code)`[sup_tab$`PDX Model`==model])
 EGFR_amplification=ifelse(sup_tab$`EGFR Amplification (Copy number >=7)`=='Yes','Yes','No') #Use the last column
 condition_df=data.frame(EFSx4,'EGFR amplification'=EGFR_amplification,'Tumor histology'=histology,check.names=F)
@@ -90,7 +92,7 @@ res=as.data.frame(res[order(res$log2FoldChange),] )
 res=res[!is.na(res$padj) & (res$padj<=padj) & (abs(res$log2FoldChange)>=log2(fold_change_cutoff)),]
 
 DE=res
-write.csv(DE,file='./data/erlotinib_response_DE_genes.csv',row.names = F)
+write.csv(DE,file='./data/erlotinib_response_DE_genes.csv',row.names = T)
 
 
 
